@@ -3,10 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Home</title>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Nueva era - ecommerce</title>
 </head>
 <body>
-    
+
+    <!-- Header con logo y botón de navegación -->
+    <header>
+        <div class="logo">
+            <img src="./img/logo.svg" alt="Logo E-commerce">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider banner -->
+    <section class="banner">
+        <div class="slider">
+            <div class="slide active">
+                <img src="./img/banner1.png" alt="Banner 1">
+            </div>
+            <div class="slide">
+                <img src="./img/banner2.png" alt="Banner 2">
+            </div>
+            <div class="slide">
+                <img src="./img/banner3.png" alt="Banner 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer con lista de categorías y formulario de contacto -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-categorias">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#">Electrónica</a></li>
+                    <li><a href="#">Ropa</a></li>
+                    <li><a href="#">Hogar</a></li>
+                    <li><a href="#">Deportes</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacto">
+                <h3>Contacto</h3>
+                <form action="#" method="POST">
+                    <input type="text" name="nombre" placeholder="Tu nombre">
+                    <input type="email" name="email" placeholder="Tu email">
+                    <textarea name="mensaje" placeholder="Tu mensaje"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/action.js"></script>
 </body>
 </html>
