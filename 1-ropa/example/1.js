@@ -1,25 +1,46 @@
-let currentIndex = 0;
-        
-document.querySelector('.prev-button').addEventListener('click', () => {
-   navigate(-1);
+var full=false;
+
+$('.imgWrap').hover(function () {
+ // $(this).css('width', '36%');
+   $(this).addClass('current');
+  //$(this).siblings().css('width', '16%');  
+   $(this).siblings().addClass('notCurrent');
+}, function () {
+  //$('.imgWrap').css('width', '20%');  
+  $('.imgWrap').siblings().removeClass('notCurrent');
+  $('.imgWrap').removeClass('current');
+ });
+
+$('.imgWrap').click(function () {  
+  
+  if(!full){
+    full = true;
+    // $(this).css('width', '100%');
+    $(this).addClass('current-full');
+  //$(this).siblings().css('width', '0%');  
+   $(this).siblings().addClass('notCurrent-full');
+  }
 });
 
-document.querySelector('.next-button').addEventListener('click', () => {
-   navigate(1);
-});
-
-function navigate(direction) {
-   const galleryContainer = document.querySelector('.gallery-container');
-   const totalImages = document.querySelectorAll('.gallery-item').length;
-
-   currentIndex = (currentIndex + direction + totalImages) % totalImages;
-   const offset = -currentIndex * 100;
-
-   galleryContainer.style.transform = `translateX(${offset}%)`;
-}
-
-setInterval(() => {
-    navigate(1); // Avanzar automáticamente
- }, 3000); // Cambia cada 3 segundos
-
+$('.mfp-close').click(function () {
+  full = false;
+  $('.imgWrap').siblings().removeClass('notCurrent-full');
+  $('.imgWrap').removeClass('current-full');
  
+});
+
+
+$('.gallery').magnificPopup({
+  delegate: 'a',
+  type: 'image',
+  removalDelay: 300,
+  mainClass: 'mfp-fade',
+  gallery: {
+    enabled: true,
+    navigateByImgClick: true,
+    preload: [0,1]
+  }
+});
+
+
+
