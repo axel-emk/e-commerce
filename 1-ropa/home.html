@@ -24,23 +24,34 @@
     </header>
 
     <!-- Slider banner -->
-    <section class="banner">
-        <div class="slider">
-            <div class="slide active">
-                <img src="./img/banner1.png" alt="Banner 1">
-            </div>
-            <div class="slide">
-                <img src="./img/banner2.png" alt="Banner 2">
-            </div>
-            <div class="slide">
-                <img src="./img/banner3.png" alt="Banner 3">
-            </div>
+    <section id="gallery">
+        <div class="gallery-container">
+            <figure class="gallery-item">
+                <img src="./img/banner1.png" alt="Imagen 1">
+                <figcaption>Descripción de la imagen 1</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="./img/banner2.png" alt="Imagen 2">
+                <figcaption>Descripción de la imagen 2</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="./img/banner3.png" alt="Imagen 3">
+                <figcaption>Descripción de la imagen 3</figcaption>
+            </figure>
+            <!-- ... otras imágenes ... -->
         </div>
+        <nav class="gallery-navigation">
+            <button class="nav-button prev-button">Anterior</button>
+            <button class="nav-button next-button">Siguiente</button>
+        </nav>
     </section>
 
-    <!-- Footer con lista de categorías y formulario de contacto -->
-    <footer>
+     <!-- Footer con logo, lista de categorías y formulario de contacto -->
+     <footer>
         <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./img/logo.svg" alt="Logo E-commerce">
+            </div>
             <div class="footer-categorias">
                 <h3>Categorías</h3>
                 <ul>
