@@ -1,9 +1,26 @@
 /* Estilos generales */
+:root {
+  --background: #f0f0f0;
+  --primary: #14407F; /* Color primario */
+  --secondary: #333; /* Color secundario */
+  --promo: #FF5733; /* Color de promoción */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+h1{
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+  color: var(--secondary);
 }
 
 a {
@@ -17,11 +34,19 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #14407F;
+    background-color:var(--primary);;
+}
+
+.logo{
+  margin-left: 10%;
 }
 
 .logo img {
-    width: 120px;
+  width: 100px;
+}
+
+.navbar{
+  margin-right: 10%;
 }
 
 .navbar ul {
@@ -37,7 +62,7 @@ header {
 }
 
 .navbar ul li a:hover {
-    background-color: #0F3460;
+    background-color:var(--primary);;
     border-radius: 5px;
 }
 
@@ -45,7 +70,7 @@ header {
 .slideshow-container {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 800px;
     overflow: hidden;
    position: relative;
    margin: auto;
@@ -93,24 +118,7 @@ header {
    width: 100%;
    text-align: center;
  }
- 
 
- 
- /* The dots/bullets/indicators */
- .dot {
-   cursor: pointer;
-   height: 15px;
-   width: 15px;
-   margin: 0 2px;
-   background-color: #bbb;
-   border-radius: 50%;
-   display: inline-block;
-   transition: background-color 0.6s ease;
- }
- 
- .active, .dot:hover {
-   background-color: #717171;
- }
  
  /* Fading animation */
  .fade {
@@ -123,9 +131,127 @@ header {
    to {opacity: 1}
  }
 
+ /* Galeria */
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 0 5%;
+}
+
+
+
+ /* Card */
+ .card {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.contenido {
+  width: 100%;
+  height: 100%;
+  background-color: #F2F2F2;
+  padding: 16px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  padding-top: 10px;
+  color: var(--secondary);
+}
+
+.old-price {
+  font-size: 0.875rem;
+  color: var(--secondary);
+  text-decoration: line-through;
+  margin: 8px 0;
+}
+
+.new-price {
+  margin: 8px 0;
+}
+
+.price-button {
+  background-color:var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0px 25px 25px 25px;
+  cursor: pointer;
+  font-size: 1rem;
+
+}
+.price-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 8px 0;
+}
+
+
+.discount-label {
+font-size: 0.7em;
+color:var(--primary);;
+margin: 10px;
+}
+.installments {
+  font-size: 0.875rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.rating {
+  margin-top: 0px;
+}
+
+.rating span {
+  font-size: 20px;
+  color: gold;
+  margin-right: 2px;
+}
+
+/* Imagenes */
+
+.img-promo1{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-promo2{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+ position: relative;
+ margin: auto;
+}
+
 /* Footer */
 footer {
-    background-color: #333;
+    background-color:var(--secondary);;
     color: white;
     padding: 20px;
 }
@@ -136,10 +262,16 @@ footer {
     align-items: flex-start;
 }
 
+.footer-logo{
+  margin-left: 10%;
+}
 .footer-logo img {
     width: 100px;
 }
 
+.footer-contacto{
+  margin-right: 10%;
+}
 .footer-categorias h3,
 .footer-contacto h3 {
     margin-bottom: 10px;

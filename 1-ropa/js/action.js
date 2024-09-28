@@ -1,12 +1,12 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Controles siguientes/anteriores
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+// Controles de imágenes en miniatura
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -26,3 +26,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+// Cambia de slide cada 5 segundos
+setInterval(() => {
+  plusSlides(1); // Avanza al siguiente slide
+}, 5000); // Cambia cada 3 segundos
