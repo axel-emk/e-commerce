@@ -2,10 +2,12 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce Home</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -17,7 +19,7 @@
     <!-- Header con logo y botón de navegación -->
     <header>
         <div class="logo">
-            <img src="./img/logo.svg" alt="Logo E-commerce">
+          <a href="#"><img src="./img/logo.svg" alt="Logo E-commerce"></a>
         </div>
         <nav class="navbar">
             <ul>
@@ -25,9 +27,22 @@
                 <li><a href="#">Tienda</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
+
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar..." aria-label="Buscar">
+                <button type="submit"><i class="fas fa-search"></i></button> <!-- Icono de búsqueda -->
+            </div>
+            <ul class="icons">
+                <li><a href="#"><i class="fas fa-user"></i></a> <!-- Icono de usuario --></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a> <!-- Icono de favoritos --></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a> <!-- Icono de carrito de compras --></li>
+                <li><a href="#"><i class="fas fa-truck"></i></a> <!-- Icono de seguimiento de pedido --></li>
             </ul>
         </nav>
     </header>
+
+
 
     <!-- Slider banner -->
     <!-- Slideshow container -->
@@ -162,8 +177,120 @@
         </article>
 
     </section>
+    <!-- Galeria II -->
+    <h1>Titulo de la seccion</h1>
+    <section class="grid-container">
+        <article class="productos">
+            <div class="card">
+                <img src="./img/producto1.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Nombre del Producto</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$120.000</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$90.000</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $15.000 sin interés</p>
+                </div>
+            </div>
+        </article>
+        <article class="productos">
+            <div class="card">
+                <img src="./img/producto2.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Nombre del Producto</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$120.000</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$90.000</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $15.000 sin interés</p>
+                </div>
+            </div>
+        </article>
+        <article class="productos">
+            <div class="card">
+                <img src="./img/producto1.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Nombre del Producto</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$120.000</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$90.000</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $15.000 sin interés</p>
+                </div>
+            </div>
+        </article>
+        <article class="productos">
+            <div class="card">
+                <img src="./img/producto2.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Nombre del Producto</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$120.000</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$90.000</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $15.000 sin interés</p>
+                </div>
+            </div>
+        </article>
+        <article class="productos">
+            <div class="card">
+                <img src="./img/producto1.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Nombre del Producto</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$120.000</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$90.000</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $15.000 sin interés</p>
+                </div>
+            </div>
+        </article>
 
+    </section>
 
+        <!-- Imagen I -->
+        <section>
+            <article class="img-promo1">
+                <img src="./img/imagen2.png" alt="">
+            </article>
+        
+
+        </section>
+
+        <!-- Newsleter -->
+
+                    <!-- Formulario para suscripción al newsletter -->
+                    <div class="newsletter">
+                        <h2>¡Suscríbete a nuestro Newsletter!</h2>
+                        <p>Recibe ofertas exclusivas y novedades directamente en tu correo.</p>
+                        <form action="#" method="POST">
+                            <input type="email" name="email" placeholder="Ingresa tu correo" required>
+                            <button type="submit">Suscribirme</button>
+                        </form>
+                    </div>
+        
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
 
 
     <!-- Footer con logo, lista de categorías y formulario de contacto -->
@@ -180,6 +307,27 @@
                     <li><a href="#">Hogar</a></li>
                     <li><a href="#">Deportes</a></li>
                 </ul>
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#">Electrónica</a></li>
+                    <li><a href="#">Ropa</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer-categorias">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#">Electrónica</a></li>
+                    <li><a href="#">Ropa</a></li>
+                    <li><a href="#">Hogar</a></li>
+                    <li><a href="#">Deportes</a></li>
+                </ul>
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#">Electrónica</a></li>
+                    <li><a href="#">Ropa</a></li>
+                </ul>
+                
             </div>
             <div class="footer-contacto">
                 <h3>Contacto</h3>
