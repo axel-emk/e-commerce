@@ -112,6 +112,11 @@ header {
   text-shadow: 1px 1px 5px black;
 }
 
+.sidebar li a{
+  color: var(--luz);
+  text-decoration: none;
+}
+
 .sidebar img {
   position: absolute;
   bottom: 20px;
