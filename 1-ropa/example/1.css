@@ -1,4 +1,13 @@
 /* General Reset */
+
+:root {
+  --luz: #fff;
+  --primary: #181818;
+  --secondary: #333;
+  --tercia: #F2F2F2;
+  --alerta: #D32F2F;
+  --gold: #86BBCE;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,12 +15,12 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f4f4f4;
+  background-color: var(--gold);
 }
 
 /* Header */
 header {
-  background-color: #002423;
+  background-color: var(--primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,16 +48,16 @@ header {
 }
 
 .navlinks li a, .navlinks button {
-  color: bisque;
+  color: var(--luz);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   transition: all 0.3s ease;
 }
 
 .navlinks li a:hover, .navlinks button:hover {
-  color: tomato;
-  text-shadow: 1px 1px 5px black;
+  color: var(--gold);
+
 }
 
 /* Buscador */
@@ -65,7 +74,7 @@ header {
 }
 .search-container button {
   padding: 9px;
-  background-color: firebrick;
+  background-color: var(--gold);
   border: none;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
@@ -74,10 +83,10 @@ header {
 /* Íconos */
 .icons a {
   font-size: 20px;
-  color: bisque;
+  color: var(--luz);
 }
 .icons a:hover {
-  color: tomato;
+  color: var(--gold);
 }
 
 /* Sidebar (Menú para dispositivos móviles) */
@@ -87,7 +96,7 @@ header {
   right: 0;
   height: 100vh;
   width: 300px;
-  background-color: #002423;
+  background-color: var(--primary);
   display: none;
   flex-direction: column;
   list-style: none;
@@ -112,7 +121,7 @@ header {
 
 nav ion-icon {
   font-size: 2em;
-  color: bisque;
+  color: var(--luz);
 }
 
 /* Media Queries */
