@@ -30,4 +30,4 @@ function showSlides(n) {
 // Cambia de slide cada 5 segundos
 setInterval(() => {
   plusSlides(1); // Avanza al siguiente slide
-}, 5000); // Cambia cada 3 segundos
+}, 3000); // Cambia cada 3 segundos
