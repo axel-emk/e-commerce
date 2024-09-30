@@ -32,6 +32,7 @@ h1 {
 h2{ 
   font-size: 30px !important;
   font-weight: 600;
+  text-align: center;
 }
 
 p{
@@ -61,4 +62,9 @@ a:hover {
 
 .bg-golde{
   background-color: var(--gold) !important;
+}
+
+.mg{
+  width: 80%;
+  margin: 40px auto;
 }
