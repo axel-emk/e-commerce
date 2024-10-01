@@ -7,7 +7,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  box-shadow: 2px 2px 10px var(--secondary);
+  box-shadow: 2px 2px 10px var(--primary);
   position: fixed;
   top: 0;
   width: 100%;
@@ -17,7 +17,7 @@ header {
 .logo {
   width: 120px;
   cursor: pointer;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 .navlinks {
