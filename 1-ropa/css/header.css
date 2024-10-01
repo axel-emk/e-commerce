@@ -1,4 +1,18 @@
+/* Huincha superior de envíos */
+.huincha-envios {
+  background-color: var(--secondary); /* Color de fondo de la huincha */
+  color: var(--luz); /* Color del texto */
+  text-align: center; /* Centrar el texto */
+  padding: 4px  ; /* Espacio vertical dentro de la franja */
+  position: fixed; /* Fijo en la parte superior */
+  top: 0; /* Asegura que esté pegada en la parte superior */
+  width: 100%; /* Ocupar todo el ancho de la página */
+  z-index: 999; /* Colocar la huincha por encima de otros elementos */
+}
 
+.texto-huincha{
+  font-size: 16px !important;
+}
 
 /* Header */
 header {
@@ -12,6 +26,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
+  margin-top: 27px; /* Ajusta el espacio superior para que el header no cubra la huincha */
 }
 /* Animación del logo en el header */
 .header-logo img {
@@ -158,14 +173,16 @@ nav ion-icon {
   color: var(--luz);
 }
 
+
+
 /* Media Queries */
-@media (min-width: 830px) {
+@media (min-width: 768px) {
   .navlinks ion-icon {
       display: none;
   }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 768px) {
   .navlinks .items, .search-container, .icons {
       display: none;
   }
@@ -174,6 +191,18 @@ nav ion-icon {
   }
   .search-container-sidebar{
     width: 70%;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .huincha-envios {
+display: none;
+  }
+  
+  header {
+      margin-top: 0; /* Ajustar el header para móviles */
   }
 }
 

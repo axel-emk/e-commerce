@@ -70,13 +70,13 @@
     font-size: 1.2rem !important;
     margin: 5px 0;
     padding-top: 10px;
-    color: var(--secondary);
+    color: var(--primary);
     text-align: center;
   }
   
   .old-price {
     font-size: 0.875rem !important;
-    color: var(--secondary);
+    color: var(--primary);
     text-decoration: line-through;
     margin: 8px 0;
   }
@@ -87,7 +87,7 @@
   
   .price-button {
     background-color: var(--primary);
-    color: white;
+    color: var(--luz);
     border: none;
     padding: 10px 20px;
     border-radius: 0px 25px 25px 25px;
@@ -97,7 +97,7 @@
   }
   
   .price-button:hover{
-    background-color: var(--secondary);
+    background-color: var(--gold);
   }
   .price-wrapper {
     display: flex;
@@ -109,13 +109,13 @@
   
   .discount-label {
     font-size: 0.7em !important;
-    color: var(--primary);
+    color: var(--secondary);
     margin: 10px;
   }
   
   .installments {
     font-size: 0.875rem !important;
-    color: var(--secondary);
+    color: var(--primary);
     margin-top: 20px;
     margin-bottom: 20px;
   }
