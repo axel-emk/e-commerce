@@ -1,0 +1,121 @@
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 800px; /* Adaptado a la altura de la pantalla, puedes ajustarlo */
+    overflow: hidden;
+    margin-top: 85px; /* Ajustado para tomar en cuenta el header fijo */
+  }
+  
+  /* Ocultar las imágenes por defecto */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Botones siguiente/anterior */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Texto de pie de imagen */
+  .text {
+    color: var(--tercia);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Animación de desvanecimiento */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: .4;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Por defecto, ocultar imágenes móviles */
+.img-mobile {
+  display: none;
+}
+
+
+  /* Media Queries para hacer el slider adaptable */
+  @media (max-width: 1024px) {
+    .slideshow-container {
+      height: 60vh; /* Reducción de altura en pantallas más pequeñas */
+    }
+  
+    .prev, .next {
+      font-size: 22px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .slideshow-container {
+      height: 50vh; /* Reducción adicional en pantallas más pequeñas */
+    }
+  
+    .prev, .next {
+      font-size: 18px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slideshow-container {
+      height: 480px; /* Reducción adicional en móviles */
+    }
+  
+    .prev, .next {
+      font-size: 16px;
+      padding: 6px;
+    }
+  
+    .text {
+      font-size: 12px; /* Reducir tamaño del texto en pantallas pequeñas */
+    }
+    .img-desktop {
+      display: none; /* Ocultar las imágenes de escritorio */
+  }
+
+  .img-mobile {
+      display: block; /* Mostrar las imágenes cuadradas */
+      width: 100%; /* Asegurar que las imágenes móviles ocupen el 100% del ancho */
+      object-fit: fill; /* Ajustar la imagen manteniendo la proporción */
+  }
+  }
+  

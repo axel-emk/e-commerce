@@ -1,0 +1,70 @@
+/* General Reset */
+:root {
+    --luz: #fff;
+    --primary: #181818;
+    --secondary: #008B8B;
+    --tercia: #F2F2F2;
+    --alerta: #D32F2F;
+    --gold: #D0417E;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--luz);
+  }
+
+  /* Textos y botones */
+h1 {
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+  color: var(--primary);
+}
+
+h2{ 
+  font-size: 30px !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+p{
+  font-size: 16px !important;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: var(--luz);
+}
+
+a:hover {
+  color: var(--gold) !important;
+}
+
+.primario{
+  color: var(--primary) !important;
+}
+.bg-primario{
+  background-color: var(--primary) !important;
+}
+
+.golde{
+  color: var(--gold) !important;
+}
+
+.bg-golde{
+  background-color: var(--gold) !important;
+}
+
+.mg{
+  width: 80%;
+  margin: 40px auto;
+}
