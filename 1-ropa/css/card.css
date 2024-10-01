@@ -1,150 +1,175 @@
 /* Contenedor del slider */
 .slider-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 50px auto;
 }
 
 /* Estilo de las cards dentro del slider */
 .card-slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: calc(250px * 12); /* 12 cards por defecto */
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: calc(250px * 12);
+  /* 12 cards por defecto */
 }
 
-/* Card individual */
-.card {
-    flex: 0 0 250px;
-    margin: 10px;
-}
 
 /* Botones de navegación */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 16px;
-    font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: var(--gold);
-    border: none;
-    z-index: 2;
-    transition: 0.3s ease;
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--gold);
+  border: none;
+  z-index: 2;
+  transition: 0.3s ease;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .prev {
-    left: 1%;
+  left: 1%;
 }
 
 .next {
-    right: 0.5%;
+  right: 0.5%;
+}
+
+/* Icono de favorito */
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  left: 210px;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--gold); /* Color inicial */
+  transition: color 0.3s ease;
+}
+
+.favorite-icon i {
+  font-size: 1.5rem;
+}
+
+/* Estado del corazón relleno */
+.favorite-icon.active i {
+  color: var(--gold); /* Cambiar color al corazón activo */
 }
 
 /* Ajustes para la card según tu código */
 .card {
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  position: relative;
+  flex: 0 0 250px;
+  margin: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-img {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
 
-  
-  .card-title {
-    font-size: 1.2rem !important;
-    margin: 5px 0;
-    padding-top: 10px;
-    color: var(--primary);
-    text-align: center;
-  }
-  
-  .old-price {
-    font-size: 0.875rem !important;
-    color: var(--primary);
-    text-decoration: line-through;
-    margin: 8px 0;
-  }
-  
-  .new-price {
-    margin: 8px 0;
-  }
-  
-  .price-button {
-    background-color: var(--primary);
-    color: var(--luz);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 0px 25px 25px 25px;
-    cursor: pointer;
-    font-size: 1rem;
-  
-  }
-  
-  .price-button:hover{
-    background-color: var(--gold);
-  }
-  .price-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  
-  .discount-label {
-    font-size: 0.7em !important;
-    color: var(--secondary);
-    margin: 10px;
-  }
-  
-  .installments {
-    font-size: 0.875rem !important;
-    color: var(--primary);
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .rating {
-    margin-top: 0px;
-  }
-  
-  .rating span {
-    font-size: 20px !important;
-    color: var(--gold);
-    margin-right: 2px;
-  } 
+
+.card-title {
+  font-size: 1.2rem !important;
+  margin: 5px 0;
+  padding-top: 10px;
+  color: var(--primary);
+  text-align: center;
+}
+
+.old-price {
+  font-size: 0.875rem !important;
+  color: var(--primary);
+  text-decoration: line-through;
+  margin: 8px 0;
+}
+
+.new-price {
+  margin: 8px 0;
+}
+
+.price-button {
+  background-color: var(--primary);
+  color: var(--luz);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0px 25px 25px 25px;
+  cursor: pointer;
+  font-size: 1rem;
+
+}
+
+.price-button:hover {
+  background-color: var(--gold);
+}
+
+.price-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+
+.discount-label {
+  font-size: 0.7em !important;
+  color: var(--secondary);
+  margin: 10px;
+}
+
+.installments {
+  font-size: 0.875rem !important;
+  color: var(--primary);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.rating {
+  margin-top: 0px;
+}
+
+.rating span {
+  font-size: 20px !important;
+  color: var(--gold);
+  margin-right: 2px;
+}
 
 /* Haciendo el slider responsive */
 @media (max-width: 1024px) {
-    .card-slider {
-        width: calc(250px * 8); /* 8 cards por fila en pantallas medianas */
-    }
+  .card-slider {
+    width: calc(250px * 8);
+    /* 8 cards por fila en pantallas medianas */
+  }
 }
 
 @media (max-width: 768px) {
-    .card-slider {
-        width: calc(250px * 4); /* 4 cards por fila en pantallas más pequeñas */
-    }
+  .card-slider {
+    width: calc(250px * 4);
+    /* 4 cards por fila en pantallas más pequeñas */
+  }
 }
 
 @media (max-width: 480px) {
-    .card-slider {
-        width: calc(250px * 2); /* 2 cards por fila en pantallas móviles */
-    }
+  .card-slider {
+    width: calc(250px * 2);
+    /* 2 cards por fila en pantallas móviles */
+  }
 }

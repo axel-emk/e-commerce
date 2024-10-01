@@ -23,3 +23,24 @@ function moveSlider(n) {
     // Desliza las cards
     slider.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
 }
+
+
+// Seleccionar todos los iconos de favoritos dentro de las cards
+const favoriteIcons = document.querySelectorAll('.favorite-icon');
+
+// Agregar evento click a cada ícono de favorito
+favoriteIcons.forEach(icon => {
+    icon.addEventListener('click', function() {
+        this.classList.toggle('active'); // Cambiar el estado activo
+
+        // Alternar el ícono entre corazón vacío y relleno
+        const heartIcon = this.querySelector('i');
+        if (heartIcon.classList.contains('far')) {
+            heartIcon.classList.remove('far');
+            heartIcon.classList.add('fas');
+        } else {
+            heartIcon.classList.remove('fas');
+            heartIcon.classList.add('far');
+        }
+    });
+});

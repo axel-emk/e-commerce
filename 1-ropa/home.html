@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIT ecommerce</title>
+    <title>FIT</title>
+    <link rel="icon" type="image/x-icon" href="./img/isologo.svg">
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/banner.css">
@@ -15,8 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,10 +31,10 @@
     </div>
         <nav>
             <ul class="navlinks">
-                <li class="items"><a href="#">Inicio</a></li>
-                <li class="items"><a href="#">Tienda</a></li>
-                <li class="items"><a href="#">Nosotros</a></li>
-                <li class="items"><a href="#">Contacto</a></li>
+                <li class="items"><a href="#">Niños</a></li>
+                <li class="items"><a href="#">Mujeres</a></li>
+                <li class="items"><a href="#">Hombres</a></li>
+                <li class="items"><a href="#">Deportes</a></li>
 
                 <!-- Buscador en el header -->
                 <li class="search-container">
@@ -152,6 +152,13 @@
     </div>
 </div>
 
+    <!-- Video -->
+    <section class="fullwidth-video-section">
+        <video autoplay loop muted playsinline>
+            <source src="./img/Ecom_Banner_-_PUMA_Running_deviate.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+    </section>
 
 <!-- Contenedor principal del slider -->
  <section class="mg">
@@ -160,6 +167,11 @@
     <div class="card-slider">
         <!-- Card 1 -->
         <div class="card">
+            <!-- Ícono de favorito -->
+            <div class="favorite-icon">
+                <i class="far fa-heart"></i> <!-- Corazón vacío -->
+            </div>
+            
             <img src="./img/producto1.png" alt="Producto" class="card-img">
             <div class="contenido">
                 <h2 class="card-title">Producto 1</h2>
@@ -174,130 +186,174 @@
                 <p class="installments">en 6 x $15.000 sin interés</p>
             </div>
         </div>
+        
 
         <!-- Repite la card hasta tener 12 (cambia los valores y nombres para cada producto) -->
         <!-- Card 2 -->
         <div class="card">
-            <img src="./img/producto2.png" alt="Producto" class="card-img">
+            <!-- Ícono de favorito -->
+            <div class="favorite-icon">
+                <i class="far fa-heart"></i> <!-- Corazón vacío -->
+            </div>
+            
+            <img src="./img/producto1.png" alt="Producto" class="card-img">
             <div class="contenido">
-                <h2 class="card-title">Producto 2</h2>
+                <h2 class="card-title">Producto 1</h2>
                 <div class="rating">
                     <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
                 </div>
-                <p class="old-price">Antes: <span>$100.000</span></p>
+                <p class="old-price">Antes: <span>$120.000</span></p>
                 <div class="price-wrapper">
-                    <button class="price-button">$80.000</button>
-                    <p class="discount-label">20% OFF</p>
+                    <button class="price-button">$90.000</button>
+                    <p class="discount-label">25% OFF</p>
                 </div>
-                <p class="installments">en 6 x $13.333 sin interés</p>
+                <p class="installments">en 6 x $15.000 sin interés</p>
             </div>
         </div>
+        
         <!--  -->
         <div class="card">
-            <img src="./img/producto2.png" alt="Producto" class="card-img">
+            <!-- Ícono de favorito -->
+            <div class="favorite-icon">
+                <i class="far fa-heart"></i> <!-- Corazón vacío -->
+            </div>
+            
+            <img src="./img/producto1.png" alt="Producto" class="card-img">
             <div class="contenido">
-                <h2 class="card-title">Producto 2</h2>
+                <h2 class="card-title">Producto 1</h2>
                 <div class="rating">
                     <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
                 </div>
-                <p class="old-price">Antes: <span>$100.000</span></p>
+                <p class="old-price">Antes: <span>$120.000</span></p>
                 <div class="price-wrapper">
-                    <button class="price-button">$80.000</button>
-                    <p class="discount-label">20% OFF</p>
+                    <button class="price-button">$90.000</button>
+                    <p class="discount-label">25% OFF</p>
                 </div>
-                <p class="installments">en 6 x $13.333 sin interés</p>
+                <p class="installments">en 6 x $15.000 sin interés</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <!-- Ícono de favorito -->
+            <div class="favorite-icon">
+                <i class="far fa-heart"></i> <!-- Corazón vacío -->
+            </div>
+            
+            <img src="./img/producto1.png" alt="Producto" class="card-img">
+            <div class="contenido">
+                <h2 class="card-title">Producto 1</h2>
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                </div>
+                <p class="old-price">Antes: <span>$120.000</span></p>
+                <div class="price-wrapper">
+                    <button class="price-button">$90.000</button>
+                    <p class="discount-label">25% OFF</p>
+                </div>
+                <p class="installments">en 6 x $15.000 sin interés</p>
             </div>
         </div>
         <div class="card">
-            <img src="./img/producto2.png" alt="Producto" class="card-img">
+            <!-- Ícono de favorito -->
+            <div class="favorite-icon">
+                <i class="far fa-heart"></i> <!-- Corazón vacío -->
+            </div>
+            
+            <img src="./img/producto1.png" alt="Producto" class="card-img">
             <div class="contenido">
-                <h2 class="card-title">Producto 2</h2>
+                <h2 class="card-title">Producto 1</h2>
                 <div class="rating">
                     <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
                 </div>
-                <p class="old-price">Antes: <span>$100.000</span></p>
+                <p class="old-price">Antes: <span>$120.000</span></p>
                 <div class="price-wrapper">
-                    <button class="price-button">$80.000</button>
-                    <p class="discount-label">20% OFF</p>
+                    <button class="price-button">$90.000</button>
+                    <p class="discount-label">25% OFF</p>
                 </div>
-                <p class="installments">en 6 x $13.333 sin interés</p>
+                <p class="installments">en 6 x $15.000 sin interés</p>
             </div>
         </div>
         <div class="card">
-            <img src="./img/producto2.png" alt="Producto" class="card-img">
+            <!-- Ícono de favorito -->
+            <div class="favorite-icon">
+                <i class="far fa-heart"></i> <!-- Corazón vacío -->
+            </div>
+            
+            <img src="./img/producto1.png" alt="Producto" class="card-img">
             <div class="contenido">
-                <h2 class="card-title">Producto 2</h2>
+                <h2 class="card-title">Producto 1</h2>
                 <div class="rating">
                     <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
                 </div>
-                <p class="old-price">Antes: <span>$100.000</span></p>
+                <p class="old-price">Antes: <span>$120.000</span></p>
                 <div class="price-wrapper">
-                    <button class="price-button">$80.000</button>
-                    <p class="discount-label">20% OFF</p>
+                    <button class="price-button">$90.000</button>
+                    <p class="discount-label">25% OFF</p>
                 </div>
-                <p class="installments">en 6 x $13.333 sin interés</p>
+                <p class="installments">en 6 x $15.000 sin interés</p>
             </div>
         </div>
         <div class="card">
-            <img src="./img/producto2.png" alt="Producto" class="card-img">
+            <!-- Ícono de favorito -->
+            <div class="favorite-icon">
+                <i class="far fa-heart"></i> <!-- Corazón vacío -->
+            </div>
+            
+            <img src="./img/producto1.png" alt="Producto" class="card-img">
             <div class="contenido">
-                <h2 class="card-title">Producto 2</h2>
+                <h2 class="card-title">Producto 1</h2>
                 <div class="rating">
                     <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
                 </div>
-                <p class="old-price">Antes: <span>$100.000</span></p>
+                <p class="old-price">Antes: <span>$120.000</span></p>
                 <div class="price-wrapper">
-                    <button class="price-button">$80.000</button>
-                    <p class="discount-label">20% OFF</p>
+                    <button class="price-button">$90.000</button>
+                    <p class="discount-label">25% OFF</p>
                 </div>
-                <p class="installments">en 6 x $13.333 sin interés</p>
+                <p class="installments">en 6 x $15.000 sin interés</p>
             </div>
         </div>
         <div class="card">
-            <img src="./img/producto2.png" alt="Producto" class="card-img">
+            <!-- Ícono de favorito -->
+            <div class="favorite-icon">
+                <i class="far fa-heart"></i> <!-- Corazón vacío -->
+            </div>
+            
+            <img src="./img/producto1.png" alt="Producto" class="card-img">
             <div class="contenido">
-                <h2 class="card-title">Producto 2</h2>
+                <h2 class="card-title">Producto 1</h2>
                 <div class="rating">
                     <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
                 </div>
-                <p class="old-price">Antes: <span>$100.000</span></p>
+                <p class="old-price">Antes: <span>$120.000</span></p>
                 <div class="price-wrapper">
-                    <button class="price-button">$80.000</button>
-                    <p class="discount-label">20% OFF</p>
+                    <button class="price-button">$90.000</button>
+                    <p class="discount-label">25% OFF</p>
                 </div>
-                <p class="installments">en 6 x $13.333 sin interés</p>
+                <p class="installments">en 6 x $15.000 sin interés</p>
             </div>
         </div>
         <div class="card">
-            <img src="./img/producto2.png" alt="Producto" class="card-img">
+            <!-- Ícono de favorito -->
+            <div class="favorite-icon">
+                <i class="far fa-heart"></i> <!-- Corazón vacío -->
+            </div>
+            
+            <img src="./img/producto1.png" alt="Producto" class="card-img">
             <div class="contenido">
-                <h2 class="card-title">Producto 2</h2>
+                <h2 class="card-title">Producto 1</h2>
                 <div class="rating">
                     <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
                 </div>
-                <p class="old-price">Antes: <span>$100.000</span></p>
+                <p class="old-price">Antes: <span>$120.000</span></p>
                 <div class="price-wrapper">
-                    <button class="price-button">$80.000</button>
-                    <p class="discount-label">20% OFF</p>
+                    <button class="price-button">$90.000</button>
+                    <p class="discount-label">25% OFF</p>
                 </div>
-                <p class="installments">en 6 x $13.333 sin interés</p>
+                <p class="installments">en 6 x $15.000 sin interés</p>
             </div>
         </div>
-        <div class="card">
-            <img src="./img/producto2.png" alt="Producto" class="card-img">
-            <div class="contenido">
-                <h2 class="card-title">Producto 2</h2>
-                <div class="rating">
-                    <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
-                </div>
-                <p class="old-price">Antes: <span>$100.000</span></p>
-                <div class="price-wrapper">
-                    <button class="price-button">$80.000</button>
-                    <p class="discount-label">20% OFF</p>
-                </div>
-                <p class="installments">en 6 x $13.333 sin interés</p>
-            </div>
-        </div>
+        
 
         <!-- Más tarjetas hasta tener 12 -->
     </div>
@@ -308,6 +364,14 @@
 </div>
 
 </section>
+
+    <!-- Imagen I -->
+    <section>
+        <article class="img-promo1">
+            <img src="./img/imagen2.png" alt="">
+        </article>
+
+
     <!-- Newsleter -->
     <!-- Formulario para suscripción al newsletter -->
     <div class="newsletter">
@@ -333,13 +397,11 @@
             </div>
         </div>
         <div class="footer-categorias">
-            <h3>Categorías</h3>
+            <h3>AYUDA</h3>
             <ul>
-                <li><a href="#">Electrónica</a></li>
-                <li><a href="#">Ropa</a></li>
-                <li><a href="#">Hogar</a></li>
-                <li><a href="#">Deportes</a></li>
-            </ul>
+                <li><a href="#">Centro de ayuda</a></li>
+                <li><a href="#">Bases Legales</a></li>
+            </ul><br>
             <h3>Categorías</h3>
             <ul>
                 <li><a href="#">Electrónica</a></li>
