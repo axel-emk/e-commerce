@@ -2,7 +2,7 @@
 .slideshow-container {
     position: relative;
     width: 100%;
-    height: 80vh; /* Adaptado a la altura de la pantalla, puedes ajustarlo */
+    height: 800px; /* Adaptado a la altura de la pantalla, puedes ajustarlo */
     overflow: hidden;
     margin-top: 85px; /* Ajustado para tomar en cuenta el header fijo */
   }
@@ -66,6 +66,12 @@
     }
   }
   
+  /* Por defecto, ocultar imágenes móviles */
+.img-mobile {
+  display: none;
+}
+
+
   /* Media Queries para hacer el slider adaptable */
   @media (max-width: 1024px) {
     .slideshow-container {
@@ -91,7 +97,7 @@
   
   @media (max-width: 480px) {
     .slideshow-container {
-      height: 40vh; /* Reducción adicional en móviles */
+      height: 480px; /* Reducción adicional en móviles */
     }
   
     .prev, .next {
@@ -102,5 +108,14 @@
     .text {
       font-size: 12px; /* Reducir tamaño del texto en pantallas pequeñas */
     }
+    .img-desktop {
+      display: none; /* Ocultar las imágenes de escritorio */
+  }
+
+  .img-mobile {
+      display: block; /* Mostrar las imágenes cuadradas */
+      width: 100%; /* Asegurar que las imágenes móviles ocupen el 100% del ancho */
+      object-fit: fill; /* Ajustar la imagen manteniendo la proporción */
+  }
   }
   
