@@ -50,7 +50,7 @@
 .card-btn {
     padding: 10px 20px;
     background-color: var(--gold);
-    color: var(--primary);
+    color: var(--luz);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -58,7 +58,7 @@
 }
 
 .card-btn:hover {
-    background-color: var(--luz);
+    background-color: var(--secondary);
 }
 
 /* Responsividad para pantallas medianas */

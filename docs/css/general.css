@@ -68,3 +68,91 @@ a:hover {
   width: 80%;
   margin: 40px auto;
 }
+
+/* Imagen */
+.img-promo1 {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+/* Video en pantalla completa */
+.fullwidth-video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  overflow: hidden;
+}
+
+/* Video adaptado al contenedor */
+.fullwidth-video-section video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* Mantiene la proporción del video y lo adapta al contenedor */
+}
+
+/* Adaptaciones responsive */
+
+/* Pantallas medianas y grandes (mayores a 1024px) */
+@media (max-width: 1024px) {
+  .img-promo1 {
+    height: 500px; /* Ajuste de altura para pantallas medianas */
+  }
+
+  .fullwidth-video-section {
+    height: 75vh; /* Reduce la altura para pantallas medianas */
+  }
+}
+
+/* Pantallas pequeñas (menores a 768px) */
+@media (max-width: 768px) {
+  .img-promo1 {
+    height: 400px; /* Ajuste de altura para pantallas pequeñas */
+  }
+  .img-promo1 img {
+    width: 100%; /* Asegura que la imagen cubra todo el ancho */
+    height: 100%; /* Asegura que la imagen cubra toda la altura del contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    object-position: right center; /* Alinea la imagen hacia la derecha, centrada verticalmente */
+  }
+
+  .fullwidth-video-section {
+    height: 50vh; /* Reduce aún más la altura para pantallas pequeñas */
+  }
+
+  .fullwidth-video-section video {
+    object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+    min-width: 100%;
+    height: auto; /* El video se adaptará al ancho, manteniendo la proporción */
+  }
+}
+
+/* Pantallas muy pequeñas (menores a 480px) */
+@media (max-width: 480px) {
+  .img-promo1 {
+    height: 300px; /* Ajuste de altura para pantallas muy pequeñas */
+  }
+  .img-promo1 img {
+    width: 100%; /* Asegura que la imagen cubra todo el ancho */
+    height: 100%; /* Asegura que la imagen cubra toda la altura del contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    object-position: center; /* Centra la imagen */
+  }
+
+  .fullwidth-video-section {
+    height: 40vh; /* Reduce aún más la altura para pantallas móviles pequeñas */
+  }
+
+  .fullwidth-video-section video {
+    object-fit: cover;
+    min-width: 100%;
+    height: auto; /* El video se adapta al ancho */
+  }
+}
