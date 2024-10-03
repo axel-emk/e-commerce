@@ -6,6 +6,7 @@
   }
   
   .newsletter h2 {
+    margin-top: 20px;
     font-size: 24px;
     color: var(--luz) !important;
   }
@@ -13,14 +14,14 @@
   .newsletter p {
     font-size: 16px;
     color: var(--luz) !important;
-    margin-bottom: 15px;
+    margin-top: 10px ;
   }
 /* Estilos para el formulario */
 .newsletter form {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 20px;
+    margin: 10px 30px 20px 30px ;
   }
   
   .newsletter input[type="email"] {

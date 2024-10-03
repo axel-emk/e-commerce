@@ -1,10 +1,14 @@
+header{
+  margin-bottom: 0;
+}
 /* Slideshow container */
 .slideshow-container {
     position: relative;
     width: 100%;
-    height: 800px; /* Adaptado a la altura de la pantalla, puedes ajustarlo */
+    /* height: 800px;  */
     overflow: hidden;
-    margin-top: 85px; /* Ajustado para tomar en cuenta el header fijo */
+    margin-top: 115px; /* Ajustado para tomar en cuenta el header fijo */
+    margin-bottom: 40px;
   }
   
   /* Ocultar las imágenes por defecto */
@@ -13,7 +17,7 @@
   }
   
   /* Botones siguiente/anterior */
-  .prev,
+  /* .prev,
   .next {
     cursor: pointer;
     position: absolute;
@@ -37,7 +41,7 @@
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
+  } */
   
   /* Texto de pie de imagen */
   .text {
@@ -97,7 +101,7 @@
   
   @media (max-width: 480px) {
     .slideshow-container {
-      height: 480px; /* Reducción adicional en móviles */
+      height: 100%; /* Reducción adicional en móviles */
     }
   
     .prev, .next {

@@ -17,7 +17,7 @@ header{
   }
   
   /* Botones siguiente/anterior */
-  .prev,
+  /* .prev,
   .next {
     cursor: pointer;
     position: absolute;
@@ -41,7 +41,7 @@ header{
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
+  } */
   
   /* Texto de pie de imagen */
   .text {
