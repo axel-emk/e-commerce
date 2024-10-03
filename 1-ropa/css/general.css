@@ -9,9 +9,9 @@
   }
   
   * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
   }
   
   body {
@@ -77,12 +77,21 @@ a:hover {
   overflow: hidden;
 }
 
+.img-seccion {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  margin-top: 115px ;
+}
+
 /* Video en pantalla completa */
 .fullwidth-video-section {
   position: relative;
   width: 100%;
   height: 100vh; /* Ocupa el 100% de la altura de la ventana */
   overflow: hidden;
+  margin-bottom: -5%;
 }
 
 /* Video adaptado al contenedor */

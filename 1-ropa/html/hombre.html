@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT - Hombre</title>
+    <link rel="icon" type="image/x-icon" href="./img/isologo.svg">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/categorias.css">
+    <link rel="stylesheet" href="../css/newsletter.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- Huincha superior -->
+<div class="huincha-envios">
+    <p class="texto-huincha">ENVÍOS PUEDEN DEMORAR HASTA 15 DÍAS HÁBILES RM Y 20 DÍAS HÁBILES REGIONES</p>
+</div>
+
+   <header>
+        <div class="header-logo">
+            <a href="../home.html"><img src="../img/logo.svg" alt="Logo" class="logo"></a>
+    </div>
+        <nav>
+            <ul class="navlinks">
+                <li class="items"><a href="../html/niños.html">Niños</a></li>
+                <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
+                <li class="items"><a href="../html/hombre.html">Hombres</a></li>
+                <li class="items"><a href="../html/deportes.html">Deportes</a></li>
+
+                <!-- Buscador en el header -->
+                <li class="search-container">
+                    <input type="text" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </li>
+
+                <!-- Íconos del usuario, favoritos, carrito, seguimiento -->
+                <li class="icons"><a href="#"><i class="fas fa-user"></i></a></li>
+                <li class="icons"><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li class="icons"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="icons"><a href="#"><i class="fas fa-truck"></i></a></li>
+
+                <!-- Icono del menú para pantallas pequeñas -->
+                <li onclick="showSidebar()"><a href="#"><ion-icon name="menu-outline"></ion-icon></a></li>
+            </ul>
+
+            <!-- Sidebar para dispositivos móviles -->
+            <ul class="sidebar">
+                <!-- Botón para cerrar el sidebar -->
+                <li onclick="closeSidebar()"><a href="#"><ion-icon name="close-outline"></ion-icon></a></li>
+
+                <!-- Elementos del menú en la sidebar -->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+
+
+
+                <!-- Íconos en la sidebar -->
+                <li class="icons-sidebar"><a href="#"><i class="fas fa-user"></i></a></li>
+                <li class="icons-sidebar"><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li class="icons-sidebar"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="icons-sidebar"><a href="#"><i class="fas fa-truck"></i></a></li>
+
+                <!-- Buscador en la sidebar -->
+                <li class="search-container-sidebar">
+                    <input type="text" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </li>
+                <!-- Logo en la sidebar -->
+                <img src="./img/logo.svg" alt="Logo Sidebar">
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Imagen I -->
+    <section>
+        <article class="img-seccion">
+            <img src="../img/img-hombre.png" alt="">
+        </article>
+
+
+<!-- Contenedor principal del slider -->
+<section class="mg">
+    <h2>Todo Zapatillas</h2>
+    <!-- 
+    https://www.adidas.cl/zapatillas-run-falcon-2.0/FY5943.html
+    https://www.nike.cl/fj4249-001-book-1/p
+    https://cl.puma.com/zapatillas-gv-special-366613-06.html
+    -->
+    <div class="slider-container">
+        <div class="card-slider">
+            <!-- Card 1 -->
+            <div class="card">
+                <!-- Ícono de favorito -->
+                <div class="favorite-icon">
+                    <i class="far fa-heart"></i> <!-- Corazón vacío -->
+                </div>
+                
+                <img src="../img/producto1.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Run Falcon 2.0</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$49.990</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$29.990</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $4.998 sin interés</p>
+                </div>
+            </div>
+            
+    
+            <!-- Repite la card hasta tener 12 (cambia los valores y nombres para cada producto) -->
+            <!-- Card 2 -->
+            <div class="card">
+                <!-- Ícono de favorito -->
+                <div class="favorite-icon">
+                    <i class="far fa-heart"></i> <!-- Corazón vacío -->
+                </div>
+                
+                <img src="../img/producto2.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Producto 1</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$120.000</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$90.000</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $15.000 sin interés</p>
+                </div>
+            </div>
+            
+            <!--  -->
+            <div class="card">
+                <!-- Ícono de favorito -->
+                <div class="favorite-icon">
+                    <i class="far fa-heart"></i> <!-- Corazón vacío -->
+                </div>
+                
+                <img src="../img/producto3.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Producto 1</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$120.000</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$90.000</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $15.000 sin interés</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <!-- Ícono de favorito -->
+                <div class="favorite-icon">
+                    <i class="far fa-heart"></i> <!-- Corazón vacío -->
+                </div>
+                
+                <img src="../img/producto1.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Producto 1</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$120.000</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$90.000</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $15.000 sin interés</p>
+                </div>
+            </div>
+            <div class="card">
+                <!-- Ícono de favorito -->
+                <div class="favorite-icon">
+                    <i class="far fa-heart"></i> <!-- Corazón vacío -->
+                </div>
+                
+                <img src="../img/producto2.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Producto 1</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$120.000</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$90.000</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $15.000 sin interés</p>
+                </div>
+            </div>
+            <div class="card">
+                <!-- Ícono de favorito -->
+                <div class="favorite-icon">
+                    <i class="far fa-heart"></i> <!-- Corazón vacío -->
+                </div>
+                
+                <img src="../img/producto3.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Producto 1</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$120.000</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$90.000</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $15.000 sin interés</p>
+                </div>
+            </div>
+            <div class="card">
+                <!-- Ícono de favorito -->
+                <div class="favorite-icon">
+                    <i class="far fa-heart"></i> <!-- Corazón vacío -->
+                </div>
+                
+                <img src="../img/producto1.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Producto 1</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$120.000</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$90.000</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $15.000 sin interés</p>
+                </div>
+            </div>
+            <div class="card">
+                <!-- Ícono de favorito -->
+                <div class="favorite-icon">
+                    <i class="far fa-heart"></i> <!-- Corazón vacío -->
+                </div>
+                
+                <img src="../img/producto1.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Producto 1</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$120.000</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$90.000</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $15.000 sin interés</p>
+                </div>
+            </div>
+            <div class="card">
+                <!-- Ícono de favorito -->
+                <div class="favorite-icon">
+                    <i class="far fa-heart"></i> <!-- Corazón vacío -->
+                </div>
+                
+                <img src="../img/producto1.png" alt="Producto" class="card-img">
+                <div class="contenido">
+                    <h2 class="card-title">Producto 1</h2>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                    </div>
+                    <p class="old-price">Antes: <span>$120.000</span></p>
+                    <div class="price-wrapper">
+                        <button class="price-button">$90.000</button>
+                        <p class="discount-label">25% OFF</p>
+                    </div>
+                    <p class="installments">en 6 x $15.000 sin interés</p>
+                </div>
+            </div>
+            
+    
+            <!-- Más tarjetas hasta tener 12 -->
+        </div>
+    
+        <!-- Botones de navegación -->
+        <button class="prev" onclick="moveSlider(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlider(1)">&#10095;</button>
+    </div>
+    
+    </section>
+    
+<!-- Card ----------------------------------------------------------- -->
+<!-- Contenedor de las cards de categorías -->
+<div class="category-cards">
+    <!-- Card 1: Fútbol -->
+    <div class="cardi">
+        <img src="../img/categoria1.png" alt="Fútbol" class="cardi-img">
+        <div class="card-content">
+            <h3>Fútbol</h3>
+            <p>El deporte más popular del mundo. ¡Descubre más sobre el fútbol aquí!</p>
+            <button class="card-btn">Ver más</button>
+        </div>
+    </div>
+
+    <!-- Card 2: Baloncesto -->
+    <div class="cardi">
+        <img src="../img/categoria2.png" alt="Baloncesto" class="cardi-img">
+        <div class="card-content">
+            <h3>Baloncesto</h3>
+            <p>Disfruta de la emoción del baloncesto, un deporte lleno de acción.</p>
+            <button class="card-btn">Ver más</button>
+        </div>
+    </div>
+
+    <!-- Card 3: Tenis -->
+    <div class="cardi">
+        <img src="../img/categoria3.png" alt="Tenis" class="cardi-img">
+        <div class="card-content">
+            <h3>Tenis</h3>
+            <p>Un deporte elegante y desafiante. Conoce más sobre el tenis.</p>
+            <button class="card-btn">Ver más</button>
+        </div>
+    </div>
+
+    <!-- Card 4: Natación -->
+    <div class="cardi">
+        <img src="../img/categoria4.png" alt="Natación" class="cardi-img">
+        <div class="card-content">
+            <h3>Natación</h3>
+            <p>Sumérgete en el mundo de la natación y disfruta de sus beneficios.</p>
+            <button class="card-btn">Ver más</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <!-- Newsleter -->
+    <!-- Formulario para suscripción al newsletter -->
+    <div class="newsletter">
+        <h2 class="primario">¡Suscríbete a nuestro Newsletter!</h2>
+        <p  class="primario">Recibe ofertas exclusivas y novedades directamente en tu correo.</p>
+        <form action="#" method="POST">
+            <input type="email" name="email" placeholder="Ingresa tu correo" required>
+            <button type="submit">Suscribirme</button>
+        </form>
+    </div>
+<!-- ---------------Footer ---------------------- -->
+  <!-- Footer con logo, lista de categorías y formulario de contacto -->
+  <footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="./img/logo.svg" alt="Logo E-commerce">
+               <!-- Redes sociales -->
+               <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-categorias">
+            <h3>Servicio al Cliente</h3>
+            <ul>
+                <li><a href="#">Centro de ayuda</a></li>
+                <li><a href="#">Bases Legales</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+            </ul><br>
+            <h3>Acerca de Nosotros</h3>
+            <ul>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Tiendas</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-categorias">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Electrónica</a></li>
+                <li><a href="#">Ropa</a></li>
+                <li><a href="#">Hogar</a></li>
+                <li><a href="#">Deportes</a></li>
+            </ul>
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Electrónica</a></li>
+                <li><a href="#">Ropa</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-contacto">
+            <h3>¿Tienes alguna duda?</h3>
+            <form action="#" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre">
+                <input type="email" name="email" placeholder="Tu email">
+                <textarea name="mensaje" placeholder="Tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- ----------------------- SCript  ------------------------------------- -->
+
+    <script src="../js/header.js"></script>
+    <script src="../js/banner.js"></script>
+    <script src="../js/card.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
