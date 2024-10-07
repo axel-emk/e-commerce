@@ -58,10 +58,10 @@
                 <li onclick="closeSidebar()"><a href="#"><ion-icon name="close-outline"></ion-icon></a></li>
 
                 <!-- Elementos del menú en la sidebar -->
-                <li class="items"><a href="../html/niños.html">Niños</a></li>
-                <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
-                <li class="items"><a href="../html/hombre.html">Hombres</a></li>
-                <li class="items"><a href="../html/deportes.html">Deportes</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
 
 
 
@@ -145,7 +145,7 @@
     https://cl.puma.com/zapatillas-gv-special-366613-06.html
     -->
     <div class="slider-container">
-        <div class="card-slider">
+        <div class="card-slider" id="slider1">
             <!-- Card 1 -->
             <div class="card">
                 <!-- Ícono de favorito -->
@@ -340,8 +340,8 @@
         </div>
     
         <!-- Botones de navegación -->
-        <button class="prev" onclick="moveSlider(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlider(1)">&#10095;</button>
+        <button class="prev" onclick="moveSlider('slider1', -1)">⟨</button>
+        <button class="next" onclick="moveSlider('slider1', 1)">⟩</button>
     </div>
     
     </section>
@@ -355,7 +355,7 @@
     https://cl.puma.com/zapatillas-gv-special-366613-06.html
     -->
     <div class="slider-container">
-        <div class="card-slider">
+        <div class="card-slider" id="slider2">
             <!-- Card 1 -->
             <div class="card">
                 <!-- Ícono de favorito -->
@@ -550,8 +550,8 @@
         </div>
     
         <!-- Botones de navegación -->
-        <button class="prev" onclick="moveSlider(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlider(1)">&#10095;</button>
+        <button class="prev" onclick="moveSlider('slider2', -1)">⟨</button>
+        <button class="next" onclick="moveSlider('slider2', 1)">⟩</button>
     </div>
     
     </section>
@@ -565,7 +565,7 @@
     https://cl.puma.com/zapatillas-gv-special-366613-06.html
     -->
     <div class="slider-container">
-        <div class="card-slider">
+        <div class="card-slider" id="slider3">
             <!-- Card 1 -->
             <div class="card">
                 <!-- Ícono de favorito -->
@@ -760,8 +760,8 @@
         </div>
     
         <!-- Botones de navegación -->
-        <button class="prev" onclick="moveSlider(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlider(1)">&#10095;</button>
+        <button class="prev" onclick="moveSlider('slider3', -1)">⟨</button>
+        <button class="next" onclick="moveSlider('slider3', 1)">⟩</button>
     </div>
     
     </section>
@@ -790,7 +790,7 @@
   <footer>
     <div class="footer-content">
         <div class="footer-logo">
-            <img src="./img/logo.svg" alt="Logo E-commerce">
+            <img src="../img/logo.svg" alt="Logo E-commerce">
                <!-- Redes sociales -->
                <div class="social-icons">
                 <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -845,7 +845,7 @@
 
     <script src="../js/header.js"></script>
     <script src="../js/banner.js"></script>
-    <script src="../js/card.js"></script>
+    <script src="../js/card-slider.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

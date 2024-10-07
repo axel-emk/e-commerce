@@ -32,10 +32,10 @@
   transition: 0.3s ease;
 }
 
-/* .prev:hover,
+.prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-} */
+}
 
 .prev {
   left: 1%;
@@ -169,6 +169,9 @@
 }
 
 @media (max-width: 480px) {
+  .img-seccion {
+    margin-top: 90px;
+  }
   .card-slider {
     width: calc(250px * 2);
     /* 2 cards por fila en pantallas móviles */
