@@ -1,0 +1,33 @@
+[
+    {
+        "categoria": "zapatillas",
+        "imagen": "./img/producto1.png",
+        "titulo": "Run Falcon 2.0",
+        "valoracion": 4,
+        "precioAnterior": "$49.990",
+        "precioFinal": "$29.990",
+        "descuento": 25,
+        "cuotas": "en 6 x $4.998 sin interés"
+    },
+    {
+        "categoria": "zapatillas",
+        "imagen": "./img/producto2.png",
+        "titulo": "Producto 2",
+        "valoracion": 5,
+        "precioAnterior": "$120.000",
+        "precioFinal": "$90.000",
+        "descuento": 25,
+        "cuotas": "en 6 x $15.000 sin interés"
+    },
+    {
+        "categoria": "relojes",
+        "imagen": "./img/producto3.png",
+        "titulo": "Reloj Clásico",
+        "valoracion": 5,
+        "precioAnterior": "$200.000",
+        "precioFinal": "$150.000",
+        "descuento": 25,
+        "cuotas": "en 6 x $25.000 sin interés"
+    }
+   
+]
