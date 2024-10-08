@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <img src="${producto.imagen}" alt="${producto.titulo}" class="card-img">
                         </a>
                         <div class="contenido">
+                            <p class="card-brand">${producto.marca}</p> <!-- Texto de la marca -->
                             <a href="${producto.url}">
                                 <h2 class="card-title">${producto.titulo}</h2>
                             </a>

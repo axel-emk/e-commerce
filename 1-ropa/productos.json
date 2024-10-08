@@ -2,6 +2,7 @@
     {
         "categoria": "zapatillas",
         "imagen": "./img/zapatilla1.png",
+        "marca": "Adidas",
         "titulo": "Run Falcon 2.0",
         "valoracion": 4,
         "precioAnterior": "$49.990",
@@ -13,6 +14,7 @@
     {
         "categoria": "zapatillas",
         "imagen": "./img/zapatilla2.png",
+        "marca": "Nike",
         "titulo": "Book 1",
         "valoracion": 5,
         "precioAnterior": "$159.990",
@@ -24,6 +26,7 @@
     {
         "categoria": "zapatillas",
         "imagen": "./img/zapatilla3.png",
+        "marca": "Puma",
         "titulo": "GV Special +",
         "valoracion": 4,
         "precioAnterior": "$84.990",
@@ -35,6 +38,7 @@
     {
         "categoria": "zapatillas",
         "imagen": "./img/zapatilla4.png",
+        "marca": "Adidas",
         "titulo": "Gazelle",
         "valoracion": 5,
         "precioAnterior": "$79.990",
@@ -46,6 +50,7 @@
     {
         "categoria": "zapatillas",
         "imagen": "./img/zapatilla5.png",
+        "marca": "Nike",
         "titulo": "ReactX Pegasus Trail 5",
         "valoracion": 5,
         "precioAnterior": "$134.990",
@@ -57,6 +62,7 @@
     {
         "categoria": "zapatillas",
         "imagen": "./img/zapatilla6.png",
+        "marca": "Puma",
         "titulo": "Cali Court Leathe",
         "valoracion": 5,
         "precioAnterior": "$79.990",
@@ -90,6 +96,7 @@
     {
         "categoria": "camisetas",
         "imagen": "./img/camiseta1.png",
+        "marca": "Adidas",
         "titulo": "COLO 3RD JSY",
         "valoracion": 5,
         "precioAnterior": "$54.990",
@@ -101,6 +108,7 @@
     {
         "categoria": "camisetas",
         "imagen": "./img/camiseta2.png",
+        "marca": "Adidas",
         "titulo": "Colo-Colo Visita 2024",
         "valoracion": 5,
         "precioAnterior": "$54.990",
@@ -112,6 +120,7 @@
     {
         "categoria": "camisetas",
         "imagen": "./img/camiseta3.png",
+        "marca": "Adidas",
         "titulo": "Colo-Colo Local 2024",
         "valoracion": 5,
         "precioAnterior": "$54.990",
@@ -178,6 +187,7 @@
     {
         "categoria": "smartwatches",
         "imagen": "./img/smartwatches1.png",
+        "marca": "Garmin",
         "titulo": "Instinct Solar Grafito",
         "valoracion": 5,
         "precioAnterior": "$499.990",
@@ -189,7 +199,8 @@
     {
         "categoria": "smartwatches",
         "imagen": "./img/smartwatches2.png",
-        "titulo": "Apple Watch Series 9",
+        "marca": "Apple",
+        "titulo": "Watch Series 9",
         "valoracion": 5,
         "precioAnterior": "$599.990",
         "precioFinal": "$419.990",
@@ -266,23 +277,73 @@
     {
         "categoria": "zapatillas niño",
         "imagen": "../img/niño/zapatilla-niño1.png",
-        "titulo": "Instinct Solar Grafito",
+        "marca": "Adidas",
+        "titulo": "RUNFALCON 5 EL C",
         "valoracion": 5,
-        "precioAnterior": "$499.990",
-        "precioFinal": "$249.990",
-        "descuento": 50,
-        "cuotas": "en 6 x $41.690 sin interés",
+        "precioAnterior": "$41.990",
+        "precioFinal": "$39.990",
+        "descuento": 5,
+        "cuotas": "en 6 x $6.665 sin interés",
         "url": "productos/producto1.html"
     },
     {
         "categoria": "zapatillas niño",
         "imagen": "../img/niño/zapatilla-niño2.png",
-        "titulo": "Apple Watch Series 9",
+        "marca": "Adidas",
+        "titulo": "Grand Court Mid",
+        "valoracion": 0,
+        "precioAnterior": "$40.990",
+        "precioFinal": "$37.990",
+        "descuento": 5,
+        "cuotas": "en 6 x $6.331 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "zapatillas niño",
+        "imagen": "../img/niño/zapatilla-niño3.png",
+        "marca": "Adidas",
+        "titulo": "Campus Comfort",
         "valoracion": 5,
-        "precioAnterior": "$599.990",
-        "precioFinal": "$419.990",
-        "descuento": 30,
-        "cuotas": "en 6 x $69.990 sin interés",
+        "precioAnterior": "$45.990",
+        "precioFinal": "$42.990",
+        "descuento": 5,
+        "cuotas": "en 6 x $7.165 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "zapatillas niño",
+        "imagen": "../img/niño/zapatilla-niño4.png",
+        "marca": "Nike",
+        "titulo": "Force 1 Mid EasyOn",
+        "valoracion": 4,
+        "precioAnterior": "$84.990",
+        "precioFinal": "$70.990",
+        "descuento": 16,
+        "cuotas": "en 6 x $11.832 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "zapatillas niño",
+        "imagen": "../img/niño/zapatilla-niño5.png",
+        "marca": "Nike",
+        "titulo": "Court Borough Low",
+        "valoracion": 5,
+        "precioAnterior": "$44.990",
+        "precioFinal": "$42.990",
+        "descuento": 4,
+        "cuotas": "en 6 x $7.165 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "zapatillas niño",
+        "imagen": "../img/niño/zapatilla-niño6.png",
+        "marca": "Nike",
+        "titulo": "Air Max 90 LTR",
+        "valoracion": 5,
+        "precioAnterior": "$118.990",
+        "precioFinal": "$73.990",
+        "descuento": 38,
+        "cuotas": "en 6 x $12.332 sin interés",
         "url": "productos/producto1.html"
     }
 ]
