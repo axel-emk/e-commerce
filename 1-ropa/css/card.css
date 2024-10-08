@@ -89,7 +89,7 @@
 
 .card-brand {
   font-size: 14px !important;
-  color: var(--primary); /* Color más claro para la marca */
+  color: var(--primary); 
   margin: 5px auto;
   text-transform: uppercase;
   font-weight: 500;

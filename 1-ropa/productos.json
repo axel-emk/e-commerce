@@ -9,7 +9,7 @@
         "precioFinal": "$29.990",
         "descuento": 40,
         "cuotas": "en 6 x $4.998 sin interés",
-        "url": "productos/producto1.html"
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "zapatillas",
@@ -21,7 +21,7 @@
         "precioFinal": "$95.990",
         "descuento": 40,
         "cuotas": "en 6 x $15.990 sin interés",
-        "url": "productos/producto1.html"
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "zapatillas",
@@ -33,7 +33,7 @@
         "precioFinal": "$59.990",
         "descuento": 25,
         "cuotas": "en 6 x $9.998 sin interés",
-        "url": "productos/producto1.html"
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "zapatillas",
@@ -45,7 +45,7 @@
         "precioFinal": "$47.990",
         "descuento": 60,
         "cuotas": "en 6 x $7.990 sin interés",
-        "url": "productos/producto1.html"
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "zapatillas",
@@ -57,7 +57,7 @@
         "precioFinal": "$149.990",
         "descuento": 10,
         "cuotas": "en 6 x $4.998 sin interés",
-        "url": "productos/producto1.html"
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "zapatillas",
@@ -69,7 +69,7 @@
         "precioFinal": "$55.990",
         "descuento": 25,
         "cuotas": "en 6 x $15.000 sin interés",
-        "url": "productos/producto1.html"
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "zapatillas",
@@ -80,7 +80,7 @@
         "precioFinal": "$29.990",
         "descuento": 25,
         "cuotas": "en 6 x $4.998 sin interés",
-        "url": "productos/producto1.html"
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "zapatillas",
@@ -91,7 +91,7 @@
         "precioFinal": "$90.000",
         "descuento": 25,
         "cuotas": "en 6 x $15.000 sin interés",
-        "url": "productos/producto1.html"
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "camisetas",

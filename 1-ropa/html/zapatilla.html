@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT - Producto</title>
+    <link rel="icon" type="image/x-icon" href="./img/isologo.svg">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/producto.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/categorias.css">
+    <link rel="stylesheet" href="../css/newsletter.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Huincha superior -->
+<div class="huincha-envios">
+    <p class="texto-huincha">ENVÍOS PUEDEN DEMORAR HASTA 15 DÍAS HÁBILES RM Y 20 DÍAS HÁBILES REGIONES</p>
+</div>
+
+   <header>
+        <div class="header-logo">
+            <a href="../index.html"><img src="../img/logo.svg" alt="Logo" class="logo"></a>
+    </div>
+        <nav>
+            <ul class="navlinks">
+                <li class="items"><a href="../html/niños.html">Niños</a></li>
+                <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
+                <li class="items"><a href="../html/hombre.html">Hombres</a></li>
+                <li class="items"><a href="../html/deportes.html">Deportes</a></li>
+
+                <!-- Buscador en el header -->
+                <li class="search-container">
+                    <input type="text" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </li>
+
+                <!-- Íconos del usuario, favoritos, carrito, seguimiento -->
+                <li class="icons"><a href="#"><i class="fas fa-user"></i></a></li>
+                <li class="icons"><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li class="icons"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="icons"><a href="#"><i class="fas fa-truck"></i></a></li>
+
+                <!-- Icono del menú para pantallas pequeñas -->
+                <li onclick="showSidebar()"><a href="#"><ion-icon name="menu-outline"></ion-icon></a></li>
+            </ul>
+
+            <!-- Sidebar para dispositivos móviles -->
+            <ul class="sidebar">
+                <!-- Botón para cerrar el sidebar -->
+                <li onclick="closeSidebar()"><a href="#"><ion-icon name="close-outline"></ion-icon></a></li>
+
+                <!-- Elementos del menú en la sidebar -->
+                <li class="items"><a href="../html/niños.html">Niños</a></li>
+                <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
+                <li class="items"><a href="../html/hombre.html">Hombres</a></li>
+                <li class="items"><a href="../html/deportes.html">Deportes</a></li>
+
+
+
+                <!-- Íconos en la sidebar -->
+                <li class="icons-sidebar"><a href="#"><i class="fas fa-user"></i></a></li>
+                <li class="icons-sidebar"><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li class="icons-sidebar"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="icons-sidebar"><a href="#"><i class="fas fa-truck"></i></a></li>
+
+                <!-- Buscador en la sidebar -->
+                <li class="search-container-sidebar">
+                    <input type="text" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </li>
+                <!-- Logo en la sidebar -->
+                <img src="../img/logo.svg" alt="Logo Sidebar">
+            </ul>
+        </nav>
+    </header>
+    <a href="../html/zapatilla.html"></a>
+
+    <!-- Sección de Producto -->
+    <main class="producto-detalle">
+        <div class="producto-grid">
+            <!-- Columna de imagenes del producto -->
+            <div class="producto-imagenes">
+                <div class="imagen-principal">
+                    <img src="../img/zapatilla1.png" alt="Producto Principal">
+                </div>
+                <div class="miniaturas">
+                    <img src="../img/zapatilla1.png" alt="Miniatura 1">
+                    <img src="../img/zapatilla1.png" alt="Miniatura 2">
+                    <img src="../img/zapatilla1.png" alt="Miniatura 3">
+                </div>
+            </div>
+
+            <!-- Columna de detalles del producto -->
+            <div class="producto-informacion">
+                <h1 class="producto-titulo">Nike Air Max 90 LTR</h1>
+                <p class="producto-precio">$120.000</p>
+
+                <p class="producto-descripcion">Las zapatillas Nike Air Max 90 LTR ofrecen una excelente combinación de estilo y comodidad. Con una amortiguación visible de Air Max y una estética icónica, son perfectas tanto para la moda como para el rendimiento.</p>
+
+                <!-- Opciones de talla y color -->
+                <div class="producto-opciones">
+                    <div class="producto-talla">
+                        <label for="talla">Talla</label>
+                        <select id="talla">
+                            <option>38</option>
+                            <option>39</option>
+                            <option>40</option>
+                            <option>41</option>
+                            <option>42</option>
+                        </select>
+                    </div>
+
+                    <div class="producto-color">
+                        <label for="color">Color</label>
+                        <select id="color">
+                            <option>Blanco</option>
+                            <option>Negro</option>
+                            <option>Rojo</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Botones de acción -->
+                <button class="boton-carrito">Agregar al Carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Slider de productos relacionados (mantener) -->
+    <section class="mg">
+        <h2>Productos Relacionados</h2>
+        <div class="slider-container">
+            <div class="card-slider" id="slider1" data-categoria="zapatillas niño">
+                <!-- Las tarjetas se generarán dinámicamente con JavaScript -->
+            </div>
+            <button class="prev" onclick="moveSlider('slider1', -1)">⟨</button>
+            <button class="next" onclick="moveSlider('slider1', 1)">⟩</button>
+        </div>
+    </section>
+
+<!-- ---------------Footer ---------------------- -->
+  <!-- Footer con logo, lista de categorías y formulario de contacto -->
+  <footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="../img/logo.svg" alt="Logo E-commerce">
+               <!-- Redes sociales -->
+               <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-categorias">
+            <h3>Servicio al Cliente</h3>
+            <ul>
+                <li><a href="#">Centro de ayuda</a></li>
+                <li><a href="#">Bases Legales</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+            </ul><br>
+            <h3>Acerca de Nosotros</h3>
+            <ul>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Tiendas</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-categorias">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Electrónica</a></li>
+                <li><a href="#">Ropa</a></li>
+                <li><a href="#">Hogar</a></li>
+                <li><a href="#">Deportes</a></li>
+            </ul>
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Electrónica</a></li>
+                <li><a href="#">Ropa</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-contacto">
+            <h3>¿Tienes alguna duda?</h3>
+            <form action="#" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre">
+                <input type="email" name="email" placeholder="Tu email">
+                <textarea name="mensaje" placeholder="Tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/banner.js"></script>
+    <script src="../js/render.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
