@@ -1,12 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Primero cargamos los datos del archivo JSON
-    fetch('productos.json')
+    // Detectar si estamos en el index o en una página dentro de /html para ajustar la ruta del JSON
+    let jsonFile = 'productos.json';
+    const urlPath = window.location.pathname;
+    if (urlPath.includes('/html/')) {
+        jsonFile = '../productos.json';  // Ajustamos la ruta si estamos dentro de una subcarpeta como /html
+    }
+
+    // Cargar el archivo JSON con los productos
+    fetch(jsonFile)
         .then(response => response.json())
         .then(data => {
             // Recorre todos los sliders y carga los productos adecuados
             document.querySelectorAll('.card-slider').forEach(slider => {
                 const categoria = slider.getAttribute('data-categoria'); // Obtener la categoría del slider
                 const productosFiltrados = data.filter(producto => producto.categoria === categoria); // Filtrar productos por categoría
+
+                // Verificar si hay productos filtrados para la categoría
+                if (productosFiltrados.length === 0) {
+                    console.warn(`No se encontraron productos para la categoría: ${categoria}`);
+                    return;
+                }
 
                 // Generar las cards dinámicamente
                 productosFiltrados.forEach(producto => {
@@ -15,9 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="favorite-icon">
                             <i class="far fa-heart"></i> <!-- Corazón vacío -->
                         </div>
-                        <img src="${producto.imagen}" alt="Producto" class="card-img">
+                        <a href="${producto.url}">
+                            <img src="${producto.imagen}" alt="${producto.titulo}" class="card-img">
+                        </a>
                         <div class="contenido">
-                            <h2 class="card-title">${producto.titulo}</h2>
+                            <a href="${producto.url}">
+                                <h2 class="card-title">${producto.titulo}</h2>
+                            </a>
                             <div class="rating">
                                 ${renderStars(producto.valoracion)}
                             </div>
@@ -40,7 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Inicializar los íconos de favoritos en este slider después de que las tarjetas se generen
                 initializeFavoriteIcons(slider);
             });
-        });
+        })
+        .catch(error => console.error('Error cargando productos:', error));
 
     // Función para renderizar las estrellas
     function renderStars(rating) {

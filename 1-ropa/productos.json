@@ -7,7 +7,8 @@
         "precioAnterior": "$49.990",
         "precioFinal": "$29.990",
         "descuento": 40,
-        "cuotas": "en 6 x $4.998 sin interés"
+        "cuotas": "en 6 x $4.998 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "zapatillas",
@@ -17,7 +18,8 @@
         "precioAnterior": "$159.990",
         "precioFinal": "$95.990",
         "descuento": 40,
-        "cuotas": "en 6 x $15.990 sin interés"
+        "cuotas": "en 6 x $15.990 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "zapatillas",
@@ -27,7 +29,8 @@
         "precioAnterior": "$84.990",
         "precioFinal": "$59.990",
         "descuento": 25,
-        "cuotas": "en 6 x $9.998 sin interés"
+        "cuotas": "en 6 x $9.998 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "zapatillas",
@@ -37,7 +40,8 @@
         "precioAnterior": "$79.990",
         "precioFinal": "$47.990",
         "descuento": 60,
-        "cuotas": "en 6 x $7.990 sin interés"
+        "cuotas": "en 6 x $7.990 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "zapatillas",
@@ -47,7 +51,8 @@
         "precioAnterior": "$134.990",
         "precioFinal": "$149.990",
         "descuento": 10,
-        "cuotas": "en 6 x $4.998 sin interés"
+        "cuotas": "en 6 x $4.998 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "zapatillas",
@@ -57,7 +62,8 @@
         "precioAnterior": "$79.990",
         "precioFinal": "$55.990",
         "descuento": 25,
-        "cuotas": "en 6 x $15.000 sin interés"
+        "cuotas": "en 6 x $15.000 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "zapatillas",
@@ -67,7 +73,8 @@
         "precioAnterior": "$49.990",
         "precioFinal": "$29.990",
         "descuento": 25,
-        "cuotas": "en 6 x $4.998 sin interés"
+        "cuotas": "en 6 x $4.998 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "zapatillas",
@@ -77,7 +84,8 @@
         "precioAnterior": "$120.000",
         "precioFinal": "$90.000",
         "descuento": 25,
-        "cuotas": "en 6 x $15.000 sin interés"
+        "cuotas": "en 6 x $15.000 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "camisetas",
@@ -87,7 +95,8 @@
         "precioAnterior": "$54.990",
         "precioFinal": "$26.990",
         "descuento": 50,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "camisetas",
@@ -97,7 +106,8 @@
         "precioAnterior": "$54.990",
         "precioFinal": "$26.990",
         "descuento": 50,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "camisetas",
@@ -107,7 +117,8 @@
         "precioAnterior": "$54.990",
         "precioFinal": "$39.990",
         "descuento": 30,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "camisetas",
@@ -117,7 +128,8 @@
         "precioAnterior": "$54.990",
         "precioFinal": "$26.990",
         "descuento": 50,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "camisetas",
@@ -127,7 +139,8 @@
         "precioAnterior": "$54.990",
         "precioFinal": "$26.990",
         "descuento": 50,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "camisetas",
@@ -137,7 +150,8 @@
         "precioAnterior": "$54.990",
         "precioFinal": "$39.990",
         "descuento": 30,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "camisetas",
@@ -147,7 +161,8 @@
         "precioAnterior": "$54.990",
         "precioFinal": "$26.990",
         "descuento": 50,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "camisetas",
@@ -157,7 +172,8 @@
         "precioAnterior": "$54.990",
         "precioFinal": "$39.990",
         "descuento": 30,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "smartwatches",
@@ -167,7 +183,8 @@
         "precioAnterior": "$499.990",
         "precioFinal": "$249.990",
         "descuento": 50,
-        "cuotas": "en 6 x $41.690 sin interés"
+        "cuotas": "en 6 x $41.690 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "smartwatches",
@@ -177,7 +194,8 @@
         "precioAnterior": "$599.990",
         "precioFinal": "$419.990",
         "descuento": 30,
-        "cuotas": "en 6 x $69.990 sin interés"
+        "cuotas": "en 6 x $69.990 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "smartwatches",
@@ -187,7 +205,8 @@
         "precioAnterior": "$499.990",
         "precioFinal": "$249.990",
         "descuento": 50,
-        "cuotas": "en 6 x $41.690 sin interés"
+        "cuotas": "en 6 x $41.690 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "smartwatches",
@@ -197,7 +216,8 @@
         "precioAnterior": "$599.990",
         "precioFinal": "$419.990",
         "descuento": 30,
-        "cuotas": "en 6 x $69.990 sin interés"
+        "cuotas": "en 6 x $69.990 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "smartwatches",
@@ -207,7 +227,8 @@
         "precioAnterior": "$499.990",
         "precioFinal": "$249.990",
         "descuento": 50,
-        "cuotas": "en 6 x $41.690 sin interés"
+        "cuotas": "en 6 x $41.690 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "smartwatches",
@@ -217,7 +238,8 @@
         "precioAnterior": "$599.990",
         "precioFinal": "$419.990",
         "descuento": 30,
-        "cuotas": "en 6 x $69.990 sin interés"
+        "cuotas": "en 6 x $69.990 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "smartwatches",
@@ -227,7 +249,8 @@
         "precioAnterior": "$499.990",
         "precioFinal": "$249.990",
         "descuento": 50,
-        "cuotas": "en 6 x $41.690 sin interés"
+        "cuotas": "en 6 x $41.690 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "smartwatches",
@@ -237,6 +260,29 @@
         "precioAnterior": "$599.990",
         "precioFinal": "$419.990",
         "descuento": 30,
-        "cuotas": "en 6 x $69.990 sin interés"
+        "cuotas": "en 6 x $69.990 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "zapatillas niño",
+        "imagen": "../img/niño/zapatilla-niño1.png",
+        "titulo": "Instinct Solar Grafito",
+        "valoracion": 5,
+        "precioAnterior": "$499.990",
+        "precioFinal": "$249.990",
+        "descuento": 50,
+        "cuotas": "en 6 x $41.690 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "zapatillas niño",
+        "imagen": "../img/niño/zapatilla-niño2.png",
+        "titulo": "Apple Watch Series 9",
+        "valoracion": 5,
+        "precioAnterior": "$599.990",
+        "precioFinal": "$419.990",
+        "descuento": 30,
+        "cuotas": "en 6 x $69.990 sin interés",
+        "url": "productos/producto1.html"
     }
 ]
