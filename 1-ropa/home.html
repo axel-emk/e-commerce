@@ -163,28 +163,39 @@
 
 <!-- Contenedor principal del slider -->
 <section class="mg">
-    <h2>Todo Zapatillas</h2>
+    <h2>Zapatillas</h2>
     <div class="slider-container">
-        <div class="card-slider" id="slider2" data-categoria="zapatillas">
-            <!-- Las tarjetas se cargarán dinámicamente -->
+        <div class="card-slider" id="slider1" data-categoria="zapatillas">
+            <!-- Las tarjetas se generarán dinámicamente con JavaScript -->
+        </div>
+        <button class="prev" onclick="moveSlider('slider1', -1)">⟨</button>
+        <button class="next" onclick="moveSlider('slider1', 1)">⟩</button>
+    </div>
+</section>
+
+<!-- Slider de Camisetas -->
+<section class="mg">
+    <h2>Camisetas</h2>
+    <div class="slider-container">
+        <div class="card-slider" id="slider2" data-categoria="camisetas">
+            <!-- Las tarjetas se generarán dinámicamente con JavaScript -->
         </div>
         <button class="prev" onclick="moveSlider('slider2', -1)">⟨</button>
         <button class="next" onclick="moveSlider('slider2', 1)">⟩</button>
     </div>
 </section>
 
+<!-- Slider de Reloj -->
 <section class="mg">
-    <h2>Todo Relojes</h2>
+    <h2>Reloj</h2>
     <div class="slider-container">
-        <div class="card-slider" id="slider3" data-categoria="relojes">
-            <!-- Las tarjetas se cargarán dinámicamente -->
+        <div class="card-slider" id="slider2" data-categoria="reloj">
+            <!-- Las tarjetas se generarán dinámicamente con JavaScript -->
         </div>
-        <button class="prev" onclick="moveSlider('slider3', -1)">⟨</button>
-        <button class="next" onclick="moveSlider('slider3', 1)">⟩</button>
+        <button class="prev" onclick="moveSlider('slider2', -1)">⟨</button>
+        <button class="next" onclick="moveSlider('slider2', 1)">⟩</button>
     </div>
 </section>
-
-
 
     
     

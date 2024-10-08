@@ -36,6 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Inicializamos el slider después de generar las cards
                 initializeSlider(slider.id);
+
+                // Inicializar los íconos de favoritos en este slider después de que las tarjetas se generen
+                initializeFavoriteIcons(slider);
             });
         });
 
@@ -85,9 +88,14 @@ document.addEventListener('DOMContentLoaded', function () {
             // Desliza las cards
             slider.style.transform = `translateX(${-sliders[sliderId].currentIndex * cardWidth}px)`;
         };
+    }
 
-        // Agregamos la funcionalidad de favorito
-        const favoriteIcons = document.querySelectorAll('.favorite-icon');
+    // Función para inicializar los íconos de favoritos
+    function initializeFavoriteIcons(slider) {
+        // Solo selecciona los íconos de favoritos dentro del slider específico
+        const favoriteIcons = slider.querySelectorAll('.favorite-icon');
+        
+        // Recorre cada ícono de favorito y añade el evento
         favoriteIcons.forEach(icon => {
             icon.addEventListener('click', function () {
                 this.classList.toggle('active');

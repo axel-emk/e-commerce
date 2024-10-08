@@ -145,6 +145,8 @@
 
 .rating {
   margin-top: 0px;
+  color: var(--gold);
+  font-size: 22px;
 }
 
 .rating span {
