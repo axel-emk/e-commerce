@@ -108,7 +108,7 @@
 }
 
 .price-button {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   color: var(--luz);
   border: none;
   padding: 10px 20px;
@@ -131,8 +131,9 @@
 
 
 .discount-label {
-  font-size: 0.7em !important;
-  color: var(--secondary);
+  font-size: 0.8em !important;
+  font-weight: 700;
+  color: var(--gold);
   margin: 10px;
 }
 
