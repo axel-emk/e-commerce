@@ -102,6 +102,7 @@ header{
   @media (max-width: 480px) {
     .slideshow-container {
       height: 100%; /* Reducción adicional en móviles */
+      margin-top: 20%;
     }
   
     .prev, .next {

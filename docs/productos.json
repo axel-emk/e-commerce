@@ -2,62 +2,81 @@
     {
         "categoria": "zapatillas",
         "imagen": "./img/zapatilla1.png",
+        "marca": "Adidas",
         "titulo": "Run Falcon 2.0",
         "valoracion": 4,
         "precioAnterior": "$49.990",
         "precioFinal": "$29.990",
         "descuento": 40,
-        "cuotas": "en 6 x $4.998 sin interés"
-    },
+        "cuotas": "en 6 x $4.998 sin interés",
+        "url": "./html/zapatilla.html",
+        "miniaturas": [
+            "../img/minizapatilla0.png",
+            "../img/minizapatilla1.png",
+            "../img/minizapatilla2.png",
+            "../img/minizapatilla3.png"
+        ],
+        "descripcion": "Zapatillas deportivas informales para un estilo de vida activo. Con estas zapatillas adidas podrás correr en el parque y luego tomar un café con amigos con total comodidad. Su exterior de malla ofrece transpirabilidad máxima que mantiene tus pies frescos de la mañana a la noche. La suela tipo cupsole de caucho brinda la estabilidad necesaria para enfrentarte a todo lo que te depare el día."
+    },    
     {
         "categoria": "zapatillas",
         "imagen": "./img/zapatilla2.png",
+        "marca": "Nike",
         "titulo": "Book 1",
         "valoracion": 5,
         "precioAnterior": "$159.990",
         "precioFinal": "$95.990",
         "descuento": 40,
-        "cuotas": "en 6 x $15.990 sin interés"
+        "cuotas": "en 6 x $15.990 sin interés",
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "zapatillas",
         "imagen": "./img/zapatilla3.png",
+        "marca": "Puma",
         "titulo": "GV Special +",
         "valoracion": 4,
         "precioAnterior": "$84.990",
         "precioFinal": "$59.990",
         "descuento": 25,
-        "cuotas": "en 6 x $9.998 sin interés"
+        "cuotas": "en 6 x $9.998 sin interés",
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "zapatillas",
         "imagen": "./img/zapatilla4.png",
+        "marca": "Adidas",
         "titulo": "Gazelle",
         "valoracion": 5,
         "precioAnterior": "$79.990",
         "precioFinal": "$47.990",
         "descuento": 60,
-        "cuotas": "en 6 x $7.990 sin interés"
+        "cuotas": "en 6 x $7.990 sin interés",
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "zapatillas",
         "imagen": "./img/zapatilla5.png",
+        "marca": "Nike",
         "titulo": "ReactX Pegasus Trail 5",
         "valoracion": 5,
         "precioAnterior": "$134.990",
         "precioFinal": "$149.990",
         "descuento": 10,
-        "cuotas": "en 6 x $4.998 sin interés"
+        "cuotas": "en 6 x $4.998 sin interés",
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "zapatillas",
         "imagen": "./img/zapatilla6.png",
+        "marca": "Puma",
         "titulo": "Cali Court Leathe",
         "valoracion": 5,
         "precioAnterior": "$79.990",
         "precioFinal": "$55.990",
         "descuento": 25,
-        "cuotas": "en 6 x $15.000 sin interés"
+        "cuotas": "en 6 x $15.000 sin interés",
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "zapatillas",
@@ -67,7 +86,8 @@
         "precioAnterior": "$49.990",
         "precioFinal": "$29.990",
         "descuento": 25,
-        "cuotas": "en 6 x $4.998 sin interés"
+        "cuotas": "en 6 x $4.998 sin interés",
+        "url": "./html/zapatilla.html"
     },
     {
         "categoria": "zapatillas",
@@ -77,7 +97,44 @@
         "precioAnterior": "$120.000",
         "precioFinal": "$90.000",
         "descuento": 25,
-        "cuotas": "en 6 x $15.000 sin interés"
+        "cuotas": "en 6 x $15.000 sin interés",
+        "url": "./html/zapatilla.html"
+    },
+    {
+        "categoria": "camisetas",
+        "imagen": "./img/camiseta1.png",
+        "marca": "Adidas",
+        "titulo": "COLO 3RD JSY",
+        "valoracion": 5,
+        "precioAnterior": "$54.990",
+        "precioFinal": "$26.990",
+        "descuento": 50,
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "camisetas",
+        "imagen": "./img/camiseta2.png",
+        "marca": "Adidas",
+        "titulo": "Colo-Colo Visita 2024",
+        "valoracion": 5,
+        "precioAnterior": "$54.990",
+        "precioFinal": "$26.990",
+        "descuento": 50,
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "camisetas",
+        "imagen": "./img/camiseta3.png",
+        "marca": "Adidas",
+        "titulo": "Colo-Colo Local 2024",
+        "valoracion": 5,
+        "precioAnterior": "$54.990",
+        "precioFinal": "$39.990",
+        "descuento": 30,
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "camisetas",
@@ -87,7 +144,8 @@
         "precioAnterior": "$54.990",
         "precioFinal": "$26.990",
         "descuento": 50,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "camisetas",
@@ -97,7 +155,8 @@
         "precioAnterior": "$54.990",
         "precioFinal": "$26.990",
         "descuento": 50,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "camisetas",
@@ -107,17 +166,8 @@
         "precioAnterior": "$54.990",
         "precioFinal": "$39.990",
         "descuento": 30,
-        "cuotas": "en 6 x $4.498 sin interés"
-    },
-    {
-        "categoria": "camisetas",
-        "imagen": "./img/camiseta1.png",
-        "titulo": "COLO 3RD JSY",
-        "valoracion": 5,
-        "precioAnterior": "$54.990",
-        "precioFinal": "$26.990",
-        "descuento": 50,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "camisetas",
@@ -127,7 +177,8 @@
         "precioAnterior": "$54.990",
         "precioFinal": "$26.990",
         "descuento": 50,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
         "categoria": "camisetas",
@@ -137,106 +188,169 @@
         "precioAnterior": "$54.990",
         "precioFinal": "$39.990",
         "descuento": 30,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $4.498 sin interés",
+        "url": "productos/producto1.html"
     },
     {
-        "categoria": "camisetas",
-        "imagen": "./img/camiseta2.png",
-        "titulo": "Colo-Colo Visita 2024",
+        "categoria": "smartwatches",
+        "imagen": "./img/smartwatches1.png",
+        "marca": "Garmin",
+        "titulo": "Instinct Solar Grafito",
         "valoracion": 5,
-        "precioAnterior": "$54.990",
-        "precioFinal": "$26.990",
+        "precioAnterior": "$499.990",
+        "precioFinal": "$249.990",
         "descuento": 50,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "cuotas": "en 6 x $41.690 sin interés",
+        "url": "productos/producto1.html"
     },
     {
-        "categoria": "camisetas",
-        "imagen": "./img/camiseta3.png",
-        "titulo": "Colo-Colo Local 2024",
+        "categoria": "smartwatches",
+        "imagen": "./img/smartwatches2.png",
+        "marca": "Apple",
+        "titulo": "Watch Series 9",
         "valoracion": 5,
-        "precioAnterior": "$54.990",
+        "precioAnterior": "$599.990",
+        "precioFinal": "$419.990",
+        "descuento": 30,
+        "cuotas": "en 6 x $69.990 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "smartwatches",
+        "imagen": "./img/smartwatches1.png",
+        "titulo": "Instinct Solar Grafito",
+        "valoracion": 5,
+        "precioAnterior": "$499.990",
+        "precioFinal": "$249.990",
+        "descuento": 50,
+        "cuotas": "en 6 x $41.690 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "smartwatches",
+        "imagen": "./img/smartwatches2.png",
+        "titulo": "Apple Watch Series 9",
+        "valoracion": 5,
+        "precioAnterior": "$599.990",
+        "precioFinal": "$419.990",
+        "descuento": 30,
+        "cuotas": "en 6 x $69.990 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "smartwatches",
+        "imagen": "./img/smartwatches1.png",
+        "titulo": "Instinct Solar Grafito",
+        "valoracion": 5,
+        "precioAnterior": "$499.990",
+        "precioFinal": "$249.990",
+        "descuento": 50,
+        "cuotas": "en 6 x $41.690 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "smartwatches",
+        "imagen": "./img/smartwatches2.png",
+        "titulo": "Apple Watch Series 9",
+        "valoracion": 5,
+        "precioAnterior": "$599.990",
+        "precioFinal": "$419.990",
+        "descuento": 30,
+        "cuotas": "en 6 x $69.990 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "smartwatches",
+        "imagen": "./img/smartwatches1.png",
+        "titulo": "Instinct Solar Grafito",
+        "valoracion": 5,
+        "precioAnterior": "$499.990",
+        "precioFinal": "$249.990",
+        "descuento": 50,
+        "cuotas": "en 6 x $41.690 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "smartwatches",
+        "imagen": "./img/smartwatches2.png",
+        "titulo": "Apple Watch Series 9",
+        "valoracion": 5,
+        "precioAnterior": "$599.990",
+        "precioFinal": "$419.990",
+        "descuento": 30,
+        "cuotas": "en 6 x $69.990 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "zapatillas niño",
+        "imagen": "../img/niño/zapatilla-niño1.png",
+        "marca": "Adidas",
+        "titulo": "RUNFALCON 5 EL C",
+        "valoracion": 5,
+        "precioAnterior": "$41.990",
         "precioFinal": "$39.990",
-        "descuento": 30,
-        "cuotas": "en 6 x $4.498 sin interés"
+        "descuento": 5,
+        "cuotas": "en 6 x $6.665 sin interés",
+        "url": "productos/producto1.html"
     },
     {
-        "categoria": "smartwatches",
-        "imagen": "./img/smartwatches1.png",
-        "titulo": "Instinct Solar Grafito",
-        "valoracion": 5,
-        "precioAnterior": "$499.990",
-        "precioFinal": "$249.990",
-        "descuento": 50,
-        "cuotas": "en 6 x $41.690 sin interés"
+        "categoria": "zapatillas niño",
+        "imagen": "../img/niño/zapatilla-niño2.png",
+        "marca": "Adidas",
+        "titulo": "Grand Court Mid",
+        "valoracion": 0,
+        "precioAnterior": "$40.990",
+        "precioFinal": "$37.990",
+        "descuento": 5,
+        "cuotas": "en 6 x $6.331 sin interés",
+        "url": "productos/producto1.html"
     },
     {
-        "categoria": "smartwatches",
-        "imagen": "./img/smartwatches2.png",
-        "titulo": "Apple Watch Series 9",
+        "categoria": "zapatillas niño",
+        "imagen": "../img/niño/zapatilla-niño3.png",
+        "marca": "Adidas",
+        "titulo": "Campus Comfort",
         "valoracion": 5,
-        "precioAnterior": "$599.990",
-        "precioFinal": "$419.990",
-        "descuento": 30,
-        "cuotas": "en 6 x $69.990 sin interés"
+        "precioAnterior": "$45.990",
+        "precioFinal": "$42.990",
+        "descuento": 5,
+        "cuotas": "en 6 x $7.165 sin interés",
+        "url": "productos/producto1.html"
     },
     {
-        "categoria": "smartwatches",
-        "imagen": "./img/smartwatches1.png",
-        "titulo": "Instinct Solar Grafito",
-        "valoracion": 5,
-        "precioAnterior": "$499.990",
-        "precioFinal": "$249.990",
-        "descuento": 50,
-        "cuotas": "en 6 x $41.690 sin interés"
+        "categoria": "zapatillas niño",
+        "imagen": "../img/niño/zapatilla-niño4.png",
+        "marca": "Nike",
+        "titulo": "Force 1 Mid EasyOn",
+        "valoracion": 4,
+        "precioAnterior": "$84.990",
+        "precioFinal": "$70.990",
+        "descuento": 16,
+        "cuotas": "en 6 x $11.832 sin interés",
+        "url": "productos/producto1.html"
     },
     {
-        "categoria": "smartwatches",
-        "imagen": "./img/smartwatches2.png",
-        "titulo": "Apple Watch Series 9",
+        "categoria": "zapatillas niño",
+        "imagen": "../img/niño/zapatilla-niño5.png",
+        "marca": "Nike",
+        "titulo": "Court Borough Low",
         "valoracion": 5,
-        "precioAnterior": "$599.990",
-        "precioFinal": "$419.990",
-        "descuento": 30,
-        "cuotas": "en 6 x $69.990 sin interés"
+        "precioAnterior": "$44.990",
+        "precioFinal": "$42.990",
+        "descuento": 4,
+        "cuotas": "en 6 x $7.165 sin interés",
+        "url": "productos/producto1.html"
     },
     {
-        "categoria": "smartwatches",
-        "imagen": "./img/smartwatches1.png",
-        "titulo": "Instinct Solar Grafito",
+        "categoria": "zapatillas niño",
+        "imagen": "../img/niño/zapatilla-niño6.png",
+        "marca": "Nike",
+        "titulo": "Air Max 90 LTR",
         "valoracion": 5,
-        "precioAnterior": "$499.990",
-        "precioFinal": "$249.990",
-        "descuento": 50,
-        "cuotas": "en 6 x $41.690 sin interés"
-    },
-    {
-        "categoria": "smartwatches",
-        "imagen": "./img/smartwatches2.png",
-        "titulo": "Apple Watch Series 9",
-        "valoracion": 5,
-        "precioAnterior": "$599.990",
-        "precioFinal": "$419.990",
-        "descuento": 30,
-        "cuotas": "en 6 x $69.990 sin interés"
-    },
-    {
-        "categoria": "smartwatches",
-        "imagen": "./img/smartwatches1.png",
-        "titulo": "Instinct Solar Grafito",
-        "valoracion": 5,
-        "precioAnterior": "$499.990",
-        "precioFinal": "$249.990",
-        "descuento": 50,
-        "cuotas": "en 6 x $41.690 sin interés"
-    },
-    {
-        "categoria": "smartwatches",
-        "imagen": "./img/smartwatches2.png",
-        "titulo": "Apple Watch Series 9",
-        "valoracion": 5,
-        "precioAnterior": "$599.990",
-        "precioFinal": "$419.990",
-        "descuento": 30,
-        "cuotas": "en 6 x $69.990 sin interés"
+        "precioAnterior": "$118.990",
+        "precioFinal": "$73.990",
+        "descuento": 38,
+        "cuotas": "en 6 x $12.332 sin interés",
+        "url": "productos/producto1.html"
     }
 ]

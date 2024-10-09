@@ -9,8 +9,15 @@
         "precioFinal": "$29.990",
         "descuento": 40,
         "cuotas": "en 6 x $4.998 sin interés",
-        "url": "./html/zapatilla.html"
-    },
+        "url": "./html/zapatilla.html",
+        "miniaturas": [
+            "../img/minizapatilla0.png",
+            "../img/minizapatilla1.png",
+            "../img/minizapatilla2.png",
+            "../img/minizapatilla3.png"
+        ],
+        "descripcion": "Zapatillas deportivas informales para un estilo de vida activo. Con estas zapatillas adidas podrás correr en el parque y luego tomar un café con amigos con total comodidad. Su exterior de malla ofrece transpirabilidad máxima que mantiene tus pies frescos de la mañana a la noche. La suela tipo cupsole de caucho brinda la estabilidad necesaria para enfrentarte a todo lo que te depare el día."
+    },    
     {
         "categoria": "zapatillas",
         "imagen": "./img/zapatilla2.png",
