@@ -39,6 +39,7 @@ function buscarProductos(query) {
     return productos.filter(producto => {
         const titulo = producto.titulo.toLowerCase();
         const categoria = producto.categoria.toLowerCase();
+        
         return titulo.includes(query.toLowerCase()) || categoria.includes(query.toLowerCase());
     });
 }
@@ -62,6 +63,7 @@ function mostrarResultados(resultados) {
               <div class="search-result-details">
                   <span class="search-result-title">${producto.titulo}</span>
                   <span class="search-result-price">${producto.precioFinal}</span>
+                  <span class="search-result-price">${producto.marca}</span>
               </div>
           `;
           li.innerHTML = resultItem;
