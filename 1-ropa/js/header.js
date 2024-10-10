@@ -34,15 +34,16 @@ fetch(jsonPath)
     })
     .catch(error => console.error('Error al cargar productos:', error));
 
-// Función para filtrar los productos
+// Función para filtrar los productos (ahora también filtra por marca)
 function buscarProductos(query) {
     return productos.filter(producto => {
-        const titulo = producto.titulo.toLowerCase();
-        const categoria = producto.categoria.toLowerCase();
-        
-        return titulo.includes(query.toLowerCase()) || categoria.includes(query.toLowerCase());
+        const titulo = producto.titulo ? producto.titulo.toLowerCase() : '';
+        const categoria = producto.categoria ? producto.categoria.toLowerCase() : '';
+        const marca = producto.marca ? producto.marca.toLowerCase() : '';
+        return titulo.includes(query.toLowerCase()) || categoria.includes(query.toLowerCase()) || marca.includes(query.toLowerCase());
     });
 }
+
 
 // Función para mostrar los resultados de búsqueda con imagen
 function mostrarResultados(resultados) {
