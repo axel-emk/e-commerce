@@ -34,60 +34,61 @@ fetch(jsonPath)
     })
     .catch(error => console.error('Error al cargar productos:', error));
 
-// Función para filtrar los productos
+// Función para filtrar los productos (ahora también filtra por marca)
 function buscarProductos(query) {
     return productos.filter(producto => {
-        const titulo = producto.titulo.toLowerCase();
-        const categoria = producto.categoria.toLowerCase();
-        
-        return titulo.includes(query.toLowerCase()) || categoria.includes(query.toLowerCase());
+        const titulo = producto.titulo ? producto.titulo.toLowerCase() : '';
+        const categoria = producto.categoria ? producto.categoria.toLowerCase() : '';
+        const marca = producto.marca ? producto.marca.toLowerCase() : '';
+        return titulo.includes(query.toLowerCase()) || categoria.includes(query.toLowerCase()) || marca.includes(query.toLowerCase());
     });
 }
 
-// Función para mostrar los resultados de búsqueda con imagen
+// Función para mostrar los resultados de búsqueda con manejo de imagenes
 function mostrarResultados(resultados) {
-  const searchResults = document.getElementById('search-results');
-  searchResults.innerHTML = ""; // Limpiar resultados previos
-  
-  if (resultados.length === 0) {
-      searchResults.classList.add('hidden'); // Si no hay resultados, ocultar el div
-  } else {
-      const ul = document.createElement('ul');
-      resultados.forEach(producto => {
-          const li = document.createElement('li');
-          li.classList.add('search-result-item'); // Agregar clase para estilos
+    const searchResults = document.getElementById('search-results');
+    searchResults.innerHTML = ""; // Limpiar resultados previos
+    
+    if (resultados.length === 0) {
+        searchResults.classList.add('hidden'); // Si no hay resultados, ocultar el div
+    } else {
+        const ul = document.createElement('ul');
+        resultados.forEach(producto => {
+            const li = document.createElement('li');
+            li.classList.add('search-result-item'); // Agregar clase para estilos
 
-          // Crear un div para mostrar imagen y detalles del producto
-          const resultItem = `
-              <img src="${producto.imagen}" alt="${producto.titulo}" class="search-result-image">
-              <div class="search-result-details">
-                  <span class="search-result-title">${producto.titulo}</span>
-                  <span class="search-result-price">${producto.precioFinal}</span>
-                  <span class="search-result-price">${producto.marca}</span>
-              </div>
-          `;
-          li.innerHTML = resultItem;
+            // Crear el contenido del producto
+            const resultItem = `
+                <img src="${producto.imagen[0]}" alt="${producto.titulo}" class="search-result-image"
+                     onerror="this.onerror=null; this.src='${producto.imagen[1]}';">
+                <div class="search-result-details">
+                    <span class="search-result-title">${producto.titulo}</span>
+                    <span class="search-result-price">${producto.precioFinal}</span>
+                    <span class="search-result-marca">${producto.marca}</span>
+                </div>
+            `;
+            li.innerHTML = resultItem;
 
-          li.addEventListener('click', () => {
-              // Redirigir a la página del producto
-              window.location.href = producto.url;
-          });
+            li.addEventListener('click', () => {
+                // Redirigir a la página del producto
+                window.location.href = producto.url;
+            });
 
-          ul.appendChild(li);
-      });
-      searchResults.appendChild(ul);
-      searchResults.classList.remove('hidden'); // Mostrar el div si hay resultados
-  }
+            ul.appendChild(li);
+        });
+        searchResults.appendChild(ul);
+        searchResults.classList.remove('hidden'); // Mostrar el div si hay resultados
+    }
 }
 
 // Event listener para la búsqueda en tiempo real
 const searchInput = document.getElementById('search-input');
 searchInput.addEventListener('input', () => {
-  const query = searchInput.value.trim();
-  if (query.length > 0) {
-      const resultados = buscarProductos(query);
-      mostrarResultados(resultados);
-  } else {
-      document.getElementById('search-results').classList.add('hidden'); // Si el campo de búsqueda está vacío, ocultar los resultados
-  }
+    const query = searchInput.value.trim();
+    if (query.length > 0) {
+        const resultados = buscarProductos(query);
+        mostrarResultados(resultados);
+    } else {
+        document.getElementById('search-results').classList.add('hidden'); // Si el campo de búsqueda está vacío, ocultar los resultados
+    }
 });

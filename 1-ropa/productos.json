@@ -13,7 +13,7 @@
         "precioFinal": "$29.990",
         "descuento": 40,
         "cuotas": "en 6 x $4.998 sin interés",
-        "url": "./html/zapatilla.html",
+        "url": "./html/productos.html",
         "miniaturas": [
             "../img/minizapatilla0.png",
             "../img/minizapatilla1.png",
@@ -382,6 +382,22 @@
         ],  
         "marca": "Nike",
         "titulo": "Air Max 90 LTR",
+        "valoracion": 5,
+        "precioAnterior": "$118.990",
+        "precioFinal": "$73.990",
+        "descuento": 38,
+        "cuotas": "en 6 x $12.332 sin interés",
+        "url": "productos/producto1.html"
+    },
+    {
+        "categoria": "mujer",
+        "imagen":
+        [   
+            "./img/niño/zapatilla-niño6.png",
+            "../img/niño/zapatilla-niño6.png"
+        ],  
+        "marca": "Nike",
+        "titulo": "Mujer Max 90 LTR",
         "valoracion": 5,
         "precioAnterior": "$118.990",
         "precioFinal": "$73.990",
