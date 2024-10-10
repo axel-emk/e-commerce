@@ -39,8 +39,11 @@
 
                 <!-- Buscador en el header -->
                 <li class="search-container">
-                    <input type="text" placeholder="Buscar..." aria-label="Buscar">
+                    <input type="text" id="search-input" placeholder="Buscar..." aria-label="Buscar">
                     <button type="submit"><i class="fas fa-search"></i></button>
+                    
+                    <!-- Contenedor para mostrar los resultados de la búsqueda (oculto por defecto) -->
+                    <div id="search-results" class="search-results hidden"></div>
                 </li>
 
                 <!-- Íconos del usuario, favoritos, carrito, seguimiento -->

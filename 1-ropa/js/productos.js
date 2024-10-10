@@ -1,8 +1,14 @@
 // Función para renderizar el producto en el HTML
 function renderProducto(producto) {
-    // Imagen principal del producto
-    document.querySelector('.imagen-principal img').src = producto.miniaturas[0];
-
+    // Imagen principal del producto con manejo de error
+    const imagenPrincipal = document.querySelector('.imagen-principal img');
+    imagenPrincipal.src = producto.miniaturas[0];
+    
+    // Agregar el manejo de error para la imagen principal
+    imagenPrincipal.onerror = function() {
+        this.onerror = null;  // Evitar bucle infinito
+        this.src = producto.imagen[1];  // Asignar la imagen de respaldo
+    };
 
     // Renderizar miniaturas
     const miniaturasContainer = document.querySelector('.miniaturas');
@@ -15,7 +21,13 @@ function renderProducto(producto) {
 
         // Cambiar la imagen principal al hacer clic en una miniatura
         imgElement.addEventListener('click', () => {
-            document.querySelector('.imagen-principal img').src = miniatura;
+            imagenPrincipal.src = miniatura;
+
+            // Aplicar el manejo de error para cada miniatura seleccionada
+            imagenPrincipal.onerror = function() {
+                this.onerror = null;  // Evitar bucle infinito
+                this.src = producto.imagen[1];  // Asignar la imagen de respaldo
+            };
         });
     });
 
