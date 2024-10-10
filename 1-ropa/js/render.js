@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <i class="far fa-heart"></i> <!-- Corazón vacío -->
                         </div>
                         <a href="${producto.url}">
-                            <img src="${producto.imagen}" alt="${producto.titulo}" class="card-img">
+                            <img src="${producto.imagen[0]}" alt="${producto.titulo}" class="card-img">
                         </a>
                         <div class="contenido">
                             <p class="card-brand">${producto.marca}</p> <!-- Texto de la marca -->
