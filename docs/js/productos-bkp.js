@@ -1,16 +1,13 @@
-// Función para obtener parámetros de la URL
-function getQueryParam(param) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
-}
-
 // Función para renderizar el producto en el HTML
 function renderProducto(producto) {
-    // Imagen principal del producto
-    document.querySelector('.imagen-principal img').src = producto.miniaturas[0];
-    document.querySelector('.imagen-principal img').onerror = function() {
-        this.onerror = null;
-        this.src = producto.imagen[1];
+    // Imagen principal del producto con manejo de error
+    const imagenPrincipal = document.querySelector('.imagen-principal img');
+    imagenPrincipal.src = producto.miniaturas[0];
+    
+    // Agregar el manejo de error para la imagen principal
+    imagenPrincipal.onerror = function() {
+        this.onerror = null;  // Evitar bucle infinito
+        this.src = producto.imagen[1];  // Asignar la imagen de respaldo
     };
 
     // Renderizar miniaturas
@@ -24,15 +21,18 @@ function renderProducto(producto) {
 
         // Cambiar la imagen principal al hacer clic en una miniatura
         imgElement.addEventListener('click', () => {
-            document.querySelector('.imagen-principal img').src = miniatura;
+            imagenPrincipal.src = miniatura;
+
+            // Aplicar el manejo de error para cada miniatura seleccionada
+            imagenPrincipal.onerror = function() {
+                this.onerror = null;  // Evitar bucle infinito
+                this.src = producto.imagen[1];  // Asignar la imagen de respaldo
+            };
         });
     });
 
     // Título del producto
     document.querySelector('.producto-titulo').textContent = producto.titulo;
-
-    // Marca del producto
-    document.querySelector('.card-brand2').textContent = producto.marca;
 
     // Precio anterior
     document.querySelector('.old-price span').textContent = producto.precioAnterior;
@@ -57,26 +57,6 @@ function renderProducto(producto) {
         star.textContent = i < producto.valoracion ? '★' : '☆';
         ratingContainer.appendChild(star);
     }
-
-    // Opciones de talla
-    const tallaSelect = document.getElementById('talla');
-    tallaSelect.innerHTML = ""; // Limpiar opciones anteriores
-    producto.tallas.forEach(talla => {
-        const option = document.createElement('option');
-        option.value = talla;
-        option.textContent = talla;
-        tallaSelect.appendChild(option);
-    });
-
-    // Opciones de color
-    const colorSelect = document.getElementById('color');
-    colorSelect.innerHTML = ""; // Limpiar opciones anteriores
-    producto.colores.forEach(color => {
-        const option = document.createElement('option');
-        option.value = color;
-        option.textContent = color;
-        colorSelect.appendChild(option);
-    });
 }
 
 // Función para obtener los datos del producto
@@ -84,12 +64,8 @@ function obtenerProducto() {
     fetch('../productos.json')
         .then(response => response.json())
         .then(data => {
-            // Obtener el ID del producto desde la URL
-            const productoId = getQueryParam('id');
-
-            // Buscar el producto en el JSON usando el ID
-            const producto = data.find(p => p.id === productoId);
-
+            // Aquí suponiendo que tienes un array de productos en tu JSON
+            const producto = data.find(p => p.titulo === "Run Falcon 2.0"); // Puedes cambiar esta condición
             if (producto) {
                 renderProducto(producto);
             } else {

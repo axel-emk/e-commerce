@@ -1,8 +1,8 @@
 [
     {
+        "id": "run-falcon-2.0",
         "categoria": "zapatillas",
-        "imagen": 
-        [
+        "imagen": [
             "./img/zapatilla1.png",
             "../img/zapatilla1.png"
         ],
@@ -13,19 +13,21 @@
         "precioFinal": "$29.990",
         "descuento": 40,
         "cuotas": "en 6 x $4.998 sin interés",
-        "url": "./html/productos.html",
+        "url": "./html/productos.html?id=run-falcon-2.0",
         "miniaturas": [
             "../img/minizapatilla0.png",
             "../img/minizapatilla1.png",
             "../img/minizapatilla2.png",
             "../img/minizapatilla3.png"
         ],
-        "descripcion": "Zapatillas deportivas informales para un estilo de vida activo. Con estas zapatillas adidas podrás correr en el parque y luego tomar un café con amigos con total comodidad. Su exterior de malla ofrece transpirabilidad máxima que mantiene tus pies frescos de la mañana a la noche. La suela tipo cupsole de caucho brinda la estabilidad necesaria para enfrentarte a todo lo que te depare el día."
-    },
+        "descripcion": "Zapatillas deportivas informales para un estilo de vida activo...",
+        "tallas": [38, 39, 40, 41, 42],
+        "colores": ["Negro", "Blanco", "Rojo"]
+    },    
     {
+        "id": "book-1",
         "categoria": "zapatillas",
-        "imagen": 
-        [
+        "imagen": [
             "./img/zapatilla2.png",
             "../img/zapatilla2.png"
         ],
@@ -36,12 +38,22 @@
         "precioFinal": "$95.990",
         "descuento": 40,
         "cuotas": "en 6 x $15.990 sin interés",
-        "url": "./html/zapatilla.html"
-    },
+        "url": "./html/productos.html?id=book-1",
+        "miniaturas": [
+            "../img/book1-0.png",
+            "../img/book1-1.png",
+            "../img/book1-2.png",
+            "../img/book1-3.png"
+
+        ],
+        "descripcion": "Devin Booker Book 1. Calzado de básquetbol Devin Booker es un artesano que puede perder a un jugador de la defensa arrebatando con el tobillo y luego regresar con una serie de golpes hipnotizantes para brincar a la canasta. El calzado característico de Book le da las herramientas que necesita para hacer su arte. Con detalles de cuero que resaltan la parte superior supersuave junto a una pisada rápida, pero cómoda, este diseño puede ayudarte a explorar los espacios creados por la penetrante labor de tus pies y tu alma hambrienta de básquetbol.",
+        "tallas": [38, 39, 40, 41, 42],
+        "colores": ["Negro", "Rojo"]
+    },    
     {
+        "id": "gv-special",
         "categoria": "zapatillas",
-        "imagen": 
-        [
+        "imagen": [
             "./img/zapatilla3.png",
             "../img/zapatilla3.png"
         ],
@@ -52,63 +64,105 @@
         "precioFinal": "$59.990",
         "descuento": 25,
         "cuotas": "en 6 x $9.998 sin interés",
-        "url": "./html/zapatilla.html"
-    },
-    {
-        "categoria": "zapatillas",
-        "imagen": 
-        [
-            "./img/zapatilla4.png",
-            "../img/zapatilla4.png"
+        "url": "./html/productos.html?id=gv-special",
+        "miniaturas": [
+            "../img/gvspecial-0.png",
+            "../img/gvspecial-1.png",
+            "../img/gvspecial-2.png",
+            "../img/gvspecial-3.png"
         ],
-        "marca": "Adidas",
-        "titulo": "Gazelle",
-        "valoracion": 5,
-        "precioAnterior": "$79.990",
-        "precioFinal": "$47.990",
-        "descuento": 60,
-        "cuotas": "en 6 x $7.990 sin interés",
-        "url": "./html/zapatilla.html"
-    },
+        "descripcion": "HISTORIA DEL PRODUCTO - Juego, set y partido. Directo desde nuestro archivo de 1982 y evocando a la exitosa carrera del tenista argentino Guillermo Vilas, el modelo homónimo toma prestado el estilo del clásico del tenis PUMA. Las GV Special + no deja a nadie indiferente con su base robusta y un exterior íntegramente de piel que tampoco pasa de moda.",
+        "tallas": [38, 39, 40, 41, 42],
+        "colores": ["Blanco & Azul", "Blanco & Negro"]
+    },    
     {
+        "id": "gv-special",
         "categoria": "zapatillas",
-        "imagen": 
-        [
-            "./img/zapatilla5.png",
-            "../img/zapatilla5.png"
-        ],
-        "marca": "Nike",
-        "titulo": "ReactX Pegasus Trail 5",
-        "valoracion": 5,
-        "precioAnterior": "$134.990",
-        "precioFinal": "$149.990",
-        "descuento": 10,
-        "cuotas": "en 6 x $4.998 sin interés",
-        "url": "./html/zapatilla.html"
-    },
-    {
-        "categoria": "zapatillas",
-        "imagen": 
-        [
-            "./img/zapatilla6.png",
-            "../img/zapatilla6.png"
+        "imagen": [
+            "./img/zapatilla3.png",
+            "../img/zapatilla3.png"
         ],
         "marca": "Puma",
-        "titulo": "Cali Court Leathe",
-        "valoracion": 5,
-        "precioAnterior": "$79.990",
-        "precioFinal": "$55.990",
+        "titulo": "GV Special +",
+        "valoracion": 4,
+        "precioAnterior": "$84.990",
+        "precioFinal": "$59.990",
         "descuento": 25,
-        "cuotas": "en 6 x $15.000 sin interés",
-        "url": "./html/zapatilla.html"
-    },
-    
+        "cuotas": "en 6 x $9.998 sin interés",
+        "url": "./html/productos.html?id=gv-special",
+        "miniaturas": [
+            "../img/gvspecial-0.png",
+            "../img/gvspecial-1.png",
+            "../img/gvspecial-2.png",
+            "../img/gvspecial-3.png"
+        ],
+        "descripcion": "HISTORIA DEL PRODUCTO - Juego, set y partido. Directo desde nuestro archivo de 1982 y evocando a la exitosa carrera del tenista argentino Guillermo Vilas, el modelo homónimo toma prestado el estilo del clásico del tenis PUMA. Las GV Special + no deja a nadie indiferente con su base robusta y un exterior íntegramente de piel que tampoco pasa de moda.",
+        "tallas": [38, 39, 40, 41, 42],
+        "colores": ["Blanco & Azul", "Blanco & Negro"]
+    },    
     {
+        "id": "gv-special",
+        "categoria": "zapatillas",
+        "imagen": [
+            "./img/zapatilla3.png",
+            "../img/zapatilla3.png"
+        ],
+        "marca": "Puma",
+        "titulo": "GV Special +",
+        "valoracion": 4,
+        "precioAnterior": "$84.990",
+        "precioFinal": "$59.990",
+        "descuento": 25,
+        "cuotas": "en 6 x $9.998 sin interés",
+        "url": "./html/productos.html?id=gv-special",
+        "miniaturas": [
+            "../img/gvspecial-0.png",
+            "../img/gvspecial-1.png",
+            "../img/gvspecial-2.png",
+            "../img/gvspecial-3.png"
+        ],
+        "descripcion": "HISTORIA DEL PRODUCTO - Juego, set y partido. Directo desde nuestro archivo de 1982 y evocando a la exitosa carrera del tenista argentino Guillermo Vilas, el modelo homónimo toma prestado el estilo del clásico del tenis PUMA. Las GV Special + no deja a nadie indiferente con su base robusta y un exterior íntegramente de piel que tampoco pasa de moda.",
+        "tallas": [38, 39, 40, 41, 42],
+        "colores": ["Blanco & Azul", "Blanco & Negro"]
+    },    
+    {
+        "id": "gv-special",
+        "categoria": "zapatillas",
+        "imagen": [
+            "./img/zapatilla3.png",
+            "../img/zapatilla3.png"
+        ],
+        "marca": "Puma",
+        "titulo": "GV Special +",
+        "valoracion": 4,
+        "precioAnterior": "$84.990",
+        "precioFinal": "$59.990",
+        "descuento": 25,
+        "cuotas": "en 6 x $9.998 sin interés",
+        "url": "./html/productos.html?id=gv-special",
+        "miniaturas": [
+            "../img/gvspecial-0.png",
+            "../img/gvspecial-1.png",
+            "../img/gvspecial-2.png",
+            "../img/gvspecial-3.png"
+        ],
+        "descripcion": "HISTORIA DEL PRODUCTO - Juego, set y partido. Directo desde nuestro archivo de 1982 y evocando a la exitosa carrera del tenista argentino Guillermo Vilas, el modelo homónimo toma prestado el estilo del clásico del tenis PUMA. Las GV Special + no deja a nadie indiferente con su base robusta y un exterior íntegramente de piel que tampoco pasa de moda.",
+        "tallas": [38, 39, 40, 41, 42],
+        "colores": ["Blanco & Azul", "Blanco & Negro"]
+    },    
+    
+    
+
+
+
+
+        
+    {
+        "id": "colo-erd-jsy",
         "categoria": "camisetas",
-        "imagen": 
-        [
+        "imagen": [
             "./img/camiseta1.png",
-            "../img/camiseta1.png"            
+            "../img/camiseta1.png"
         ],
         "marca": "Adidas",
         "titulo": "COLO 3RD JSY",
@@ -117,8 +171,19 @@
         "precioFinal": "$26.990",
         "descuento": 50,
         "cuotas": "en 6 x $4.498 sin interés",
-        "url": "productos/producto1.html"
-    },
+        "url": "./html/productos.html?id=colo-erd-jsy",
+        "miniaturas": [
+            "../img/colo-erd-jsy-0.png",
+            "../img/colo-erd-jsy-1.png",
+            "../img/colo-erd-jsy-2.png",
+            "../img/colo-erd-jsy-3.png"
+        ],
+        "descripcion": "Colo 3Rd Jsy es un nuevo producto para Hombre de adidas. Te invitamos a ver las imágenes para apreciar más detalles desde diferentes ángulos. Si ya conoces Colo 3Rd Jsy puedes dejar una reseña abajo; siempre nos encanta conocer tu opinión.",
+        "tallas": ["S", "M", "L", "XL"],
+        "colores": ["Dorado"]
+    },   
+    
+
     {
         "categoria": "camisetas",
         "imagen": 
@@ -197,6 +262,9 @@
         "url": "productos/producto1.html"
     },
     
+
+
+
     {
         "categoria": "smartwatches",
         "imagen": 
@@ -293,7 +361,10 @@
         "cuotas": "en 6 x $69.990 sin interés",
         "url": "productos/producto1.html"
     },
+    
+    
     {
+        "id": "runfalcon-5-c",
         "categoria": "zapatillas niño",
         "imagen": 
         [   
@@ -302,20 +373,30 @@
         ],        
         "marca": "Adidas",
         "titulo": "RUNFALCON 5 EL C",
-        "valoracion": 5,
+        "valoracion": 4,
         "precioAnterior": "$41.990",
         "precioFinal": "$39.990",
         "descuento": 5,
         "cuotas": "en 6 x $6.665 sin interés",
-        "url": "productos/producto1.html"
-    },
+        "url": "../html/productos.html?id=runfalcon-5-c",
+        "miniaturas": [
+            "../img/runfalcon5-0.png",
+            "../img/runfalcon5-1.png",
+            "../img/runfalcon5-2.png",
+            "../img/runfalcon5-3.png"
+        ],
+        "descripcion": "Zapatillas deportivas informales para un estilo de vida activo...",
+        "tallas": [38, 39, 40, 41, 42],
+        "colores": ["Negro", "Blanco", "Rojo"]
+    },    
     {
+        "id": "grand-court-mid",
         "categoria": "zapatillas niño",
-        "imagen":
+        "imagen": 
         [   
             "./img/niño/zapatilla-niño2.png",
             "../img/niño/zapatilla-niño2.png"
-        ],    
+        ],        
         "marca": "Adidas",
         "titulo": "Grand Court Mid",
         "valoracion": 0,
@@ -323,8 +404,18 @@
         "precioFinal": "$37.990",
         "descuento": 5,
         "cuotas": "en 6 x $6.331 sin interés",
-        "url": "productos/producto1.html"
-    },
+        "url": "../html/productos.html?id=grand-court-mid",
+        "miniaturas": [
+            "../img/grand-court-mid-0.png",
+            "../img/grand-court-mid-1.png",
+            "../img/grand-court-mid-2.png",
+            "../img/grand-court-mid-3.png"
+        ],
+        "descripcion": "Zapatillas deportivas informales para un estilo de vida activo...",
+        "tallas": [38, 39, 40, 41, 42],
+        "colores": ["Negro", "Blanco", "Rojo"]
+    },    
+    
     {
         "categoria": "zapatillas niño",
         "imagen":
