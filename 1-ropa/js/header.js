@@ -10,7 +10,7 @@ function showSidebar() {
   }
   
   
-  // ----------------------SEARCH---------------------------------
+ // ----------------------SEARCH---------------------------------
 
 // Detectar la página actual y ajustar la ruta del JSON
 let jsonPath = './productos.json';  // Por defecto, si estamos en index.html
@@ -53,7 +53,7 @@ function ajustarRuta(url) {
     return url; // Si estamos en el index o en la raíz, no hacemos cambios
 }
 
-// Función para mostrar los resultados de búsqueda con manejo de imagenes y URLs
+// Función para mostrar los resultados de búsqueda con manejo de imágenes y URLs
 function mostrarResultados(resultados) {
     const searchResults = document.getElementById('search-results');
     searchResults.innerHTML = ""; // Limpiar resultados previos
