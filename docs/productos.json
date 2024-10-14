@@ -378,7 +378,7 @@
         "precioFinal": "$39.990",
         "descuento": 5,
         "cuotas": "en 6 x $6.665 sin interés",
-        "url": "../html/productos.html?id=runfalcon-5-c",
+        "url": "./html/productos.html?id=runfalcon-5-c",
         "miniaturas": [
             "../img/runfalcon5-0.png",
             "../img/runfalcon5-1.png",
@@ -404,7 +404,7 @@
         "precioFinal": "$37.990",
         "descuento": 5,
         "cuotas": "en 6 x $6.331 sin interés",
-        "url": "../html/productos.html?id=grand-court-mid",
+        "url": "./html/productos.html?id=grand-court-mid",
         "miniaturas": [
             "../img/grand-court-mid-0.png",
             "../img/grand-court-mid-1.png",

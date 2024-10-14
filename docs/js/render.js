@@ -6,6 +6,17 @@ document.addEventListener('DOMContentLoaded', function () {
         jsonFile = '../productos.json';  // Ajustamos la ruta si estamos dentro de una subcarpeta como /html
     }
 
+    // Función para ajustar las URLs dependiendo de la página actual
+function ajustarRuta(url) {
+    if (window.location.pathname.includes('/html/')) {
+        // Si estamos en una página dentro de /html/, ajustamos la ruta para las URLs
+        return `../${url}`;
+    }
+    return url; // Si estamos en el index o en la raíz, no hacemos cambios
+}
+
+
+    
     // Cargar el archivo JSON con los productos
     fetch(jsonFile)
         .then(response => response.json())
@@ -26,15 +37,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     const cardHTML = `
                     <div class="card">
                         <div class="favorite-icon">
-                            <i class="far fa-heart"></i> <!-- Corazón vacío -->
+                            <i class="far fa-heart"></i>
                         </div>
-                        <a href="${producto.url}">
-                            <img src="${producto.imagen[0]}" alt="${producto.titulo}" class="card-img" 
-                            onerror="this.onerror=null; this.src='${producto.imagen[1]}';">
+                        <a href="${ajustarRuta(producto.url)}">
+                            <img src="${ajustarRuta(producto.imagen[0])}" alt="${producto.titulo}" class="card-img" 
+                            onerror="this.onerror=null; this.src='${ajustarRuta(producto.imagen[1])}';">
                         </a>
                         <div class="contenido">
-                            <p class="card-brand">${producto.marca}</p> <!-- Texto de la marca -->
-                            <a href="${producto.url}">
+                            <p class="card-brand">${producto.marca}</p>
+                            <a href="${ajustarRuta(producto.url)}">
                                 <h2 class="card-title">${producto.titulo}</h2>
                             </a>
                             <div class="rating">
@@ -48,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <p class="installments">${producto.cuotas}</p>
                         </div>
                     </div>`;
+                
                     
                     // Añadir la card al slider
                     slider.insertAdjacentHTML('beforeend', cardHTML);
