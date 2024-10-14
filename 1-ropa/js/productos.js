@@ -4,6 +4,20 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
+// Función para detectar si estamos en el index o una página interna
+function isInnerPage() {
+    const currentUrl = window.location.href;
+    return currentUrl.includes("/html/");
+}
+
+// Función para obtener la ruta correcta para productos.json
+function getJsonPath() {
+    if (isInnerPage()) {
+        return '../productos.json';  // Para páginas internas como niños.html
+    }
+    return './productos.json'; // Para la página principal (index.html)
+}
+
 // Función para renderizar el producto en el HTML
 function renderProducto(producto) {
     // Imagen principal del producto
@@ -81,7 +95,9 @@ function renderProducto(producto) {
 
 // Función para obtener los datos del producto
 function obtenerProducto() {
-    fetch('../productos.json')
+    const jsonPath = getJsonPath(); // Obtenemos la ruta correcta para el archivo JSON
+
+    fetch(jsonPath)
         .then(response => response.json())
         .then(data => {
             // Obtener el ID del producto desde la URL

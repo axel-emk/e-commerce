@@ -1,16 +1,16 @@
 // Header
 function showSidebar() {
-    const sidebar = document.querySelector(".sidebar");
-    sidebar.style.transform = 'translateX(0)';
-  }
-  
-  function closeSidebar() {
-    const sidebar = document.querySelector(".sidebar");
-    sidebar.style.transform = 'translateX(100%)';
-  }
-  
-  
-  // ----------------------SEARCH---------------------------------
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.transform = 'translateX(0)';
+}
+
+function closeSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.transform = 'translateX(100%)';
+}
+
+
+// ----------------------SEARCH---------------------------------
 
 // Detectar la página actual y ajustar la ruta del JSON
 let jsonPath = './productos.json';  // Por defecto, si estamos en index.html
@@ -44,16 +44,7 @@ function buscarProductos(query) {
     });
 }
 
-// Función para ajustar las URLs de las imágenes y productos dependiendo de la página actual
-function ajustarRuta(url) {
-    if (window.location.pathname.includes('/html/')) {
-        // Si estamos en una página dentro de /html/, ajustamos la ruta para las imágenes y productos
-        return `../${url}`;
-    }
-    return url; // Si estamos en el index o en la raíz, no hacemos cambios
-}
-
-// Función para mostrar los resultados de búsqueda con manejo de imagenes y URLs
+// Función para mostrar los resultados de búsqueda con manejo de imagenes
 function mostrarResultados(resultados) {
     const searchResults = document.getElementById('search-results');
     searchResults.innerHTML = ""; // Limpiar resultados previos
@@ -66,10 +57,10 @@ function mostrarResultados(resultados) {
             const li = document.createElement('li');
             li.classList.add('search-result-item'); // Agregar clase para estilos
 
-            // Crear el contenido del producto con ajuste de imágenes y URLs
+            // Crear el contenido del producto
             const resultItem = `
-                <img src="${ajustarRuta(producto.imagen[0])}" alt="${producto.titulo}" class="search-result-image"
-                     onerror="this.onerror=null; this.src='${ajustarRuta(producto.imagen[1])}';">
+                <img src="${producto.imagen[0]}" alt="${producto.titulo}" class="search-result-image"
+                     onerror="this.onerror=null; this.src='${producto.imagen[1]}';">
                 <div class="search-result-details">
                     <span class="search-result-title">${producto.titulo}</span>
                     <span class="search-result-price">${producto.precioFinal}</span>
@@ -80,7 +71,7 @@ function mostrarResultados(resultados) {
 
             li.addEventListener('click', () => {
                 // Redirigir a la página del producto
-                window.location.href = ajustarRuta(producto.url); // Ajuste de la URL del producto
+                window.location.href = producto.url;
             });
 
             ul.appendChild(li);
@@ -101,5 +92,3 @@ searchInput.addEventListener('input', () => {
         document.getElementById('search-results').classList.add('hidden'); // Si el campo de búsqueda está vacío, ocultar los resultados
     }
 });
-
-  
