@@ -68,14 +68,19 @@ function mostrarResultados(resultados) {
 
             // Crear el contenido del producto con ajuste de imágenes y URLs
             const resultItem = `
-                <img src="${ajustarRuta(producto.imagen[0])}" alt="${producto.titulo}" class="search-result-image"
-                     onerror="this.onerror=null; this.src='${ajustarRuta(producto.imagen[1])}';">
+            <div class="result-item">
+                <img src="${producto.imagen[0]}" alt="${producto.titulo}" class="search-result-image"
+                     onerror="this.onerror=null; this.src='${producto.imagen[1]}';">
                 <div class="search-result-details">
                     <span class="search-result-title">${producto.titulo}</span>
                     <span class="search-result-price">${producto.precioFinal}</span>
                     <span class="search-result-marca">${producto.marca}</span>
                 </div>
-            `;
+                <p class="discount-label">${producto.descuento}% OFF</p>
+            </div>
+        `;
+        
+        
             li.innerHTML = resultItem;
 
             li.addEventListener('click', () => {

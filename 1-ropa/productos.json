@@ -177,6 +177,31 @@
         "tallas": [38, 39, 40],
         "colores": ["Verde"]
     }, 
+    {
+        "id": "air-max-90",
+        "categoria": "zapatillas mujer",
+        "imagen": [
+            "./img/air-max-90-0.png",
+            "../img/air-max-90-0.png"
+        ],
+        "marca": "Nike",
+        "titulo": "Nike Air Max 90 LTR",
+        "valoracion": 5,
+        "precioAnterior": "$118.990",
+        "precioFinal": "$73.990",
+        "descuento": 38,
+        "cuotas": "en 6 x $12.332 sin interés",
+        "url": "./html/productos.html?id=air-max-90",
+        "miniaturas": [
+            "../img/air-max-90-0.png",
+            "../img/air-max-90-1.png",
+            "../img/air-max-90-2.png",
+            "../img/air-max-90-3.png"
+        ],
+        "descripcion": "El calzado Nike Air Max 90 LTR celebra el año número 30 del ícono con un diseño ideal para niños. Con el Air personalizado para niños, la amortiguación de espuma y una suela flexible, se trata de introducir los favoritos de los años 90 a una nueva generación.",
+        "tallas": [36, 37, 38, 39],
+        "colores": ["Multi-Color"]
+    }, 
 
 
         
@@ -486,37 +511,6 @@
         "descuento": 4,
         "cuotas": "en 6 x $7.165 sin interés",
         "url": "productos/producto1.html"
-    },
-    {
-        "categoria": "zapatillas niño",
-        "imagen":
-        [   
-            "./img/niño/zapatilla-niño6.png",
-            "../img/niño/zapatilla-niño6.png"
-        ],  
-        "marca": "Nike",
-        "titulo": "Air Max 90 LTR",
-        "valoracion": 5,
-        "precioAnterior": "$118.990",
-        "precioFinal": "$73.990",
-        "descuento": 38,
-        "cuotas": "en 6 x $12.332 sin interés",
-        "url": "productos/producto1.html"
-    },
-    {
-        "categoria": "mujer",
-        "imagen":
-        [   
-            "./img/niño/zapatilla-niño6.png",
-            "../img/niño/zapatilla-niño6.png"
-        ],  
-        "marca": "Nike",
-        "titulo": "Mujer Max 90 LTR",
-        "valoracion": 5,
-        "precioAnterior": "$118.990",
-        "precioFinal": "$73.990",
-        "descuento": 38,
-        "cuotas": "en 6 x $12.332 sin interés",
-        "url": "productos/producto1.html"
     }
+
 ]

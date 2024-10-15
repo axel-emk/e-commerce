@@ -1,32 +1,32 @@
 [
     {
-        "id": "run-falcon-2.0",
-        "categoria": "zapatillas",
+        "id": "forum-low",
+        "categoria": "zapatillas hombre",
         "imagen": [
-            "./img/zapatilla1.png",
-            "../img/zapatilla1.png"
+            "./img/forum-low-0.png",
+            "../img/forum-low-0.png"
         ],
         "marca": "Adidas",
-        "titulo": "Run Falcon 2.0",
-        "valoracion": 4,
-        "precioAnterior": "$49.990",
-        "precioFinal": "$29.990",
-        "descuento": 40,
-        "cuotas": "en 6 x $4.998 sin interés",
-        "url": "./html/productos.html?id=run-falcon-2.0",
+        "titulo": "Forum Low CL",
+        "valoracion": 5,
+        "precioAnterior": "$84.990",
+        "precioFinal": "$59.990",
+        "descuento": 25,
+        "cuotas": "en 6 x $9.998 sin interés",
+        "url": "./html/productos.html?id=forum-low",
         "miniaturas": [
-            "../img/minizapatilla0.png",
-            "../img/minizapatilla1.png",
-            "../img/minizapatilla2.png",
-            "../img/minizapatilla3.png"
+            "../img/forum-low-0.png",
+            "../img/forum-low-1.png",
+            "../img/forum-low-2.png",
+            "../img/forum-low-3.png"
         ],
-        "descripcion": "Zapatillas deportivas informales para un estilo de vida activo...",
-        "tallas": [38, 39, 40, 41, 42],
-        "colores": ["Negro", "Blanco", "Rojo"]
-    },    
+        "descripcion": "Luce un estilo clásico lleno de comodidad con estas zapatillas adidas Forum de corte bajo. El exterior de gamuza premium con sutiles detalles dorados confieren un look moderno atemporal. Sin importar si estás haciendo mandados en la ciudad o encontrándose con amigos para compartir un café, estas zapatillas versátiles le inyectan estilo casual sofisticado a tu look.",
+        "tallas": [40, 41, 42, 43],
+        "colores": ["Crew Orange", "Preloved Blue"]
+    },   
     {
         "id": "book-1",
-        "categoria": "zapatillas",
+        "categoria": "zapatillas hombre",
         "imagen": [
             "./img/zapatilla2.png",
             "../img/zapatilla2.png"
@@ -52,7 +52,7 @@
     },    
     {
         "id": "gv-special",
-        "categoria": "zapatillas",
+        "categoria": "zapatillas hombre",
         "imagen": [
             "./img/zapatilla3.png",
             "../img/zapatilla3.png"
@@ -74,86 +74,134 @@
         "descripcion": "HISTORIA DEL PRODUCTO - Juego, set y partido. Directo desde nuestro archivo de 1982 y evocando a la exitosa carrera del tenista argentino Guillermo Vilas, el modelo homónimo toma prestado el estilo del clásico del tenis PUMA. Las GV Special + no deja a nadie indiferente con su base robusta y un exterior íntegramente de piel que tampoco pasa de moda.",
         "tallas": [38, 39, 40, 41, 42],
         "colores": ["Blanco & Azul", "Blanco & Negro"]
+    },      
+    {
+        "id": "run-falcon-2.0",
+        "categoria": "zapatillas hombre",
+        "imagen": [
+            "./img/zapatilla1.png",
+            "../img/zapatilla1.png"
+        ],
+        "marca": "Adidas",
+        "titulo": "Run Falcon 2.0",
+        "valoracion": 0,
+        "precioAnterior": "$49.990",
+        "precioFinal": "$29.990",
+        "descuento": 40,
+        "cuotas": "en 6 x $4.998 sin interés",
+        "url": "./html/productos.html?id=run-falcon-2.0",
+        "miniaturas": [
+            "../img/minizapatilla0.png",
+            "../img/minizapatilla1.png",
+            "../img/minizapatilla2.png",
+            "../img/minizapatilla3.png"
+        ],
+        "descripcion": "Zapatillas deportivas informales para un estilo de vida activo...",
+        "tallas": [38, 39, 40, 41, 42],
+        "colores": ["Negro"]
     },    
     {
-        "id": "gv-special",
-        "categoria": "zapatillas",
+        "id": "dunk-high-retro",
+        "categoria": "zapatillas hombre",
         "imagen": [
-            "./img/zapatilla3.png",
-            "../img/zapatilla3.png"
+            "./img/dunk-high-retro-0.png",
+            "../img/dunk-high-retro-0.png"
         ],
-        "marca": "Puma",
-        "titulo": "GV Special +",
-        "valoracion": 4,
-        "precioAnterior": "$84.990",
-        "precioFinal": "$59.990",
-        "descuento": 25,
-        "cuotas": "en 6 x $9.998 sin interés",
-        "url": "./html/productos.html?id=gv-special",
+        "marca": "Nike",
+        "titulo": "Dunk High Retro SE",
+        "valoracion": 5,
+        "precioAnterior": "$145.990",
+        "precioFinal": "$139.990",
+        "descuento": 5,
+        "cuotas": "en 6 x $23.332 sin interés",
+        "url": "./html/productos.html?id=dunk-high-retro",
         "miniaturas": [
-            "../img/gvspecial-0.png",
-            "../img/gvspecial-1.png",
-            "../img/gvspecial-2.png",
-            "../img/gvspecial-3.png"
+            "../img/dunk-high-retro-0.png",
+            "../img/dunk-high-retro-1.png",
+            "../img/dunk-high-retro-2.png",
+            "../img/dunk-high-retro-3.png"
         ],
-        "descripcion": "HISTORIA DEL PRODUCTO - Juego, set y partido. Directo desde nuestro archivo de 1982 y evocando a la exitosa carrera del tenista argentino Guillermo Vilas, el modelo homónimo toma prestado el estilo del clásico del tenis PUMA. Las GV Special + no deja a nadie indiferente con su base robusta y un exterior íntegramente de piel que tampoco pasa de moda.",
-        "tallas": [38, 39, 40, 41, 42],
-        "colores": ["Blanco & Azul", "Blanco & Negro"]
-    },    
-    {
-        "id": "gv-special",
-        "categoria": "zapatillas",
-        "imagen": [
-            "./img/zapatilla3.png",
-            "../img/zapatilla3.png"
-        ],
-        "marca": "Puma",
-        "titulo": "GV Special +",
-        "valoracion": 4,
-        "precioAnterior": "$84.990",
-        "precioFinal": "$59.990",
-        "descuento": 25,
-        "cuotas": "en 6 x $9.998 sin interés",
-        "url": "./html/productos.html?id=gv-special",
-        "miniaturas": [
-            "../img/gvspecial-0.png",
-            "../img/gvspecial-1.png",
-            "../img/gvspecial-2.png",
-            "../img/gvspecial-3.png"
-        ],
-        "descripcion": "HISTORIA DEL PRODUCTO - Juego, set y partido. Directo desde nuestro archivo de 1982 y evocando a la exitosa carrera del tenista argentino Guillermo Vilas, el modelo homónimo toma prestado el estilo del clásico del tenis PUMA. Las GV Special + no deja a nadie indiferente con su base robusta y un exterior íntegramente de piel que tampoco pasa de moda.",
-        "tallas": [38, 39, 40, 41, 42],
-        "colores": ["Blanco & Azul", "Blanco & Negro"]
-    },    
-    {
-        "id": "gv-special",
-        "categoria": "zapatillas",
-        "imagen": [
-            "./img/zapatilla3.png",
-            "../img/zapatilla3.png"
-        ],
-        "marca": "Puma",
-        "titulo": "GV Special +",
-        "valoracion": 4,
-        "precioAnterior": "$84.990",
-        "precioFinal": "$59.990",
-        "descuento": 25,
-        "cuotas": "en 6 x $9.998 sin interés",
-        "url": "./html/productos.html?id=gv-special",
-        "miniaturas": [
-            "../img/gvspecial-0.png",
-            "../img/gvspecial-1.png",
-            "../img/gvspecial-2.png",
-            "../img/gvspecial-3.png"
-        ],
-        "descripcion": "HISTORIA DEL PRODUCTO - Juego, set y partido. Directo desde nuestro archivo de 1982 y evocando a la exitosa carrera del tenista argentino Guillermo Vilas, el modelo homónimo toma prestado el estilo del clásico del tenis PUMA. Las GV Special + no deja a nadie indiferente con su base robusta y un exterior íntegramente de piel que tampoco pasa de moda.",
-        "tallas": [38, 39, 40, 41, 42],
-        "colores": ["Blanco & Azul", "Blanco & Negro"]
+        "descripcion": "Nike Dunk High Retro SE - Zapatillas para hombres Siempre puedes contar con un clásico. Las Dunk High combinan un bloqueo de colores icónico con materiales premium y un acolchado lujoso para una comodidad revolucionaria que perdura. Las posibilidades son infinitas: ¿cómo usarás tus Dunks?",
+        "tallas": [ 40, 41, 42, 43],
+        "colores": ["Verde"]
     },    
     
-    
 
-
+    {
+        "id": "palermo-vintage",
+        "categoria": "zapatillas mujer",
+        "imagen": [
+            "./img/palermo-vintage-magenta-2.png",
+            "../img/palermo-vintage-magenta-2.png"
+        ],
+        "marca": "Puma",
+        "titulo": "Palermo Vintage",
+        "valoracion": 5,
+        "precioAnterior": "$84.990",
+        "precioFinal": "$59.990",
+        "descuento": 25,
+        "cuotas": "en 6 x $9.998 sin interés",
+        "url": "./html/productos.html?id=palermo-vintage",
+        "miniaturas": [
+            "../img/palermo-vintage-magenta-2.png",
+            "../img/palermo-vintage-magenta-1.png",
+            "../img/palermo-vintage-magenta-0.png",
+            "../img/palermo-vintage-magenta-3.png"
+        ],
+        "descripcion": "HISTORIA DEL PRODUCTO - Presentamos las Palermo, recién salidas de los archivos de PUMA. Esta zapatilla clásica de las gradas de los estadios de fútbol debutó en los 80. Ahora, la traemos de vuelta para los fans. Con su característica puntera en T y su clásica suela de goma, esta versión presenta un exterior textil e inserciones de ante.",
+        "tallas": [35, 36, 37, 38, 39],
+        "colores": ["Magenta Gleam-Frosted Ivory", "Jade Frost-Frosted Ivory-Gum"]
+    },   
+    {
+        "id": "air-jordan-4rm",
+        "categoria": "zapatillas mujer",
+        "imagen": [
+            "./img/air-jordan-4rm-0.png",
+            "../img/air-jordan-4rm-0.png"
+        ],
+        "marca": "Nike",
+        "titulo": "Air Jordan 4RM",
+        "valoracion": 5,
+        "precioAnterior": "$165.990",
+        "precioFinal": "$157.990",
+        "descuento": 5,
+        "cuotas": "en 6 x $26.330 sin interés",
+        "url": "./html/productos.html?id=air-jordan-4rm",
+        "miniaturas": [
+            "../img/air-jordan-4rm-0.png",
+            "../img/air-jordan-4rm-1.png",
+            "../img/air-jordan-4rm-2.png",
+            "../img/air-jordan-4rm-3.png"
+        ],
+        "descripcion": "El remix que no sabías que necesitabas. Diseñados para el día a día, estos tenis reinventan los AJ4 pensando en la comodidad y la durabilidad. La unidad Max Air amortigua cada pisada. Además, los elementos de la parte superior se combinan en una estructura flexible y resistente que envuelve los tenis para añadir solidez a tus desplazamientos diarios.",
+        "tallas": [38, 39, 40],
+        "colores": ["Verde"]
+    }, 
+    {
+        "id": "air-max-90",
+        "categoria": "zapatillas mujer",
+        "imagen": [
+            "./img/air-max-90-0.png",
+            "../img/air-max-90-0.png"
+        ],
+        "marca": "Nike",
+        "titulo": "Nike Air Max 90 LTR",
+        "valoracion": 5,
+        "precioAnterior": "$118.990",
+        "precioFinal": "$73.990",
+        "descuento": 38,
+        "cuotas": "en 6 x $12.332 sin interés",
+        "url": "./html/productos.html?id=air-max-90",
+        "miniaturas": [
+            "../img/air-max-90-0.png",
+            "../img/air-max-90-1.png",
+            "../img/air-max-90-2.png",
+            "../img/air-max-90-3.png"
+        ],
+        "descripcion": "El calzado Nike Air Max 90 LTR celebra el año número 30 del ícono con un diseño ideal para niños. Con el Air personalizado para niños, la amortiguación de espuma y una suela flexible, se trata de introducir los favoritos de los años 90 a una nueva generación.",
+        "tallas": [36, 37, 38, 39],
+        "colores": ["Multi-Color"]
+    }, 
 
 
         
@@ -463,37 +511,6 @@
         "descuento": 4,
         "cuotas": "en 6 x $7.165 sin interés",
         "url": "productos/producto1.html"
-    },
-    {
-        "categoria": "zapatillas niño",
-        "imagen":
-        [   
-            "./img/niño/zapatilla-niño6.png",
-            "../img/niño/zapatilla-niño6.png"
-        ],  
-        "marca": "Nike",
-        "titulo": "Air Max 90 LTR",
-        "valoracion": 5,
-        "precioAnterior": "$118.990",
-        "precioFinal": "$73.990",
-        "descuento": 38,
-        "cuotas": "en 6 x $12.332 sin interés",
-        "url": "productos/producto1.html"
-    },
-    {
-        "categoria": "mujer",
-        "imagen":
-        [   
-            "./img/niño/zapatilla-niño6.png",
-            "../img/niño/zapatilla-niño6.png"
-        ],  
-        "marca": "Nike",
-        "titulo": "Mujer Max 90 LTR",
-        "valoracion": 5,
-        "precioAnterior": "$118.990",
-        "precioFinal": "$73.990",
-        "descuento": 38,
-        "cuotas": "en 6 x $12.332 sin interés",
-        "url": "productos/producto1.html"
     }
+
 ]
