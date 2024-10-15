@@ -117,3 +117,55 @@ function obtenerProducto() {
 
 // Llamar a la función de renderizado cuando el DOM esté listo
 document.addEventListener("DOMContentLoaded", obtenerProducto);
+
+
+// Función para agregar producto a favoritos
+function agregarAFavoritos(producto) {
+    // Obtener productos favoritos guardados en localStorage (si existen)
+    let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+    
+    // Agregar el producto actual a los favoritos
+    favoritos.push(producto);
+    
+    // Guardar de nuevo en localStorage
+    localStorage.setItem('favoritos', JSON.stringify(favoritos));
+    
+    alert("Producto agregado a favoritos");
+}
+
+// Asignar el evento al botón de "Agregar a Favoritos"
+document.querySelector('.boton-favoritos').addEventListener('click', function() {
+    const productoId = getQueryParam('id');
+    fetch(getJsonPath())
+        .then(response => response.json())
+        .then(data => {
+            const producto = data.find(p => p.id === productoId);
+            if (producto) {
+                agregarAFavoritos(producto);
+            }
+        });
+});
+
+// Obtener datos del producto actual
+function obtenerProducto() {
+    const jsonPath = getJsonPath(); 
+
+    fetch(jsonPath)
+        .then(response => response.json())
+        .then(data => {
+            const productoId = getQueryParam('id');
+            const producto = data.find(p => p.id === productoId);
+
+            if (producto) {
+                renderProducto(producto);
+
+                // Añadir evento al botón de "Agregar al Carrito"
+                document.querySelector('.boton-carrito').addEventListener('click', function() {
+                    agregarAlCarrito(producto);
+                });
+            } else {
+                console.error("Producto no encontrado.");
+            }
+        })
+        .catch(error => console.error('Error al obtener el producto:', error));
+}

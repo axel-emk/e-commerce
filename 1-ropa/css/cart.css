@@ -75,6 +75,30 @@
   .eliminar-item:hover {
     background-color: var(--secondary);
   }
+
+  #carrito-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-carrito {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.producto-carrito img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.producto-carrito .info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
   
   /* Estilos responsivos para pantallas pequeñas */
   @media (max-width: 768px) {
