@@ -76,8 +76,10 @@ function mostrarResultados(resultados) {
                     <span class="search-result-price">${producto.precioFinal}</span>
                     <span class="search-result-marca">${producto.marca}</span>
                 </div>
+                <p class="discount-label">${producto.descuento}% OFF</p>
             </div>
         `;
+        
         
             li.innerHTML = resultItem;
 
