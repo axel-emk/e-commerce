@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT - Producto</title>
+    <link rel="icon" type="image/x-icon" href="./img/isologo.svg">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/producto.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/categorias.css">
+    <link rel="stylesheet" href="../css/newsletter.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Huincha superior -->
+<div class="huincha-envios">
+    <p class="texto-huincha">ENVÍOS PUEDEN DEMORAR HASTA 15 DÍAS HÁBILES RM Y 20 DÍAS HÁBILES REGIONES</p>
+</div>
+
+   <header>
+        <div class="header-logo">
+            <a href="../index.html"><img src="../img/logo.svg" alt="Logo" class="logo"></a>
+    </div>
+        <nav>
+            <ul class="navlinks">
+                <li class="items"><a href="../html/niños.html">Niños</a></li>
+                <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
+                <li class="items"><a href="../html/hombre.html">Hombres</a></li>
+                <li class="items"><a href="../html/deportes.html">Deportes</a></li>
+
+                <!-- Buscador en el header -->
+                <li class="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                    
+                    <!-- Contenedor para mostrar los resultados de la búsqueda (oculto por defecto) -->
+                    <div id="search-results" class="search-results hidden"></div>
+                </li>
+
+                <!-- Íconos del usuario, favoritos, carrito, seguimiento -->
+                <li class="icons"><a href="#"><i class="fas fa-user"></i></a></li>
+                <li class="icons"><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li class="icons"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="icons"><a href="#"><i class="fas fa-truck"></i></a></li>
+
+                <!-- Icono del menú para pantallas pequeñas -->
+                <li onclick="showSidebar()"><a href="#"><ion-icon name="menu-outline"></ion-icon></a></li>
+            </ul>
+
+            <!-- Sidebar para dispositivos móviles -->
+            <ul class="sidebar">
+                <!-- Botón para cerrar el sidebar -->
+                <li onclick="closeSidebar()"><a href="#"><ion-icon name="close-outline"></ion-icon></a></li>
+
+                <!-- Elementos del menú en la sidebar -->
+                <li class="items"><a href="../html/niños.html">Niños</a></li>
+                <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
+                <li class="items"><a href="../html/hombre.html">Hombres</a></li>
+                <li class="items"><a href="../html/deportes.html">Deportes</a></li>
+
+
+
+                <!-- Íconos en la sidebar -->
+                <li class="icons-sidebar"><a href="#"><i class="fas fa-user"></i></a></li>
+                <li class="icons-sidebar"><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li class="icons-sidebar"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="icons-sidebar"><a href="#"><i class="fas fa-truck"></i></a></li>
+
+                <!-- Buscador en la sidebar -->
+                <li class="search-container-sidebar">
+                    <input type="text" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </li>
+                <!-- Logo en la sidebar -->
+                <img src="../img/logo.svg" alt="Logo Sidebar">
+            </ul>
+        </nav>
+    </header>
+ 
+    <!-- Contenido principal del carrito -->
+    <main class="carrito-page">
+        <!-- Bloque izquierdo: Detalles del carrito -->
+        <div class="carrito-izquierda">
+          <h2>Tu Carro (1 producto)</h2>
+          <div class="producto-carrito">
+            <h2>Smartwatch Redmi Watch 4 Gris</h2>
+            <p>SKU: 629229999</p>
+            <img src="../img/smartwatch.png" alt="Smartwatch Redmi Watch 4 Gris" class="imagen-carrito">
+            
+            <div class="carrito-item-cantidad">
+              <label for="cantidad">Cantidad:</label>
+              <input type="number" id="cantidad" name="cantidad" value="1" min="1">
+            </div>
+      
+            <p><span class="descuento">42% OFF</span> - $69.990</p>
+            <p>Precio Original: $119.990</p>
+            <p><span class="descuento">38% OFF</span> - $74.990</p>
+            
+            <div class="acciones-producto">
+              <a href="#">Favoritos</a>
+              <button class="eliminar-item">Eliminar</button>
+            </div>
+      
+            <p>Garantía extendida desde $12.990 <button>Añadir</button></p>
+            <p>Producto disponible para retiro en tienda, despacho a domicilio y despacho en 24 horas</p>
+          </div>
+        </div>
+      
+        <!-- Bloque derecho: Resumen de compra -->
+        <div class="carrito-derecha">
+          <h2>Resumen de compra</h2>
+          <div class="resumen-detalle">
+            <p>Costo de tus productos: <span>$74.990</span></p>
+            <p>Total con Tarjeta Cencosud: <span>$69.990</span></p>
+            <p>Total con otros medios de pago: <span>$74.990</span></p>
+          </div>
+          <div class="seguridad">
+            <p>Pagar es 100% seguro</p>
+            <p>El costo de despacho se calculará en el siguiente paso</p>
+          </div>
+          <div class="medios-pago">
+            <h3>Medios de pago disponibles:</h3>
+            <img src="../img/medios_pago.png" alt="Medios de pago">
+          </div>
+        </div>
+      </main>
+      
+          <!-- Newsleter -->
+    <!-- Formulario para suscripción al newsletter -->
+    <div class="newsletter">
+        <h2 class="primario">¡Suscríbete a nuestro Newsletter!</h2>
+        <p  class="primario">Recibe ofertas exclusivas y novedades directamente en tu correo.</p>
+        <form action="#" method="POST">
+            <input type="email" name="email" placeholder="Ingresa tu correo" required>
+            <button type="submit">Suscribirme</button>
+        </form>
+    </div>
+
+
+
+<!-- ---------------Footer ---------------------- -->
+  <!-- Footer con logo, lista de categorías y formulario de contacto -->
+  <footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="../img/logo.svg" alt="Logo E-commerce">
+               <!-- Redes sociales -->
+               <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-categorias">
+            <h3>Servicio al Cliente</h3>
+            <ul>
+                <li><a href="#">Centro de ayuda</a></li>
+                <li><a href="#">Bases Legales</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+            </ul><br>
+            <h3>Acerca de Nosotros</h3>
+            <ul>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Tiendas</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-categorias">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Electrónica</a></li>
+                <li><a href="#">Ropa</a></li>
+                <li><a href="#">Hogar</a></li>
+                <li><a href="#">Deportes</a></li>
+            </ul>
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Electrónica</a></li>
+                <li><a href="#">Ropa</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-contacto">
+            <h3>¿Tienes alguna duda?</h3>
+            <form action="#" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre">
+                <input type="email" name="email" placeholder="Tu email">
+                <textarea name="mensaje" placeholder="Tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="../js/render.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
