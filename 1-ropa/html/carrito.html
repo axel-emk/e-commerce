@@ -89,53 +89,30 @@
  
     <!-- Contenido principal del carrito -->
     <main class="carrito-page">
-        
         <!-- Bloque izquierdo: Detalles del carrito -->
         <div class="carrito-izquierda">
+            <h2 id="carrito-header">Tu Carro (0 productos)</h2>
             <div id="carrito-items"></div>
-          <h2>Tu Carro (1 producto)</h2>
-          <div class="producto-carrito">
-            <h2>Smartwatch Redmi Watch 4 Gris</h2>
-            <p>SKU: 629229999</p>
-            <img src="../img/smartwatch.png" alt="Smartwatch Redmi Watch 4 Gris" class="imagen-carrito">
-            
-            <div class="carrito-item-cantidad">
-              <label for="cantidad">Cantidad:</label>
-              <input type="number" id="cantidad" name="cantidad" value="1" min="1">
-            </div>
-      
-            <p><span class="descuento">42% OFF</span> - $69.990</p>
-            <p>Precio Original: $119.990</p>
-            <p><span class="descuento">38% OFF</span> - $74.990</p>
-            
-            <div class="acciones-producto">
-              <a href="#">Favoritos</a>
-              <button class="eliminar-item">Eliminar</button>
-            </div>
-      
-            <p>Garantía extendida desde $12.990 <button>Añadir</button></p>
-            <p>Producto disponible para retiro en tienda, despacho a domicilio y despacho en 24 horas</p>
-          </div>
         </div>
       
         <!-- Bloque derecho: Resumen de compra -->
         <div class="carrito-derecha">
-          <h2>Resumen de compra</h2>
-          <div class="resumen-detalle">
-            <p>Costo de tus productos: <span>$74.990</span></p>
-            <p>Total con Tarjeta Cencosud: <span>$69.990</span></p>
-            <p>Total con otros medios de pago: <span>$74.990</span></p>
-          </div>
-          <div class="seguridad">
-            <p>Pagar es 100% seguro</p>
-            <p>El costo de despacho se calculará en el siguiente paso</p>
-          </div>
-          <div class="medios-pago">
-            <h3>Medios de pago disponibles:</h3>
-            <img src="../img/medios_pago.png" alt="Medios de pago">
-          </div>
+            <h2>Resumen de compra</h2>
+            <div class="resumen-detalle">
+                <p>Costo de tus productos: <span id="subtotal">$0</span></p>
+                <p>Total con otros medios de pago: <span id="total-general">$0</span></p>
+            </div>
+            <div class="seguridad">
+                <p>Pagar es 100% seguro</p>
+                <p>El costo de despacho se calculará en el siguiente paso</p>
+            </div>
+            <div class="medios-pago">
+                <h3>Medios de pago disponibles:</h3>
+                <img src="../img/medios_pago.png" alt="Medios de pago">
+            </div>
         </div>
-      </main>
+    </main>
+    
       
           <!-- Newsleter -->
     <!-- Formulario para suscripción al newsletter -->
