@@ -10,7 +10,7 @@
         "titulo": "Forum Low CL",
         "valoracion": 5,
         "precioAnterior": "$84.990",
-        "precioFinal": "$59.990",
+        "precioFinal": "59990",
         "descuento": 25,
         "cuotas": "en 6 x $9.998 sin interés",
         "url": "./html/productos.html?id=forum-low",
@@ -35,7 +35,7 @@
         "titulo": "Book 1",
         "valoracion": 5,
         "precioAnterior": "$159.990",
-        "precioFinal": "$95.990",
+        "precioFinal": "95990",
         "descuento": 40,
         "cuotas": "en 6 x $15.990 sin interés",
         "url": "./html/productos.html?id=book-1",
@@ -61,7 +61,7 @@
         "titulo": "GV Special +",
         "valoracion": 4,
         "precioAnterior": "$84.990",
-        "precioFinal": "$59.990",
+        "precioFinal": "59990",
         "descuento": 25,
         "cuotas": "en 6 x $9.998 sin interés",
         "url": "./html/productos.html?id=gv-special",
@@ -86,7 +86,7 @@
         "titulo": "Run Falcon 2.0",
         "valoracion": 0,
         "precioAnterior": "$49.990",
-        "precioFinal": "$29.990",
+        "precioFinal": "29990",
         "descuento": 40,
         "cuotas": "en 6 x $4.998 sin interés",
         "url": "./html/productos.html?id=run-falcon-2.0",
@@ -111,7 +111,7 @@
         "titulo": "Dunk High Retro SE",
         "valoracion": 5,
         "precioAnterior": "$145.990",
-        "precioFinal": "$139.990",
+        "precioFinal": "139990",
         "descuento": 5,
         "cuotas": "en 6 x $23.332 sin interés",
         "url": "./html/productos.html?id=dunk-high-retro",
@@ -138,7 +138,7 @@
         "titulo": "Palermo Vintage",
         "valoracion": 5,
         "precioAnterior": "$84.990",
-        "precioFinal": "$59.990",
+        "precioFinal": "59990",
         "descuento": 25,
         "cuotas": "en 6 x $9.998 sin interés",
         "url": "./html/productos.html?id=palermo-vintage",
@@ -163,7 +163,7 @@
         "titulo": "Air Jordan 4RM",
         "valoracion": 5,
         "precioAnterior": "$165.990",
-        "precioFinal": "$157.990",
+        "precioFinal": "157990",
         "descuento": 5,
         "cuotas": "en 6 x $26.330 sin interés",
         "url": "./html/productos.html?id=air-jordan-4rm",
@@ -188,7 +188,7 @@
         "titulo": "Nike Air Max 90 LTR",
         "valoracion": 5,
         "precioAnterior": "$118.990",
-        "precioFinal": "$73.990",
+        "precioFinal": "73990",
         "descuento": 38,
         "cuotas": "en 6 x $12.332 sin interés",
         "url": "./html/productos.html?id=air-max-90",
@@ -216,7 +216,7 @@
         "titulo": "COLO 3RD JSY",
         "valoracion": 5,
         "precioAnterior": "$54.990",
-        "precioFinal": "$26.990",
+        "precioFinal": "26990",
         "descuento": 50,
         "cuotas": "en 6 x $4.498 sin interés",
         "url": "./html/productos.html?id=colo-erd-jsy",
@@ -230,85 +230,134 @@
         "tallas": ["S", "M", "L", "XL"],
         "colores": ["Dorado"]
     },   
-    
-
     {
+        "id": "visita-colo-colo",
         "categoria": "camisetas",
-        "imagen": 
-        [
-            "./img/camiseta2.png",
-            "../img/camiseta2.png"            
+        "imagen": [
+            "./img/visita-colo-colo-0.png",
+            "../img/visita-colo-colo-0.png"
         ],
         "marca": "Adidas",
-        "titulo": "Colo-Colo Visita 2024",
+        "titulo": "Visita Colo-Colo 2024",
         "valoracion": 5,
-        "precioAnterior": "$54.990",
-        "precioFinal": "$26.990",
-        "descuento": 50,
-        "cuotas": "en 6 x $4.498 sin interés",
-        "url": "productos/producto1.html"
-    },
+        "precioAnterior": "$42.990",
+        "precioFinal": "39990",
+        "descuento": 5,
+        "cuotas": "en 6 x $6.665 sin interés",
+        "url": "./html/productos.html?id=visita-colo-colo",
+        "miniaturas": [
+            "../img/visita-colo-colo-0.png",
+            "../img/visita-colo-colo-1.png",
+            "../img/visita-colo-colo-2.png",
+            "../img/visita-colo-colo-3.png"
+        ],
+        "descripcion": "Colo-Colo es un club de pasión, inspirados en los colores clasicos del club, el equipo cuenta con el apoyo de sus fanáticos incluso en los momentos más dificiles, celebra cada triunfo con orgullo; a ellos les responde celebrar 45 años el titulo obtenido el año 1979. Esta camiseta visitante en su tradicional negro acompañará a Colo-Colo en sus desafíos fuera de casa. Su tejido suave incorpora tecnología de absorción AEROREADY para una sensación de total comodidad dentro y fuera de la cancha.",
+        "tallas": ["S", "M", "L"],
+        "colores": ["Negro"]
+    },   
     {
+        "id": "universidad-chile",
         "categoria": "camisetas",
-        "imagen": 
-        [
-            "./img/camiseta3.png",
-            "../img/camiseta3.png"            
+        "imagen": [
+            "./img/universidad-chile-0.png",
+            "../img/universidad-chile-0.png"
         ],
         "marca": "Adidas",
-        "titulo": "Colo-Colo Local 2024",
-        "valoracion": 5,
-        "precioAnterior": "$54.990",
-        "precioFinal": "$39.990",
-        "descuento": 30,
-        "cuotas": "en 6 x $4.498 sin interés",
-        "url": "productos/producto1.html"
-    },
-    {
-        "categoria": "camisetas",
-        "imagen": 
-        [
-            "./img/camiseta1.png",
-            "../img/camiseta1.png"            
+        "titulo": "U de Chile / Mujer",
+        "valoracion": 0,
+        "precioAnterior": "$42.990",
+        "precioFinal": "39990",
+        "descuento": 5,
+        "cuotas": "en 6 x $6.665 sin interés",
+        "url": "./html/productos.html?id=universidad-chile",
+        "miniaturas": [
+            "../img/universidad-chile-0.png",
+            "../img/universidad-chile-1.png",
+            "../img/universidad-chile-2.png",
+            "../img/universidad-chile-3.png"
         ],
-        "titulo": "COLO 3RD JSY",
-        "valoracion": 5,
-        "precioAnterior": "$54.990",
-        "precioFinal": "$26.990",
-        "descuento": 50,
-        "cuotas": "en 6 x $4.498 sin interés",
-        "url": "productos/producto1.html"
-    },
+        "descripcion": "Un estilo clasico conectando el pasado con el futuro, representando el azul del cielo Chileno",
+        "tallas": ["S", "M", "L", "XL"],
+        "colores": ["Azul"]
+    },   
     {
+        "id": "chile-2024",
         "categoria": "camisetas",
-        "imagen": 
-        [
-            "./img/camiseta2.png",
-            "../img/camiseta2.png"            
+        "imagen": [
+            "./img/chile-2024-0.png",
+            "../img/chile-2024-0.png"
         ],
-        "titulo": "Colo-Colo Visita 2024",
-        "valoracion": 5,
-        "precioAnterior": "$54.990",
-        "precioFinal": "$26.990",
-        "descuento": 50,
-        "cuotas": "en 6 x $4.498 sin interés",
-        "url": "productos/producto1.html"
-    },
+        "marca": "Adidas",
+        "titulo": "Chile 2024 / Mujer",
+        "valoracion": 4,
+        "precioAnterior": "$42.990",
+        "precioFinal": "39990",
+        "descuento": 5,
+        "cuotas": "en 6 x $6.665 sin interés",
+        "url": "./html/productos.html?id=chile-2024",
+        "miniaturas": [
+            "../img/chile-2024-0.png",
+            "../img/chile-2024-1.png",
+            "../img/chile-2024-2.png",
+            "../img/chile-2024-3.png"
+        ],
+        "descripcion": "El mar rojo de los aficionados de Chile se reúne de todas partes del país en los partidos de local para apoyar a su equipo. Representando la diversidad que existe en la hinchada del equipo, el estampado inspirado en mosaicos de esta camiseta local de adidas forma la estrella de la bandera nacional. Creada para mantenerte cómodo, esta camiseta de fútbol incorpora tecnología de absorción AEROREADY. El escudo tejido destaca tu amor por el club.",
+        "tallas": ["S", "M", "L", "XL"],
+        "colores": ["Roja"]
+    },   
     {
+        "id": "argentina-2024",
         "categoria": "camisetas",
-        "imagen":         
-        [
-            "./img/camiseta3.png",
-            "../img/camiseta3.png"            
+        "imagen": [
+            "./img/argentina-2024-0.png",
+            "../img/argentina-2024-0.png"
         ],
-        "titulo": "Colo-Colo Local 2024",
+        "marca": "Adidas",
+        "titulo": "Argentina '24 / Niños",
         "valoracion": 5,
-        "precioAnterior": "$54.990",
-        "precioFinal": "$39.990",
-        "descuento": 30,
-        "cuotas": "en 6 x $4.498 sin interés",
-        "url": "productos/producto1.html"
-    },
+        "precioAnterior": "$42.990",
+        "precioFinal": "39990",
+        "descuento": 5,
+        "cuotas": "en 6 x $6.665 sin interés",
+        "url": "./html/productos.html?id=argentina-2024",
+        "miniaturas": [
+            "../img/argentina-2024-0.png",
+            "../img/argentina-2024-1.png",
+            "../img/argentina-2024-2.png",
+            "../img/argentina-2024-3.png"
+        ],
+        "descripcion": "Un look clásico para los campeones del mundo. Desde esas famosas rayas hasta el detalle del Sol de Mayo, esta camiseta adidas para jóvenes recompensa a los hinchas leales con todos los elementos que querrías ver en una camiseta local tradicional de Argentina. Esos detalles dorados y las tres estrellas son detalles adicionales en honor a esa famosa victoria en Qatar. Diseñada para envolverte con comodidad y orgullo en la hincha, incorpora tecnología de absorción AEROREADY y un escudo bordado que irradia pasión por el fútbol.",
+        "tallas": ["7-8 AÑOS", "9-10 años", "11-12 años", "13-14 años", "15-16 años"],
+        "colores": ["Albiceleste"]
+    },   
+    {
+        "id": "liverpool",
+        "categoria": "camisetas",
+        "imagen": [
+            "./img/liverpool-0.png",
+            "../img/liverpool-0.png"
+        ],
+        "marca": "Nike",
+        "titulo": "Liverpool FC",
+        "valoracion": 5,
+        "precioAnterior": "$42.990",
+        "precioFinal": "39990",
+        "descuento": 5,
+        "cuotas": "en 6 x $6.665 sin interés",
+        "url": "./html/productos.html?id=liverpool",
+        "miniaturas": [
+            "../img/liverpool-0.png",
+            "../img/liverpool-1.png",
+            "../img/liverpool-2.png",
+            "../img/liverpool-3.png"
+        ],
+        "descripcion": "Liverpool FC 2024/25 Stadium HomeEl mar rojo de los aficionados de Chile se reúne de todas partes del país en los partidos de local para apoyar a su equipo. Representando la diversidad que existe en la hinchada del equipo, el estampado inspirado en mosaicos de esta camiseta local de adidas forma la estrella de la bandera nacional. Creada para mantenerte cómodo, esta camiseta de fútbol incorpora tecnología de absorción AEROREADY. El escudo tejido destaca tu amor por el clubJersey Réplica de Fútbol Nike Dri-FIT para Hombre.Nuestra colección Stadium combina detalles de diseño de réplica con tecnología que capilariza el sudor para ofrecerte un aspecto listo para el juego, inspirado en tu equipo favorito.",
+        "tallas": ["S", "M", "L", "XL"],
+        "colores": ["Roja Local"]
+    },   
+    
+
+    
     
 
 
@@ -324,7 +373,7 @@
         "titulo": "Instinct Solar Grafito",
         "valoracion": 5,
         "precioAnterior": "$499.990",
-        "precioFinal": "$249.990",
+        "precioFinal": "249990",
         "descuento": 50,
         "cuotas": "en 6 x $41.690 sin interés",
         "url": "productos/producto1.html"
@@ -340,75 +389,12 @@
         "titulo": "Watch Series 9",
         "valoracion": 5,
         "precioAnterior": "$599.990",
-        "precioFinal": "$419.990",
+        "precioFinal": "419990",
         "descuento": 30,
         "cuotas": "en 6 x $69.990 sin interés",
         "url": "productos/producto1.html"
     },
-    {
-        "categoria": "smartwatches",
-        "imagen": 
-        [      
-            "./img/smartwatches1.png",
-            "../img/smartwatches1.png"
-        ],
-        "marca": "Garmin",
-        "titulo": "Instinct Solar Grafito",
-        "valoracion": 5,
-        "precioAnterior": "$499.990",
-        "precioFinal": "$249.990",
-        "descuento": 50,
-        "cuotas": "en 6 x $41.690 sin interés",
-        "url": "productos/producto1.html"
-    },
-    {
-        "categoria": "smartwatches",
-        "imagen": 
-        [      
-            "./img/smartwatches2.png",
-            "../img/smartwatches2.png"
-        ],
-        "marca": "Apple",
-        "titulo": "Watch Series 9",
-        "valoracion": 5,
-        "precioAnterior": "$599.990",
-        "precioFinal": "$419.990",
-        "descuento": 30,
-        "cuotas": "en 6 x $69.990 sin interés",
-        "url": "productos/producto1.html"
-    },
-    {
-        "categoria": "smartwatches",
-        "imagen": 
-        [      
-            "./img/smartwatches1.png",
-            "../img/smartwatches1.png"
-        ],
-        "marca": "Garmin",
-        "titulo": "Instinct Solar Grafito",
-        "valoracion": 5,
-        "precioAnterior": "$499.990",
-        "precioFinal": "$249.990",
-        "descuento": 50,
-        "cuotas": "en 6 x $41.690 sin interés",
-        "url": "productos/producto1.html"
-    },
-    {
-        "categoria": "smartwatches",
-        "imagen": 
-        [      
-            "./img/smartwatches2.png",
-            "../img/smartwatches2.png"
-        ],
-        "marca": "Apple",
-        "titulo": "Watch Series 9",
-        "valoracion": 5,
-        "precioAnterior": "$599.990",
-        "precioFinal": "$419.990",
-        "descuento": 30,
-        "cuotas": "en 6 x $69.990 sin interés",
-        "url": "productos/producto1.html"
-    },
+    
     
     
     {
@@ -423,7 +409,7 @@
         "titulo": "RUNFALCON 5 EL C",
         "valoracion": 4,
         "precioAnterior": "$41.990",
-        "precioFinal": "$39.990",
+        "precioFinal": "39990",
         "descuento": 5,
         "cuotas": "en 6 x $6.665 sin interés",
         "url": "./html/productos.html?id=runfalcon-5-c",
@@ -449,7 +435,7 @@
         "titulo": "Grand Court Mid",
         "valoracion": 0,
         "precioAnterior": "$40.990",
-        "precioFinal": "$37.990",
+        "precioFinal": "37990",
         "descuento": 5,
         "cuotas": "en 6 x $6.331 sin interés",
         "url": "./html/productos.html?id=grand-court-mid",
@@ -462,55 +448,8 @@
         "descripcion": "Zapatillas deportivas informales para un estilo de vida activo...",
         "tallas": [38, 39, 40, 41, 42],
         "colores": ["Negro", "Blanco", "Rojo"]
-    },    
+    } 
     
-    {
-        "categoria": "zapatillas niño",
-        "imagen":
-        [   
-            "./img/niño/zapatilla-niño3.png",
-            "../img/niño/zapatilla-niño3.png"
-        ],  
-        "marca": "Adidas",
-        "titulo": "Campus Comfort",
-        "valoracion": 5,
-        "precioAnterior": "$45.990",
-        "precioFinal": "$42.990",
-        "descuento": 5,
-        "cuotas": "en 6 x $7.165 sin interés",
-        "url": "productos/producto1.html"
-    },
-    {
-        "categoria": "zapatillas niño",
-        "imagen":
-        [   
-            "./img/niño/zapatilla-niño4.png",
-            "../img/niño/zapatilla-niño4.png"
-        ],  
-        "marca": "Nike",
-        "titulo": "Force 1 Mid EasyOn",
-        "valoracion": 4,
-        "precioAnterior": "$84.990",
-        "precioFinal": "$70.990",
-        "descuento": 16,
-        "cuotas": "en 6 x $11.832 sin interés",
-        "url": "productos/producto1.html"
-    },
-    {
-        "categoria": "zapatillas niño",
-        "imagen":
-        [   
-            "./img/niño/zapatilla-niño5.png",
-            "../img/niño/zapatilla-niño5.png"
-        ],  
-        "marca": "Nike",
-        "titulo": "Court Borough Low",
-        "valoracion": 5,
-        "precioAnterior": "$44.990",
-        "precioFinal": "$42.990",
-        "descuento": 4,
-        "cuotas": "en 6 x $7.165 sin interés",
-        "url": "productos/producto1.html"
-    }
+    
 
 ]

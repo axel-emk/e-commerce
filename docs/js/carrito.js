@@ -1,4 +1,4 @@
-// Función para agregar productos al carrito (misma de antes)
+// Función para agregar productos al carrito
 function agregarAlCarrito(producto) {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     carrito.push(producto);
@@ -9,25 +9,45 @@ function agregarAlCarrito(producto) {
 // Función para calcular y mostrar el total del carrito
 function calcularTotales(carrito) {
     let subtotal = 0;
+    let totalConEnvio = 0;
     let totalTarjeta = 0;
-    let totalGeneral = 0;
+    const costoEnvio = 9990;  // Costo fijo del envío
 
     carrito.forEach(producto => {
-        subtotal += producto.precioFinal * producto.cantidad;
-        totalTarjeta += (producto.precioFinal * 0.95) * producto.cantidad; // Simulamos un descuento del 5% para la tarjeta
-        totalGeneral += producto.precioFinal * producto.cantidad;
+        const cantidad = parseInt(producto.cantidad, 10) || 1;  // Definir cantidad en 1 si es inválido
+        const precio = parseFloat(producto.precioFinal.replace('$', '').replace(',', '')) || 0;  // Convertir precio a número
+
+        subtotal += precio * cantidad;  // Calcular el subtotal
     });
 
-    document.getElementById('subtotal').textContent = `$${subtotal.toLocaleString()}`;
-    document.getElementById('total-tarjeta').textContent = `$${totalTarjeta.toLocaleString()}`;
-    document.getElementById('total-general').textContent = `$${totalGeneral.toLocaleString()}`;
+    totalConEnvio = subtotal + costoEnvio;  // Sumar el costo de envío fijo
+    totalTarjeta = totalConEnvio * 0.95;  // Aplicar el 5% de descuento (es decir, restar el 5%)
+
+    // Actualizar los valores en el resumen de compra
+    if (document.getElementById('subtotal')) {
+        document.getElementById('subtotal').textContent = `$${subtotal.toLocaleString()}`;
+    }
+    if (document.getElementById('total-con-envio')) {
+        document.getElementById('total-con-envio').textContent = `$${totalConEnvio.toLocaleString()}`;
+    }
+    if (document.getElementById('total-tarjeta')) {
+        document.getElementById('total-tarjeta').textContent = `$${totalTarjeta.toLocaleString()}`;
+    }
 }
+
+
+
 
 // Función para renderizar los productos en carrito.html
 function renderCarrito() {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const carritoContainer = document.getElementById('carrito-items');
     const carritoHeader = document.getElementById('carrito-header');
+
+    if (!carritoContainer || !carritoHeader) {
+        console.error('Elementos del carrito no encontrados en el DOM.');
+        return;
+    }
 
     carritoContainer.innerHTML = '';  // Limpiar el contenido anterior
 
@@ -77,9 +97,13 @@ function renderCarrito() {
 // Función para actualizar la cantidad de un producto en el carrito
 function actualizarCantidad(index, nuevaCantidad) {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    carrito[index].cantidad = parseInt(nuevaCantidad, 10);
-    localStorage.setItem('carrito', JSON.stringify(carrito));
-    renderCarrito();  // Volver a renderizar el carrito con los cambios
+    if (carrito[index]) {
+        carrito[index].cantidad = parseInt(nuevaCantidad, 10);
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        renderCarrito();  // Volver a renderizar el carrito con los cambios
+    } else {
+        console.error("Producto no encontrado en el carrito.");
+    }
 }
 
 // Función para eliminar productos del carrito
@@ -92,3 +116,4 @@ function eliminarProducto(id) {
 
 // Cargar el carrito cuando el DOM esté listo
 document.addEventListener("DOMContentLoaded", renderCarrito);
+
