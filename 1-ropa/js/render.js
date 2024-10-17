@@ -52,10 +52,16 @@ function ajustarRuta(url) {
                                 ${renderStars(producto.valoracion)}
                             </div>
                             <p class="old-price">Antes: <span>${producto.precioAnterior}</span></p>
-                            <div class="price-wrapper">
-                                <button class="price-button">${producto.precioFinal}</button>
-                                <p class="discount-label">${producto.descuento}% OFF</p>
-                            </div>
+                                <div class="price-wrapper">
+                                    <button class="price-button">
+                                        $${Number(producto.precioFinal).toLocaleString('es-CL')}
+                                    </button>
+                                    <p class="discount-label">${producto.descuento}% OFF</p>
+                                </div>
+
+
+
+
                             <p class="installments">${producto.cuotas}</p>
                         </div>
                     </div>`;

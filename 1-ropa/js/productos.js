@@ -52,7 +52,8 @@ function renderProducto(producto) {
     document.querySelector('.old-price span').textContent = producto.precioAnterior;
 
     // Precio final
-    document.querySelector('.price-button').textContent = producto.precioFinal;
+    document.querySelector('.price-button').textContent = `$${Number(producto.precioFinal).toLocaleString('es-CL')}`;
+
 
     // Descuento
     document.querySelector('.discount-label').textContent = producto.descuento + "% OFF";
