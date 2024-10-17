@@ -10,7 +10,7 @@
         "titulo": "Forum Low CL",
         "valoracion": 5,
         "precioAnterior": "$84.990",
-        "precioFinal": "$59.990",
+        "precioFinal": "59990",
         "descuento": 25,
         "cuotas": "en 6 x $9.998 sin interés",
         "url": "./html/productos.html?id=forum-low",

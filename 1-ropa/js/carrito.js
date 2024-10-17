@@ -1,4 +1,4 @@
-// Función para agregar productos al carrito (misma de antes)
+// Función para agregar productos al carrito
 function agregarAlCarrito(producto) {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     carrito.push(producto);
@@ -13,21 +13,46 @@ function calcularTotales(carrito) {
     let totalGeneral = 0;
 
     carrito.forEach(producto => {
-        subtotal += producto.precioFinal * producto.cantidad;
-        totalTarjeta += (producto.precioFinal * 0.95) * producto.cantidad; // Simulamos un descuento del 5% para la tarjeta
-        totalGeneral += producto.precioFinal * producto.cantidad;
-    });
+        console.log(producto);
+        subtotal += producto.precioFinal * (producto.cantidad || 1);
+        const cantidad = parseInt(producto.cantidad, 10) || 1;  // Definir cantidad en 1 si es inválido
+        const precio = parseFloat(producto.precioFinal) || 0;  // Definir precio en 0 si es inválido
+    
+        if (isNaN(precio) || isNaN(cantidad)) {
+            console.error(`Error en el producto: Precio o cantidad inválido en producto ID ${producto.id}`);
+        }
+    
+        subtotal += precio * cantidad;
+        totalTarjeta += (precio * 0.95) * cantidad;
+        totalGeneral += precio * cantidad;
+        //console.log(carrito);   Verificar que cada producto tiene los campos precioFinal y cantidad
 
-    document.getElementById('subtotal').textContent = `$${subtotal.toLocaleString()}`;
-    document.getElementById('total-tarjeta').textContent = `$${totalTarjeta.toLocaleString()}`;
-    document.getElementById('total-general').textContent = `$${totalGeneral.toLocaleString()}`;
+    });
+    
+
+    // Actualizar los valores en el resumen de compra
+    if (document.getElementById('subtotal')) {
+        document.getElementById('subtotal').textContent = `$${subtotal.toLocaleString()}`;
+    }
+    if (document.getElementById('total-tarjeta')) {
+        document.getElementById('total-tarjeta').textContent = `$${totalTarjeta.toLocaleString()}`;
+    }
+    if (document.getElementById('total-general')) {
+        document.getElementById('total-general').textContent = `$${totalGeneral.toLocaleString()}`;
+    }
 }
+
 
 // Función para renderizar los productos en carrito.html
 function renderCarrito() {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const carritoContainer = document.getElementById('carrito-items');
     const carritoHeader = document.getElementById('carrito-header');
+
+    if (!carritoContainer || !carritoHeader) {
+        console.error('Elementos del carrito no encontrados en el DOM.');
+        return;
+    }
 
     carritoContainer.innerHTML = '';  // Limpiar el contenido anterior
 
@@ -77,9 +102,13 @@ function renderCarrito() {
 // Función para actualizar la cantidad de un producto en el carrito
 function actualizarCantidad(index, nuevaCantidad) {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    carrito[index].cantidad = parseInt(nuevaCantidad, 10);
-    localStorage.setItem('carrito', JSON.stringify(carrito));
-    renderCarrito();  // Volver a renderizar el carrito con los cambios
+    if (carrito[index]) {
+        carrito[index].cantidad = parseInt(nuevaCantidad, 10);
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        renderCarrito();  // Volver a renderizar el carrito con los cambios
+    } else {
+        console.error("Producto no encontrado en el carrito.");
+    }
 }
 
 // Función para eliminar productos del carrito
@@ -92,3 +121,4 @@ function eliminarProducto(id) {
 
 // Cargar el carrito cuando el DOM esté listo
 document.addEventListener("DOMContentLoaded", renderCarrito);
+
