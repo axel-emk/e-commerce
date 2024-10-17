@@ -9,38 +9,33 @@ function agregarAlCarrito(producto) {
 // Función para calcular y mostrar el total del carrito
 function calcularTotales(carrito) {
     let subtotal = 0;
+    let totalConEnvio = 0;
     let totalTarjeta = 0;
-    let totalGeneral = 0;
+    const costoEnvio = 9990;  // Costo fijo del envío
 
     carrito.forEach(producto => {
-        console.log(producto);
-        subtotal += producto.precioFinal * (producto.cantidad || 1);
         const cantidad = parseInt(producto.cantidad, 10) || 1;  // Definir cantidad en 1 si es inválido
-        const precio = parseFloat(producto.precioFinal) || 0;  // Definir precio en 0 si es inválido
-    
-        if (isNaN(precio) || isNaN(cantidad)) {
-            console.error(`Error en el producto: Precio o cantidad inválido en producto ID ${producto.id}`);
-        }
-    
-        subtotal += precio * cantidad;
-        totalTarjeta += (precio * 0.95) * cantidad;
-        totalGeneral += precio * cantidad;
-        //console.log(carrito);   Verificar que cada producto tiene los campos precioFinal y cantidad
+        const precio = parseFloat(producto.precioFinal.replace('$', '').replace(',', '')) || 0;  // Convertir precio a número
 
+        subtotal += precio * cantidad;  // Calcular el subtotal
     });
-    
+
+    totalConEnvio = subtotal + costoEnvio;  // Sumar el costo de envío fijo
+    totalTarjeta = totalConEnvio * 0.95;  // Aplicar el 5% de descuento (es decir, restar el 5%)
 
     // Actualizar los valores en el resumen de compra
     if (document.getElementById('subtotal')) {
         document.getElementById('subtotal').textContent = `$${subtotal.toLocaleString()}`;
     }
+    if (document.getElementById('total-con-envio')) {
+        document.getElementById('total-con-envio').textContent = `$${totalConEnvio.toLocaleString()}`;
+    }
     if (document.getElementById('total-tarjeta')) {
         document.getElementById('total-tarjeta').textContent = `$${totalTarjeta.toLocaleString()}`;
     }
-    if (document.getElementById('total-general')) {
-        document.getElementById('total-general').textContent = `$${totalGeneral.toLocaleString()}`;
-    }
 }
+
+
 
 
 // Función para renderizar los productos en carrito.html
