@@ -49,7 +49,7 @@
                 <!-- Íconos del usuario, favoritos, carrito, seguimiento -->
                 <li class="icons"><a href="#"><i class="fas fa-user"></i></a></li>
                 <li class="icons"><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li class="icons"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="icons"><a href="../html/carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
                 <li class="icons"><a href="#"><i class="fas fa-truck"></i></a></li>
 
                 <!-- Icono del menú para pantallas pequeñas -->
@@ -72,7 +72,7 @@
                 <!-- Íconos en la sidebar -->
                 <li class="icons-sidebar"><a href="#"><i class="fas fa-user"></i></a></li>
                 <li class="icons-sidebar"><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li class="icons-sidebar"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="icons-sidebar"><a href="../html/carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
                 <li class="icons-sidebar"><a href="#"><i class="fas fa-truck"></i></a></li>
 
                 <!-- Buscador en la sidebar -->
@@ -86,67 +86,9 @@
         </nav>
     </header>
  
-    <!-- Sección de Producto -->
-    <main class="producto-detalle">
-        <div class="producto-grid">
-            <!-- Columna de imagenes del producto -->
-            <div class="producto-imagenes">
-                <div class="imagen-principal">
-                    <img src="" alt="Producto Principal">
-                </div>
-                <div class="miniaturas">
-                    <img src="" alt="Miniatura 1">
-                    <img src="" alt="Miniatura 2">
-                    <img src="" alt="Miniatura 3">
-                    <img src="" alt="Miniatura 4">
-                </div>
-            </div>
+    <div class="favoritos-container"></div>
 
-            <!-- Columna de detalles del producto -->
-            <div class="producto-informacion">
-                <p>Hombre / Zapatillas / Running</p><br>
-                <div class="rating">
-                   
-                </div>
-                <h1 class="producto-titulo"></h1>
-                <p class="card-brand2"></p>
-                <p class="old-price">Antes: <span></span></p>
-                <div class="price-wrapper2">
-                    <button class="price-button"></button>
-                    <p class="discount-label"></p>
-                </div>
-                <p class="installments2"></p>
-
-                <p class="producto-descripcion"></p>
-
-                <!-- Opciones de talla y color -->
-                <div class="producto-opciones">
-                    <div class="producto-talla">
-                        <label for="talla">Talla</label>
-                        <select id="talla">
-                            <option>38</option>
-                            <option>39</option>
-                            <option>40</option>
-                            <option>41</option>
-                            <option>42</option>
-                        </select>
-                    </div>
-
-                    <div class="producto-color">
-                        <label for="color">Color</label>
-                        <select id="color">
-                            <option>Negro</option>
-                            <option>Blanco</option>
-                            <option>Rojo</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Botones de acción -->
-                <button class="boton-carrito">Agregar al Carrito</button>
-            </div>
-        </div>
-    </main>
+  
 
     <!-- Slider de productos relacionados (mantener) -->
     <section class="mg">
@@ -218,6 +160,8 @@
     <script src="../js/header.js"></script>
     <script src="../js/productos.js"></script>
     <script src="../js/render.js"></script>
+    <script src="../js/favoritos.js"></script>
+    <script src="../js/carrito.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
