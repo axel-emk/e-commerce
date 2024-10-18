@@ -128,6 +128,8 @@ function ajustarRuta(url) {
         };
     }
 
+
+    
     // Función para inicializar los íconos de favoritos
     function initializeFavoriteIcons(slider) {
         // Solo selecciona los íconos de favoritos dentro del slider específico
