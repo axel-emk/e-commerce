@@ -1,0 +1,38 @@
+.favoritos-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-img {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 20px;
+}
+
+.contenido {
+    flex: 1; /* Para que el contenido ocupe el espacio restante */
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.price-button {
+    color: #e63946; /* Cambia el color según el diseño */
+    font-size: 1.1em;
+}
+
+.rating {
+    color: gold; /* Estilo para las estrellas */
+}
