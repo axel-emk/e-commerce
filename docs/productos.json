@@ -125,6 +125,31 @@
         "tallas": [ 40, 41, 42, 43],
         "colores": ["Verde"]
     },    
+    {
+        "id": "voyage-nitro-3",
+        "categoria": "zapatillas hombre",
+        "imagen": [
+            "./img/voyage-nitro-3-0.png",
+            "../img/voyage-nitro-3-0.png"
+        ],
+        "marca": "Puma",
+        "titulo": "Voyage NITRO 3",
+        "valoracion": 5,
+        "precioAnterior": "$145.990",
+        "precioFinal": "129990",
+        "descuento": 5,
+        "cuotas": "en 6 x $23.332 sin interés",
+        "url": "./html/productos.html?id=voyage-nitro-3",
+        "miniaturas": [
+            "../img/voyage-nitro-3-0.png",
+            "../img/voyage-nitro-3-1.png",
+            "../img/voyage-nitro-3-2.png",
+            "../img/voyage-nitro-3-3.png"
+        ],
+        "descripcion": "Enfréntate a cualquier terreno con las robustas Voyage NITRO 3. Esta versión actualizada de este modelo de trail está equipada con una mediasuela completa de espuma NITRO™ de menor peso y una adaptación constante al terreno para que llegues más lejos. Tiene una suela exterior de goma PUMAGRIP ATR rediseñada con nuestra tecnología PWRADAPT, que permite que las muescas se muevan de manera independiente y ofrezcan una mayor tracción en diferentes terrenos. Su nuevo empeine más ancho está reforzado con PWRTAPE, para ofrecer una mayor sujeción y protección, mientras que las ranuras de drenaje del antepié son perfectas para que el agua escurra. Con las Voyage NITRO 3 dominarás tu carrera sin importar la estación.",
+        "tallas": [ 40, 41, 42, 43, 44],
+        "colores": ["Brown Mushroom"]
+    },    
     
 
     {
@@ -151,6 +176,31 @@
         "descripcion": "HISTORIA DEL PRODUCTO - Presentamos las Palermo, recién salidas de los archivos de PUMA. Esta zapatilla clásica de las gradas de los estadios de fútbol debutó en los 80. Ahora, la traemos de vuelta para los fans. Con su característica puntera en T y su clásica suela de goma, esta versión presenta un exterior textil e inserciones de ante.",
         "tallas": [35, 36, 37, 38, 39],
         "colores": ["Magenta Gleam-Frosted Ivory", "Jade Frost-Frosted Ivory-Gum"]
+    },   
+    {
+        "id": "karmen-rebelle",
+        "categoria": "zapatillas mujer",
+        "imagen": [
+            "./img/karmen-rebelle-0.png",
+            "../img/karmen-rebelle-0.png"
+        ],
+        "marca": "Puma",
+        "titulo": "Karmen Rebelle",
+        "valoracion": 5,
+        "precioAnterior": "$84.990",
+        "precioFinal": "59990",
+        "descuento": 25,
+        "cuotas": "en 6 x $9.998 sin interés",
+        "url": "./html/productos.html?id=karmen-rebelle",
+        "miniaturas": [
+            "../img/karmen-rebelle-0.png",
+            "../img/karmen-rebelle-1.png",
+            "../img/karmen-rebelle-2.png",
+            "../img/karmen-rebelle-3.png"
+        ],
+        "descripcion": "Camina con estilo con las Karmen Rebelle. Estas zapatillas tienen un diseño atrevido que se combina con una plataforma para crear un modelo de estilo inconfundiblemente retro y una imagen deportiva clásica que queda bien con cualquier conjunto. Y lo mejor de todo es que la plantilla SoftFoam+ brinda comodidad para que te sientas bien a cada paso de tu día.",
+        "tallas": [35, 36, 37, 38],
+        "colores": ["Puma White", "Puma Black"]
     },   
     {
         "id": "air-jordan-4rm",
@@ -201,6 +251,56 @@
         "descripcion": "El calzado Nike Air Max 90 LTR celebra el año número 30 del ícono con un diseño ideal para niños. Con el Air personalizado para niños, la amortiguación de espuma y una suela flexible, se trata de introducir los favoritos de los años 90 a una nueva generación.",
         "tallas": [36, 37, 38, 39],
         "colores": ["Multi-Color"]
+    }, 
+    {
+        "id": "dropset-3",
+        "categoria": "zapatillas mujer",
+        "imagen": [
+            "./img/dropset-3-0.png",
+            "../img/dropset-3-0.png"
+        ],
+        "marca": "Adidas",
+        "titulo": "Dropset 3",
+        "valoracion": 5,
+        "precioAnterior": "$129.990",
+        "precioFinal": "118990",
+        "descuento": 9,
+        "cuotas": "en 6 x $19.990 sin interés",
+        "url": "./html/productos.html?id=dropset-3",
+        "miniaturas": [
+            "../img/dropset-3-0.png",
+            "../img/dropset-3-1.png",
+            "../img/dropset-3-2.png",
+            "../img/dropset-3-3.png"
+        ],
+        "descripcion": "Sin importar si el entrenamiento exige fuerza o resistencia, estas zapatillas adidas ofrecen el soporte que necesitas para los entrenamientos de fuerza. Su mediasuela de doble densidad mantiene tus pies estables al realizar levantamientos pesados, a la vez que mantiene la flexibilidad suficiente para hacer cardio. La tecnología HEAT.RDY y el exterior transpirable trabajan horas extra para vencer el calor, para que puedas concentrarte en tus repeticiones. Una horma ancha es perfecta para los pies en hinchazón, y una suela Adiwear se adhiere al suelo para impulsar el rendimiento.",
+        "tallas": [36, 37, 38, 39, 40],
+        "colores": ["Semi Pink Spark", "Iron Metallic", "Silver Dawn"]
+    }, 
+    {
+        "id": "dropset",
+        "categoria": "zapatillas mujer",
+        "imagen": [
+            "./img/dropset-0.png",
+            "../img/dropset-0.png"
+        ],
+        "marca": "Adidas",
+        "titulo": "Dropset ",
+        "valoracion": 5,
+        "precioAnterior": "$129.990",
+        "precioFinal": "118990",
+        "descuento": 9,
+        "cuotas": "en 6 x $19.990 sin interés",
+        "url": "./html/productos.html?id=dropset",
+        "miniaturas": [
+            "../img/dropset-0.png",
+            "../img/dropset-1.png",
+            "../img/dropset-2.png",
+            "../img/dropset-3.png"
+        ],
+        "descripcion": "Sin importar si el entrenamiento exige fuerza o resistencia, estas zapatillas adidas ofrecen el soporte que necesitas para los entrenamientos de fuerza. Su mediasuela de doble densidad mantiene tus pies estables al realizar levantamientos pesados, a la vez que mantiene la flexibilidad suficiente para hacer cardio. La tecnología HEAT.RDY y el exterior transpirable trabajan horas extra para vencer el calor, para que puedas concentrarte en tus repeticiones. Una horma ancha es perfecta para los pies en hinchazón, y una suela Adiwear se adhiere al suelo para impulsar el rendimiento.",
+        "tallas": [36, 37, 38, 39, 40],
+        "colores": ["Bright Red", " Core Black", "Core Black"]
     }, 
 
 
@@ -357,43 +457,37 @@
     },   
     
 
-    
-    
-
-
 
     {
-        "categoria": "smartwatches",
-        "imagen": 
-        [      
-            "./img/smartwatches1.png",
-            "../img/smartwatches1.png"
+        "id": "kit-mancuernas-20kg",
+        "categoria": "Pesas y Mancuernas",
+        "imagen": [
+            "./img/kit-mancuernas-20kg-0.png",
+            "../img/kit-mancuernas-20kg-0.png"
         ],
-        "marca": "Garmin",
-        "titulo": "Instinct Solar Grafito",
-        "valoracion": 5,
-        "precioAnterior": "$499.990",
-        "precioFinal": "249990",
-        "descuento": 50,
-        "cuotas": "en 6 x $41.690 sin interés",
-        "url": "productos/producto1.html"
-    },
-    {
-        "categoria": "smartwatches",
-        "imagen": 
-        [      
-            "./img/smartwatches2.png",
-            "../img/smartwatches2.png"
+        "marca": "CORENGTH",
+        "titulo": "Kit Mancuernas 20kg",
+        "valoracion": 4,
+        "precioAnterior": "$63.000",
+        "precioFinal": "60000",
+        "descuento": 5,
+        "cuotas": "en 6 x $10.000 sin interés",
+        "url": "./html/productos.html?id=kit-mancuernas-20kg",
+        "miniaturas": [
+            "../img/kit-mancuernas-20kg-0.png",
+            "../img/kit-mancuernas-20kg-1.png",
+            "../img/kit-mancuernas-20kg-2.png",
+            "../img/kit-mancuernas-20kg-3.png"
         ],
-        "marca": "Apple",
-        "titulo": "Watch Series 9",
-        "valoracion": 5,
-        "precioAnterior": "$599.990",
-        "precioFinal": "419990",
-        "descuento": 30,
-        "cuotas": "en 6 x $69.990 sin interés",
-        "url": "productos/producto1.html"
-    },
+        "descripcion": "Optar por hierro fundido al comprar este kit de mancuernas de 20 kg significa elegir un producto que durará toda la vida. Añade más peso a medida que progresas.",
+        "tallas": ["No aplica"],
+        "colores": ["Negro"]
+    },   
+    
+
+
+
+    
     
     
     
