@@ -483,6 +483,55 @@
         "tallas": ["No aplica"],
         "colores": ["Negro"]
     },   
+    {
+        "id": "kit-mancuernas-10kg",
+        "categoria": "Pesas y Mancuernas",
+        "imagen": [
+            "./img/kit-mancuernas-10kg-0.png",
+            "../img/kit-mancuernas-10kg-0.png"
+        ],
+        "marca": "CORENGTH",
+        "titulo": "Kit Mancuernas 10kg",
+        "valoracion": 4,
+        "precioAnterior": "$33.000",
+        "precioFinal": "33000",
+        "descuento": 5,
+        "cuotas": "en 6 x $5.500 sin interés",
+        "url": "./html/productos.html?id=kit-mancuernas-10kg",
+        "miniaturas": [
+            "../img/kit-mancuernas-10kg-0.png",
+            "../img/kit-mancuernas-10kg-1.png",
+            "../img/kit-mancuernas-10kg-2.png",
+            "../img/kit-mancuernas-10kg-3.png"
+        ],
+        "descripcion": "Este kit de mancuernas de 10 kg incluye:1 mancuerna de 2 kg, 4 discos de 1 kg y 2 discos de 2 kg para ejercicios en casa. Ideal para iniciarse en la musculación.",
+        "tallas": ["No aplica"],
+        "colores": ["Negro"]
+    },   
+    {
+        "id": "mancuernas-gris-3kg",
+        "categoria": "Pesas y Mancuernas",
+        "imagen": [
+            "./img/mancuernas-gris-3kg-0.png",
+            "../img/mancuernas-gris-3kg-0.png"
+        ],
+        "marca": "DOMYOS",
+        "titulo": "Mancuernas Gris 3kg x2",
+        "valoracion": 5,
+        "precioAnterior": "$22.990",
+        "precioFinal": "21000",
+        "descuento": 5,
+        "cuotas": "en 6 x $3.500 sin interés",
+        "url": "./html/productos.html?id=mancuernas-gris-3kg",
+        "miniaturas": [
+            "../img/mancuernas-gris-3kg-0.png",
+            "../img/mancuernas-gris-3kg-1.png",
+            "../img/mancuernas-gris-3kg-2.png"
+        ],
+        "descripcion": "Mancuernas de 3 kg, diseñadas para fortalecer eficazmente la parte inferior del cuerpo y llevar tu rendimiento a un nivel superior. Disponibles de 0,5 a 5 kg.",
+        "tallas": ["No aplica"],
+        "colores": ["Negro"]
+    },   
     
 
 
