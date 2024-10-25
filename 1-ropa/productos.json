@@ -591,7 +591,111 @@
         "descripcion": "Zapatillas deportivas informales para un estilo de vida activo...",
         "tallas": [38, 39, 40, 41, 42],
         "colores": ["Negro", "Blanco", "Rojo"]
-    } 
+    },
+    {
+        "id": "court-borough-low",
+        "categoria": "zapatillas niño",
+        "imagen": 
+        [   
+            "./img/court-borough-low-0.png",
+            "../img/court-borough-low-0.png"
+        ],        
+        "marca": "Nike",
+        "titulo": "Court Borough Low",
+        "valoracion": 5,
+        "precioAnterior": "$40.990",
+        "precioFinal": "37990",
+        "descuento": 5,
+        "cuotas": "en 6 x $6.331 sin interés",
+        "url": "./html/productos.html?id=court-borough-low",
+        "miniaturas": [
+            "../img/court-borough-low-0.png",
+            "../img/court-borough-low-1.png",
+            "../img/court-borough-low-2.png",
+            "../img/court-borough-low-3.png"
+        ],
+        "descripcion": "Haz que los más pequeños comiencen con el pie derecho con el calzado Nike Court Borough. Confeccionada para el largo plazo, esta leyenda rediseñada utiliza una combinación de materiales duraderos en la parte superior y la suela para lograr un estilo clásico con una correa fácil de poner y quitar para poner y quitar el calzado. Además, la estructura de la punta y el mediopié rediseñados le dan a sus pies un poco más de espacio para que puedan cargarlo con comodidad",
+        "tallas": [18, 19, 20, 21, 22],
+        "colores": ["Blanco", "Negro", "Rojo"]
+    },
+    {
+        "id": "kids-cortez",
+        "categoria": "zapatillas niño",
+        "imagen": 
+        [   
+            "./img/kids-cortez-0.png",
+            "../img/kids-cortez-0.png"
+        ],        
+        "marca": "Nike",
+        "titulo": "Kids Cortez (GS)",
+        "valoracion": 5,
+        "precioAnterior": "$74.990",
+        "precioFinal": "60990",
+        "descuento": 20,
+        "cuotas": "en 6 x $10.331 sin interés",
+        "url": "./html/productos.html?id=kids-cortez",
+        "miniaturas": [
+            "../img/kids-cortez-0.png",
+            "../img/kids-cortez-1.png",
+            "../img/kids-cortez-2.png",
+            "../img/kids-cortez-3.png"
+        ],
+        "descripcion": "Desde superestrella de la pista hasta fenómeno de la moda, los Cortez combinan un atractivo retro con una comodidad moderna. Hemos actualizado la forma para ofrecer espacio adicional en la punta y encima del pie. Además, la entresuela suave como una esponja y los detalles dentados de la suela ofrecen el estilo de herencia que conoces y que tanto te gusta.",
+        "tallas": [32, 33, 34, 35, 36],
+        "colores": ["Blanco"]
+    },
+    {
+        "id": "rsx-juvenil",
+        "categoria": "zapatillas niño",
+        "imagen": 
+        [   
+            "./img/rsx-juvenil-0.png",
+            "../img/rsx-juvenil-0.png"
+        ],        
+        "marca": "Puma",
+        "titulo": "RS-X juvenil",
+        "valoracion": 5,
+        "precioAnterior": "$67.990",
+        "precioFinal": "61990",
+        "descuento": 10,
+        "cuotas": "en 6 x $10.331 sin interés",
+        "url": "./html/productos.html?id=rsx-juvenil",
+        "miniaturas": [
+            "../img/rsx-juvenil-0.png",
+            "../img/rsx-juvenil-1.png",
+            "../img/rsx-juvenil-2.png",
+            "../img/rsx-juvenil-3.png"
+        ],
+        "descripcion": "Las RS-X están de vuelta. Esta silueta retro-futurista causó sensación cuando llegó en 2018, famosa por su diseño disruptivo, sus innovadoras mezclas de materiales y sus colores atrevidos. Hoy, vuelven para una nueva generación que quiere expresar su individualidad. Están aquí para revolucionar la autoexpresión.",
+        "tallas": [32, 33, 34, 35, 36],
+        "colores": ["White-Hyperlink Blue"]
+    },
+    {
+        "id": "fenty-avanti",
+        "categoria": "zapatillas niño",
+        "imagen": 
+        [   
+            "./img/fenty-avanti-0.png",
+            "../img/fenty-avanti-0.png"
+        ],        
+        "marca": "Puma",
+        "titulo": "Fenty Avanti",
+        "valoracion": 5,
+        "precioAnterior": "$79.990",
+        "precioFinal": "72990",
+        "descuento": 10,
+        "cuotas": "en 6 x $12.165 sin interés",
+        "url": "./html/productos.html?id=fenty-avanti",
+        "miniaturas": [
+            "../img/fenty-avanti-0.png",
+            "../img/fenty-avanti-1.png",
+            "../img/fenty-avanti-2.png",
+            "../img/fenty-avanti-3.png"
+        ],
+        "descripcion": "La versión de Rihanna de las Avanti, un modelo rescatado de los archivos de PUMA, se reinterpreta con un diseño inspirado en la ropa deportiva vintage. La suave piel de excelente calidad se complementa con costuras y cordones en el mismo tono, una suela de goma y la marca FENTY x PUMA.",
+        "tallas": [32, 33, 34, 35, 36],
+        "colores": ["Club Red"]
+    }
     
     
 
