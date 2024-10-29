@@ -26,65 +26,71 @@
     <p class="texto-huincha">ENVÍOS PUEDEN DEMORAR HASTA 15 DÍAS HÁBILES RM Y 20 DÍAS HÁBILES REGIONES</p>
 </div>
 
-   <header>
-        <div class="header-logo">
-            <a href="../index.html"><img src="../img/logo.svg" alt="Logo" class="logo"></a>
-    </div>
-        <nav>
-            <ul class="navlinks">
-                <li class="items"><a href="../html/niños.html">Niños</a></li>
-                <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
-                <li class="items"><a href="../html/hombre.html">Hombres</a></li>
-                <li class="items"><a href="../html/deportes.html">Deportes</a></li>
+<header>
+    <div class="header-logo">
+        <a href="../index.html"><img src="../img/logo.svg" alt="Logo" class="logo"></a>
+</div>
+    <nav>
+        <ul class="navlinks">
+            <li class="items"><a href="../html/niños.html">Niños</a></li>
+            <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
+            <li class="items"><a href="../html/hombre.html">Hombres</a></li>
+            <li class="items"><a href="../html/deportes.html">Deportes</a></li>
 
-                <!-- Buscador en el header -->
-                <li class="search-container">
-                    <input type="text" id="search-input" placeholder="Buscar..." aria-label="Buscar">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                    
-                    <!-- Contenedor para mostrar los resultados de la búsqueda (oculto por defecto) -->
-                    <div id="search-results" class="search-results hidden"></div>
-                </li>
-
-                <!-- Íconos del usuario, favoritos, carrito, seguimiento -->
-                <li class="icons"><a href="#"><i class="fas fa-user"></i></a></li>
-                <li class="icons"><a href="../html/favoritos.html"><i class="fas fa-heart"></i></a></li>
-                <li class="icons"><a href="../html/carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
-                <li class="icons"><a href="#"><i class="fas fa-truck"></i></a></li>
-
-                <!-- Icono del menú para pantallas pequeñas -->
-                <li onclick="showSidebar()"><a href="#"><ion-icon name="menu-outline"></ion-icon></a></li>
-            </ul>
-
-            <!-- Sidebar para dispositivos móviles -->
-            <ul class="sidebar">
-                <!-- Botón para cerrar el sidebar -->
-                <li onclick="closeSidebar()"><a href="#"><ion-icon name="close-outline"></ion-icon></a></li>
-
-                <!-- Elementos del menú en la sidebar -->
-                <li class="items"><a href="../html/niños.html">Niños</a></li>
-                <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
-                <li class="items"><a href="../html/hombre.html">Hombres</a></li>
-                <li class="items"><a href="../html/deportes.html">Deportes</a></li>
+            <!-- Buscador en el header -->
+            <li class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar..." aria-label="Buscar">
+                <button type="submit"><i class="fas fa-search"></i></button>
+                
+                <!-- Contenedor para mostrar los resultados de la búsqueda (oculto por defecto) -->
+                <div id="search-results" class="search-results hidden"></div>
+            </li>
 
 
 
-                <!-- Íconos en la sidebar -->
-                <li class="icons-sidebar"><a href="#"><i class="fas fa-user"></i></a></li>
-                <li class="icons-sidebar"><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li class="icons-sidebar"><a href="../html/carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
-                <li class="icons-sidebar"><a href="#"><i class="fas fa-truck"></i></a></li>
 
-                <!-- Buscador en la sidebar -->
-                <li class="search-container-sidebar">
-                    <input type="text" placeholder="Buscar..." aria-label="Buscar">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                </li>
-                <!-- Logo en la sidebar -->
-                <img src="../img/logo.svg" alt="Logo Sidebar">
-            </ul>
-        </nav>
-    </header>
+            <!-- Íconos del usuario, favoritos, carrito, seguimiento -->
+            <li class="icons"><a href="#"><i class="fas fa-user"></i></a></li>
+            <li class="icons"><a href="../html/favoritos.html"><i class="fas fa-heart"></i></a></li>
+            <li class="icons cart">
+                <a href="../html/carrito.html"><i class="fas fa-shopping-cart"></i><span id="cart-menu-num">0</span></a>
+            </li>
+            
+            <li class="icons"><a href="#"><i class="fas fa-truck"></i></a></li>
+
+            <!-- Icono del menú para pantallas pequeñas -->
+            <li onclick="showSidebar()"><a href="#"><ion-icon name="menu-outline"></ion-icon></a></li>
+        </ul>
+
+        <!-- Sidebar para dispositivos móviles -->
+        <ul class="sidebar">
+            <!-- Botón para cerrar el sidebar -->
+            <li onclick="closeSidebar()"><a href="#"><ion-icon name="close-outline"></ion-icon></a></li>
+
+            <!-- Elementos del menú en la sidebar -->
+            <li class="items"><a href="../html/niños.html">Niños</a></li>
+            <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
+            <li class="items"><a href="../html/hombre.html">Hombres</a></li>
+            <li class="items"><a href="../html/deportes.html">Deportes</a></li>
+
+
+
+            <!-- Íconos en la sidebar -->
+            <li class="icons-sidebar"><a href="#"><i class="fas fa-user"></i></a></li>
+            <li class="icons-sidebar"><a href="#"><i class="fas fa-heart"></i></a></li>
+            <li class="icons-sidebar"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <li class="icons-sidebar"><a href="#"><i class="fas fa-truck"></i></a></li>
+
+            <!-- Buscador en la sidebar -->
+            <li class="search-container-sidebar">
+                <input type="text" placeholder="Buscar..." aria-label="Buscar">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </li>
+            <!-- Logo en la sidebar -->
+            <img src="./img/logo.svg" alt="Logo Sidebar">
+        </ul>
+    </nav>
+</header>
  
     <!-- Sección de Producto -->
     <main class="producto-detalle">

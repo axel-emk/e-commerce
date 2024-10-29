@@ -247,6 +247,29 @@ nav ion-icon {
   display: none;
 }
 
+/* Estilo del contador en el carrito */
+.cart {
+  position: relative;
+}
+
+#cart-menu-num {
+  position: absolute;
+  top: -5px;
+  left: 15px;
+  background: red;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px;
+}
+
+
 /* Media Queries */
 @media (min-width: 768px) {
   .navlinks ion-icon {

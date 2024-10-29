@@ -25,64 +25,70 @@
     <p class="texto-huincha">ENVÍOS PUEDEN DEMORAR HASTA 15 DÍAS HÁBILES RM Y 20 DÍAS HÁBILES REGIONES</p>
 </div>
 
-   <header>
-        <div class="header-logo">
-            <a href="../index.html"><img src="../img/logo.svg" alt="Logo" class="logo"></a>
-    </div>
-        <nav>
-            <ul class="navlinks">
-                <li class="items"><a href="../html/niños.html">Niños</a></li>
-                <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
-                <li class="items"><a href="../html/hombre.html">Hombres</a></li>
-                <li class="items"><a href="../html/deportes.html">Deportes</a></li>
+<header>
+    <div class="header-logo">
+        <a href="../index.html"><img src="../img/logo.svg" alt="Logo" class="logo"></a>
+</div>
+    <nav>
+        <ul class="navlinks">
+            <li class="items"><a href="../html/niños.html">Niños</a></li>
+            <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
+            <li class="items"><a href="../html/hombre.html">Hombres</a></li>
+            <li class="items"><a href="../html/deportes.html">Deportes</a></li>
 
-                <!-- Buscador en el header -->
-                <li class="search-container">
-                    <input type="text" id="search-input" placeholder="Buscar..." aria-label="Buscar">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                    
-                    <!-- Contenedor para mostrar los resultados de la búsqueda (oculto por defecto) -->
-                    <div id="search-results" class="search-results hidden"></div>
-                </li>
-
-                <!-- Íconos del usuario, favoritos, carrito, seguimiento -->
-                <li class="icons"><a href="#"><i class="fas fa-user"></i></a></li>
-                <li class="icons"><a href="../html/favoritos.html"><i class="fas fa-heart"></i></a></li>
-                <li class="icons"><a href="../html/carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
-                <li class="icons"><a href="#"><i class="fas fa-truck"></i></a></li>
-
-                <!-- Icono del menú para pantallas pequeñas -->
-                <li onclick="showSidebar()"><a href="#"><ion-icon name="menu-outline"></ion-icon></a></li>
-            </ul>
-
-            <!-- Sidebar para dispositivos móviles -->
-            <ul class="sidebar">
-                <!-- Botón para cerrar el sidebar -->
-                <li onclick="closeSidebar()"><a href="#"><ion-icon name="close-outline"></ion-icon></a></li>
-
-                <!-- Elementos del menú en la sidebar -->
-                <li class="items"><a href="../html/niños.html">Niños</a></li>
-                <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
-                <li class="items"><a href="../html/hombre.html">Hombres</a></li>
-                <li class="items"><a href="../html/deportes.html">Deportes</a></li>
+            <!-- Buscador en el header -->
+            <li class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar..." aria-label="Buscar">
+                <button type="submit"><i class="fas fa-search"></i></button>
+                
+                <!-- Contenedor para mostrar los resultados de la búsqueda (oculto por defecto) -->
+                <div id="search-results" class="search-results hidden"></div>
+            </li>
 
 
-                <!-- Íconos en la sidebar -->
-                <li class="icons-sidebar"><a href="#"><i class="fas fa-user"></i></a></li>
-                <li class="icons-sidebar"><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li class="icons-sidebar"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                <li class="icons-sidebar"><a href="#"><i class="fas fa-truck"></i></a></li>
 
-                <!-- Buscador en la sidebar -->
-                <li class="search-container-sidebar">
-                    <input type="text" placeholder="Buscar..." aria-label="Buscar">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                </li>
-                <!-- Logo en la sidebar -->
-                <img src="./img/logo.svg" alt="Logo Sidebar">
-            </ul>
-        </nav>
-    </header>
+
+            <!-- Íconos del usuario, favoritos, carrito, seguimiento -->
+            <li class="icons"><a href="#"><i class="fas fa-user"></i></a></li>
+            <li class="icons"><a href="../html/favoritos.html"><i class="fas fa-heart"></i></a></li>
+            <li class="icons cart">
+                <a href="../html/carrito.html"><i class="fas fa-shopping-cart"></i><span id="cart-menu-num">0</span></a>
+            </li>            
+            <li class="icons"><a href="#"><i class="fas fa-truck"></i></a></li>
+
+            <!-- Icono del menú para pantallas pequeñas -->
+            <li onclick="showSidebar()"><a href="#"><ion-icon name="menu-outline"></ion-icon></a></li>
+        </ul>
+
+        <!-- Sidebar para dispositivos móviles -->
+        <ul class="sidebar">
+            <!-- Botón para cerrar el sidebar -->
+            <li onclick="closeSidebar()"><a href="#"><ion-icon name="close-outline"></ion-icon></a></li>
+
+            <!-- Elementos del menú en la sidebar -->
+            <li class="items"><a href="../html/niños.html">Niños</a></li>
+            <li class="items"><a href="../html/mujer.html">Mujeres</a></li>
+            <li class="items"><a href="../html/hombre.html">Hombres</a></li>
+            <li class="items"><a href="../html/deportes.html">Deportes</a></li>
+
+
+
+            <!-- Íconos en la sidebar -->
+            <li class="icons-sidebar"><a href="#"><i class="fas fa-user"></i></a></li>
+            <li class="icons-sidebar"><a href="#"><i class="fas fa-heart"></i></a></li>
+            <li class="icons-sidebar"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <li class="icons-sidebar"><a href="#"><i class="fas fa-truck"></i></a></li>
+
+            <!-- Buscador en la sidebar -->
+            <li class="search-container-sidebar">
+                <input type="text" placeholder="Buscar..." aria-label="Buscar">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </li>
+            <!-- Logo en la sidebar -->
+            <img src="./img/logo.svg" alt="Logo Sidebar">
+        </ul>
+    </nav>
+</header>
 
     <!-- Imagen I -->
     <section>
@@ -91,25 +97,12 @@
         </article>
     </section>
 
-<!-- Contenedor principal del slider -->
-<!-- Contenedor principal del slider -->
-<section class="mg">
-    <h2>Zapatillas</h2>
-    <div class="slider-container">
-        <div class="card-slider" id="slider1" data-categoria="zapatillas hombre">
-            <!-- Las tarjetas se generarán dinámicamente con JavaScript -->
-        </div>
-        <button class="prev" onclick="moveSlider('slider1', -1)">⟨</button>
-        <button class="next" onclick="moveSlider('slider1', 1)">⟩</button>
-    </div>
-</section>
-
-
-<!-- Contenedor de las cards de categorías -->
-<div class="category-cards">
+   <!-- Categorías -->
+   <section class="mg2">
+    <div class="category-cards">
     <!-- Card 1: Fútbol -->
     <div class="cardi">
-        <img src="../img/categoria1.png" alt="Fútbol" class="cardi-img">
+        <img src="../img/niño/categoria1.png" alt="Fútbol" class="cardi-img">
         <div class="card-content">
             <h3>Fútbol</h3>
             <p>El deporte más popular del mundo. ¡Descubre más sobre el fútbol aquí!</p>
@@ -117,53 +110,64 @@
         </div>
     </div>
 
-    <!-- Card 2: Baloncesto -->
-    <div class="cardi">
-        <img src="../img/categoria2.png" alt="Baloncesto" class="cardi-img">
-        <div class="card-content">
-            <h3>Baloncesto</h3>
-            <p>Disfruta de la emoción del baloncesto, un deporte lleno de acción.</p>
-            <button class="card-btn">Ver más</button>
-        </div>
-    </div>
-
-    <!-- Card 3: Tenis -->
-    <div class="cardi">
-        <img src="../img/categoria3.png" alt="Tenis" class="cardi-img">
-        <div class="card-content">
-            <h3>Tenis</h3>
-            <p>Un deporte elegante y desafiante. Conoce más sobre el tenis.</p>
-            <button class="card-btn">Ver más</button>
-        </div>
-    </div>
-
-    <!-- Card 4: Natación -->
-    <div class="cardi">
-        <img src="../img/categoria4.png" alt="Natación" class="cardi-img">
-        <div class="card-content">
-            <h3>Natación</h3>
-            <p>Sumérgete en el mundo de la natación y disfruta de sus beneficios.</p>
-            <button class="card-btn">Ver más</button>
-        </div>
+<!-- Card 2: Baloncesto -->
+<div class="cardi">
+    <img src="../img/niño/categoria2.png" alt="Baloncesto" class="cardi-img">
+    <div class="card-content">
+        <h3>Baloncesto</h3>
+        <p>Disfruta de la emoción del baloncesto, un deporte lleno de acción.</p>
+        <button class="card-btn">Ver más</button>
     </div>
 </div>
 
-
-
-
-
-
-
-    <!-- Newsleter -->
-    <!-- Formulario para suscripción al newsletter -->
-    <div class="newsletter">
-        <h2 class="primario">¡Suscríbete a nuestro Newsletter!</h2>
-        <p  class="primario">Recibe ofertas exclusivas y novedades directamente en tu correo.</p>
-        <form action="#" method="POST">
-            <input type="email" name="email" placeholder="Ingresa tu correo" required>
-            <button type="submit">Suscribirme</button>
-        </form>
+<!-- Card 3: Tenis -->
+<div class="cardi">
+    <img src="../img/niño/categoria3.png" alt="Tenis" class="cardi-img">
+    <div class="card-content">
+        <h3>Tenis</h3>
+        <p>Un deporte elegante y desafiante. Conoce más sobre el tenis.</p>
+        <button class="card-btn">Ver más</button>
     </div>
+</div>
+
+<!-- Card 4: Natación -->
+<div class="cardi">
+    <img src="../img/niño/categoria4.png" alt="Bicicleta" class="cardi-img">
+    <div class="card-content">
+        <h3>Bicicleta</h3>
+        <p>Sumérgete en el mundo de la natación y disfruta de sus beneficios.</p>
+        <button class="card-btn">Ver más</button>
+    </div>
+</div>
+</div>
+</section>
+
+
+<!-- Card ----------------------------------------------------------- -->
+<!-- Contenedor principal del slider -->
+<section class="mg">
+<h2>Zapatillas</h2>
+<div class="slider-container">
+    <div class="card-slider" id="slider1" data-categoria="zapatillas hombre">
+        <!-- Las tarjetas se generarán dinámicamente con JavaScript -->
+    </div>
+    <button class="prev" onclick="moveSlider('slider1', -1)">⟨</button>
+    <button class="next" onclick="moveSlider('slider1', 1)">⟩</button>
+</div>
+</section>
+
+
+
+<!-- Newsleter -->
+<!-- Formulario para suscripción al newsletter -->
+<div class="newsletter">
+    <h2 class="primario">¡Suscríbete a nuestro Newsletter!</h2>
+    <p  class="primario">Recibe ofertas exclusivas y novedades directamente en tu correo.</p>
+    <form action="#" method="POST">
+        <input type="email" name="email" placeholder="Ingresa tu correo" required>
+        <button type="submit">Suscribirme</button>
+    </form>
+</div>
 <!-- ---------------Footer ---------------------- -->
   <!-- Footer con logo, lista de categorías y formulario de contacto -->
   <footer>
@@ -223,7 +227,7 @@
     <!-- ----------------------- SCript  ------------------------------------- -->
 
     <script src="../js/header.js"></script>
-    <script src="../js/banner.js"></script>
+    <script src="../js/productos.js"></script>
     <script src="../js/render.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

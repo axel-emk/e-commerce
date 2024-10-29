@@ -12,10 +12,24 @@ function isInnerPage() {
 
 // Función para obtener la ruta correcta para productos.json
 function getJsonPath() {
-    if (isInnerPage()) {
-        return '../productos.json';  // Para páginas internas como niños.html
-    }
-    return './productos.json'; // Para la página principal (index.html)
+    return isInnerPage() ? '../productos.json' : './productos.json';
+}
+
+// Función para actualizar el contador del carrito en el ícono
+function actualizarContadorCarrito() {
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const contador = carrito.length;
+    document.getElementById('cart-menu-num').textContent = contador;
+}
+
+
+// Función para agregar producto al carrito
+function agregarAlCarrito(producto) {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    carrito.push(producto);
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    actualizarContadorCarrito();
+    alert("Producto agregado al carrito");
 }
 
 // Función para renderizar el producto en el HTML
@@ -54,7 +68,6 @@ function renderProducto(producto) {
     // Precio final
     document.querySelector('.price-button').textContent = `$${Number(producto.precioFinal).toLocaleString('es-CL')}`;
 
-
     // Descuento
     document.querySelector('.discount-label').textContent = producto.descuento + "% OFF";
 
@@ -92,33 +105,18 @@ function renderProducto(producto) {
         option.textContent = color;
         colorSelect.appendChild(option);
     });
-}
 
-// Función para obtener los datos del producto
-function obtenerProducto() {
-    const jsonPath = getJsonPath(); // Obtenemos la ruta correcta para el archivo JSON
-
-    fetch(jsonPath)
-        .then(response => response.json())
-        .then(data => {
-            // Obtener el ID del producto desde la URL
-            const productoId = getQueryParam('id');
-
-            // Buscar el producto en el JSON usando el ID
-            const producto = data.find(p => p.id === productoId);
-
-            if (producto) {
-                renderProducto(producto);
-            } else {
-                console.error("Producto no encontrado.");
-            }
-        })
-        .catch(error => console.error('Error al obtener el producto:', error));
+    // Asignar el evento al botón "Agregar al Carrito"
+    document.querySelector('.boton-carrito').addEventListener('click', function() {
+        agregarAlCarrito(producto);
+    });
 }
 
 // Llamar a la función de renderizado cuando el DOM esté listo
-document.addEventListener("DOMContentLoaded", obtenerProducto);
-
+document.addEventListener("DOMContentLoaded", () => {
+    obtenerProducto();
+    actualizarContadorCarrito(); // Actualizar el contador del carrito al cargar la página
+});
 
 // Función para agregar producto a favoritos
 function agregarAFavoritos(producto) {
@@ -159,11 +157,6 @@ function obtenerProducto() {
 
             if (producto) {
                 renderProducto(producto);
-
-                // Añadir evento al botón de "Agregar al Carrito"
-                document.querySelector('.boton-carrito').addEventListener('click', function() {
-                    agregarAlCarrito(producto);
-                });
             } else {
                 console.error("Producto no encontrado.");
             }
