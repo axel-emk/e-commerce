@@ -112,6 +112,32 @@ a:hover {
   object-fit: cover; /* Mantiene la proporción del video y lo adapta al contenedor */
 }
 
+/* Notificacion */
+#notification-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.notification {
+  background-color: var(--gold);
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.notification.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /* Adaptaciones responsive */
 
 /* Pantallas medianas y grandes (mayores a 1024px) */
