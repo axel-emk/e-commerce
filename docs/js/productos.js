@@ -129,7 +129,7 @@ function agregarAFavoritos(producto) {
     // Guardar de nuevo en localStorage
     localStorage.setItem('favoritos', JSON.stringify(favoritos));
     
-    alert("Producto agregado a favoritos");
+    showNotification("Producto agregado a favoritos");
 }
 
 // Asignar el evento al botón de "Agregar a Favoritos"

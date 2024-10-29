@@ -105,10 +105,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (productoIndex === -1) {
             favoritos.push(producto);
-            alert("Producto agregado a favoritos");
+            showNotification("Producto agregado a favoritos");
         } else {
             favoritos.splice(productoIndex, 1);
-            alert("Producto eliminado de favoritos");
+            showNotification("Producto eliminado de favoritos");
         }
 
         localStorage.setItem('favoritos', JSON.stringify(favoritos));
