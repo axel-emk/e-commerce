@@ -95,6 +95,23 @@ function mostrarResultados(resultados) {
     }
 }
 
+// Inicializar contador de carrito
+let cartCount = 0;
+
+// Función para actualizar el contador
+function actualizarContadorCarrito() {
+    document.getElementById('cart-menu-num').innerText = cartCount;
+}
+
+// Ejemplo de función para agregar un producto al carrito
+function agregarAlCarrito() {
+    cartCount++;
+    actualizarContadorCarrito();
+}
+
+// Llama a agregarAlCarrito() cada vez que se añada un producto
+
+
 // Event listener para la búsqueda en tiempo real
 const searchInput = document.getElementById('search-input');
 searchInput.addEventListener('input', () => {

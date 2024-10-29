@@ -94,27 +94,7 @@ function renderProducto(producto) {
     });
 }
 
-// Función para obtener los datos del producto
-function obtenerProducto() {
-    const jsonPath = getJsonPath(); // Obtenemos la ruta correcta para el archivo JSON
 
-    fetch(jsonPath)
-        .then(response => response.json())
-        .then(data => {
-            // Obtener el ID del producto desde la URL
-            const productoId = getQueryParam('id');
-
-            // Buscar el producto en el JSON usando el ID
-            const producto = data.find(p => p.id === productoId);
-
-            if (producto) {
-                renderProducto(producto);
-            } else {
-                console.error("Producto no encontrado.");
-            }
-        })
-        .catch(error => console.error('Error al obtener el producto:', error));
-}
 
 // Llamar a la función de renderizado cuando el DOM esté listo
 document.addEventListener("DOMContentLoaded", obtenerProducto);
