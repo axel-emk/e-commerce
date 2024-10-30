@@ -23,14 +23,7 @@ function actualizarContadorCarrito() {
 }
 
 
-// Función para agregar producto al carrito
-function agregarAlCarrito(producto) {
-    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    carrito.push(producto);
-    localStorage.setItem('carrito', JSON.stringify(carrito));
-    actualizarContadorCarrito();
-    alert("Producto agregado al carrito");
-}
+
 
 // Función para renderizar el producto en el HTML
 function renderProducto(producto) {
