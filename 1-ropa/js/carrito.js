@@ -3,7 +3,7 @@ function agregarAlCarrito(producto) {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     carrito.push(producto);
     localStorage.setItem('carrito', JSON.stringify(carrito));
-    alert('Producto agregado al carrito');
+    showNotification('Producto agregado al carrito');
 }
 
 // Función para calcular y mostrar el total del carrito

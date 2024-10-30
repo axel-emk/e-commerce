@@ -60,13 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
         mostrarFavoritos();  // Volver a renderizar los favoritos
     }
 
-    // Función para agregar un producto al carrito
-    function agregarAlCarrito(producto) {
-        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-        carrito.push(producto);
-        localStorage.setItem('carrito', JSON.stringify(carrito));
-        alert('Producto agregado al carrito');
-    }
 
     mostrarFavoritos();
 });
