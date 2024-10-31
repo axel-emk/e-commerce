@@ -45,8 +45,8 @@ function mostrarFavoritos() {
                     <p class="rating">${estrellas}</p>
                     <p>Precio: $${Number(producto.precioFinal).toLocaleString('es-CL')}</p>
                     <p>${producto.cuotas}</p>
-                    <button class="btn-eliminar" data-id="${producto.id}">Eliminar</button>
                     <button class="btn-carrito" data-id="${producto.id}">Agregar al carrito</button>
+                    <button class="btn-eliminar" data-id="${producto.id}">Eliminar</button>
                 </div>
             </div>
         `;

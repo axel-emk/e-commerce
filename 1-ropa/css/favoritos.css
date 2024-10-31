@@ -19,14 +19,14 @@
   gap: 20px;
   border-bottom: 1px solid #ddd;
   padding: 10px;
-  width: 100%;
+  width: 1200px;
   max-width: 700px;
   background-color: var(--tercia);
   border-radius: 10px;
 }
 
 .favoritos-item img {
-  width: 100px;
+  width: 120px;
   height: auto;
 }
 
@@ -35,15 +35,29 @@
 }
 
 .favoritos-item h2 {
-  font-size: 20px;
+  text-align: start;
+  font-size: 20px !important;
+  color: var(--primary);
 }
 
 .btn-eliminar {
-  background-color: #ff5252;
+  background-color: var(--gold);
+  color: var(--luz);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0px 25px 25px 25px;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .btn-carrito {
-  background-color: #4CAF50;
+  background-color: var(--secondary);
+  color: var(--luz);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0px 25px 25px 25px;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .rating {
