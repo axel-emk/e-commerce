@@ -554,6 +554,31 @@
         "tallas": ["No aplica"],
         "colores": ["Negro"]
     },   
+    {
+        "id": "mancuernas-hex-5kg",
+        "categoria": "Pesas y Mancuernas",
+        "imagen": [
+            "./img/mancuernas-hex-5kg-0.png",
+            "../img/mancuernas-hex-5kg-0.png"
+        ],
+        "marca": "CORENGTH",
+        "titulo": "Mancuerca Hex 5Kg",
+        "valoracion": 0,
+        "precioAnterior": "$22.990",
+        "precioFinal": "21000",
+        "descuento": 5,
+        "cuotas": "en 6 x $3.500 sin interés",
+        "url": "./html/productos.html?id=mancuernas-hex-5kg",
+        "miniaturas": [
+            "../img/mancuernas-hex-5kg-0.png",
+            "../img/mancuernas-hex-5kg-1.png",
+            "../img/mancuernas-hex-5kg-2.png",
+            "../img/mancuernas-hex-5kg-3.png"
+        ],
+        "descripcion": "Esta mancuerna fue diseñada por nuestro equipo de diseño específicamente para el crosstraining.",
+        "tallas": ["No aplica"],
+        "colores": ["Negro"]
+    },   
     
 
 
