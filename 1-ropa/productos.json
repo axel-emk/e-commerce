@@ -516,7 +516,7 @@
         "titulo": "Kit Mancuernas 10kg",
         "valoracion": 4,
         "precioAnterior": "$33.000",
-        "precioFinal": "33000",
+        "precioFinal": "30000",
         "descuento": 5,
         "cuotas": "en 6 x $5.500 sin interés",
         "url": "./html/productos.html?id=kit-mancuernas-10kg",
@@ -579,7 +579,53 @@
         "tallas": ["No aplica"],
         "colores": ["Negro"]
     },   
-    
+    {
+        "id": "kettlebell-8kg",
+        "categoria": "Pesas y Mancuernas",
+        "imagen": [
+            "./img/kettlebell-8kg-0.png",
+            "../img/kettlebell-8kg-0.png"
+        ],
+        "marca": "CORENGTH",
+        "titulo": "Kettlebell 8 KG",
+        "valoracion": 5,
+        "precioAnterior": "$33.990",
+        "precioFinal": "30990",
+        "descuento": 5,
+        "cuotas": "en 6 x $3.500 sin interés",
+        "url": "./html/productos.html?id=kettlebell-8kg",
+        "miniaturas": [
+            "../img/kettlebell-8kg-0.png",
+            "../img/kettlebell-8kg-1.png"
+        ],
+        "descripcion": "Combinando fuerza, cardio y musculación, la kettlebell de 8 kg te ofrece un entrenamiento completo.",
+        "tallas": ["No aplica"],
+        "colores": ["Negro - Azul"]
+    },   
+    {
+        "id": "pesas-tobillos-muñecas",
+        "categoria": "Pesas y Mancuernas",
+        "imagen": [
+            "./img/pesas-tobillos-muñecas-0.png",
+            "../img/pesas-tobillos-muñecas-0.png"
+        ],
+        "marca": "CORENGTH",
+        "titulo": "Pesas Tobillos/Muñecas",
+        "valoracion": 0,
+        "precioAnterior": "$22.990",
+        "precioFinal": "21000",
+        "descuento": 5,
+        "cuotas": "en 6 x $3.500 sin interés",
+        "url": "./html/productos.html?id=pesas-tobillos-muñecas",
+        "miniaturas": [
+            "../img/pesas-tobillos-muñecas-0.png",
+            "../img/pesas-tobillos-muñecas-1.png",
+            "../img/pesas-tobillos-muñecas-2.png"
+        ],
+        "descripcion": "Pesas para tobillos y muñecas modulables de 250 g a 1 kg, para variar la intensidad de tus sesiones de refuerzo muscular o pilates. Disponibles en 2 kg.",
+        "tallas": ["No aplica"],
+        "colores": ["Burdeo"]
+    },
 
 
 
