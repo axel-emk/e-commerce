@@ -629,6 +629,36 @@
 
 
 
+
+
+
+    
+    {
+        "id": "pesas-tobillos-muñecas",
+        "categoria": "Pesas y Mancuernas",
+        "imagen": [
+            "./img/pesas-tobillos-muñecas-0.png",
+            "../img/pesas-tobillos-muñecas-0.png"
+        ],
+        "marca": "PUMA",
+        "titulo": "Guantes de arquero ULTRA ULTIMATE Hybrid",
+        "valoracion": 0,
+        "precioAnterior": "$22.990",
+        "precioFinal": "21000",
+        "descuento": 5,
+        "cuotas": "en 6 x $3.500 sin interés",
+        "url": "./html/productos.html?id=pesas-tobillos-muñecas",
+        "miniaturas": [
+            "../img/pesas-tobillos-muñecas-0.png",
+            "../img/pesas-tobillos-muñecas-1.png",
+            "../img/pesas-tobillos-muñecas-2.png"
+        ],
+        "descripcion": "Pesas para tobillos y muñecas modulables de 250 g a 1 kg, para variar la intensidad de tus sesiones de refuerzo muscular o pilates. Disponibles en 2 kg.",
+        "tallas": ["No aplica"],
+        "colores": ["Burdeo"]
+    },
+
+
     
     
     
