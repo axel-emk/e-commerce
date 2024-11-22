@@ -9,9 +9,21 @@
   gap: 20px;
 }
 
-.carrito-izquierda, .carrito-derecha {
+.carrito-derecha {
+  width: 30%;
+  max-width: 500px;
+  background-color: var(--tercia);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 10px;
+ 
+}
+.carrito-izquierda{
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   background-color: var(--tercia);
   padding: 20px;
   border-radius: 10px;
@@ -22,9 +34,8 @@
 }
 
 .producto-carrito img {
-  width: 100px;
+  width: 120px;
   height: auto;
-  margin-right: 20px;
 }
 
 .producto-carrito {
