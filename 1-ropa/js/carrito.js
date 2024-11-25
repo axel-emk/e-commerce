@@ -38,24 +38,51 @@ function renderCarrito() {
     carritoContainer.innerHTML = '';
     carritoHeader.textContent = `Tu Carro (${carrito.length} producto${carrito.length !== 1 ? 's' : ''})`;
 
-    carrito.forEach((producto, index) => {
-        const item = document.createElement('div');
-        item.classList.add('producto-carrito');
-        item.innerHTML = `
-            <img src="${producto.imagen[1]}" alt="${producto.titulo}" class="imagen-carrito">
-            <h2 class="title-carrito">${producto.titulo}</h2>
-            <div class="carrito-item-cantidad">
-              <label for="cantidad">Cantidad:</label>
-              <input type="number" class="cantidad" name="cantidad" value="${producto.cantidad || 1}" min="1" data-index="${index}">
-            </div>
-            <p>Precio Final: $${Number(producto.precioFinal).toLocaleString('es-CL')}</p>
+    // carrito.forEach((producto, index) => {
+    //     const item = document.createElement('div');
+    //     item.classList.add('producto-carrito');
+    //     item.innerHTML = `
+    //         <img src="${producto.imagen[1]}" alt="${producto.titulo}" class="imagen-carrito">
+    //         <h2 class="title-carrito">${producto.titulo}</h2>
+    //         <div class="carrito-item-cantidad">
+    //           <label for="cantidad">Cantidad:</label>
+    //           <input type="number" class="cantidad" name="cantidad" value="${producto.cantidad || 1}" min="1" data-index="${index}">
+    //         </div>
+    //         <p>Precio Final: $${Number(producto.precioFinal).toLocaleString('es-CL')}</p>
 
-            <div class="acciones-producto">
-              <button class="eliminar-item" data-id="${producto.id}">Eliminar</button>
+    //         <div class="acciones-producto">
+    //           <button class="eliminar-item" data-id="${producto.id}">Eliminar</button>
+    //         </div>
+    //     `;
+    //     carritoContainer.appendChild(item);
+    // });
+
+    carrito.forEach(producto => {
+        const item = document.createElement('div');
+        item.classList.add('carrito-item');
+        item.innerHTML = `
+            <a href="${producto.url}">
+                <img src="${producto.imagen[1]}" alt="${producto.titulo}" class="imagen-carrito"
+                onerror="this.onerror=null; this.src='${ajustarRuta(producto.imagen[1])}';">
+            </a>
+            <div class="info-carrito">
+                <h2 class="title-carrito">${producto.titulo}</h2>
+                <p>Marca: ${producto.marca}</p>
+                <div class="carrito-item-cantidad">
+                    <label for="cantidad-${producto.id}">Cantidad:</label>
+                    <input type="number" class="cantidad" id="cantidad-${producto.id}" name="cantidad" 
+                    value="${producto.cantidad || 1}" min="1" data-id="${producto.id}">
+                </div>
+                <p class="precio-carrito">Precio Final: $${Number(producto.precioFinal).toLocaleString('es-CL')}</p>
+                <div class="acciones-producto">
+                    <button class="btn-agregar-favoritos" data-id="${producto.id}">Mover a Favoritos</button>
+                    <button class="eliminar-item" data-id="${producto.id}">Eliminar</button>
+                </div>
             </div>
         `;
         carritoContainer.appendChild(item);
     });
+    
 
     document.querySelectorAll('.cantidad').forEach(input => {
         input.addEventListener('change', (e) => {
