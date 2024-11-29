@@ -51,12 +51,16 @@
   height: auto;
   border-radius: 5px;
 }
-
+.title-carrito{
+  text-align: start;
+  font-size: 20px !important;
+  color: var(--primary);
+}
 .info {
   flex: 1; /* Ocupa todo el espacio restante */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 .carrito-item-cantidad {
