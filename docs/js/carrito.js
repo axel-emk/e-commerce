@@ -59,13 +59,15 @@ function renderCarrito() {
 
     carrito.forEach(producto => {
         const item = document.createElement('div');
-        item.classList.add('carrito-item');
+        item.classList.add('producto-carrito'); // Usamos la clase de diseño definida en el CSS
         item.innerHTML = `
-            <a href="${producto.url}">
-                <img src="${producto.imagen[1]}" alt="${producto.titulo}" class="imagen-carrito"
-                onerror="this.onerror=null; this.src='${ajustarRuta(producto.imagen[1])}';">
-            </a>
-            <div class="info-carrito">
+            <div class="imagen-container">
+                <a href="${producto.url}">
+                    <img src="${producto.imagen[1]}" alt="${producto.titulo}" class="imagen-carrito"
+                    onerror="this.onerror=null; this.src='${ajustarRuta(producto.imagen[1])}';">
+                </a>
+            </div>
+            <div class="info">
                 <h2 class="title-carrito">${producto.titulo}</h2>
                 <p>Marca: ${producto.marca}</p>
                 <div class="carrito-item-cantidad">
@@ -82,6 +84,7 @@ function renderCarrito() {
         `;
         carritoContainer.appendChild(item);
     });
+    
     
 
     document.querySelectorAll('.cantidad').forEach(input => {
