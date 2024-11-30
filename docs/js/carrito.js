@@ -69,7 +69,7 @@ function renderCarrito() {
             </div>
             <div class="info">
                 <h2 class="title-carrito">${producto.titulo}</h2>
-                <p>Marca: ${producto.marca}</p>
+                <p class="title-marca">Marca: ${producto.marca}</p>
                 <div class="carrito-item-cantidad">
                     <label for="cantidad-${producto.id}">Cantidad:</label>
                     <input type="number" class="cantidad" id="cantidad-${producto.id}" name="cantidad" 
@@ -77,7 +77,7 @@ function renderCarrito() {
                 </div>
                 <p class="precio-carrito">Precio Final: $${Number(producto.precioFinal).toLocaleString('es-CL')}</p>
                 <div class="acciones-producto">
-                    <button class="btn-agregar-favoritos" data-id="${producto.id}">Mover a Favoritos</button>
+                    <button class="btn-agregar-favoritos" data-id="${producto.id}">Agregar a Favoritos</button>
                     <button class="eliminar-item" data-id="${producto.id}">Eliminar</button>
                 </div>
             </div>
@@ -93,6 +93,28 @@ function renderCarrito() {
             actualizarCantidad(index, e.target.value);
         });
     });
+
+    document.querySelectorAll('.btn-agregar-favoritos').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const productoId = e.target.dataset.id;
+            const producto = carrito.find(p => p.id === productoId);
+    
+            if (producto) {
+                let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+                const yaEnFavoritos = favoritos.some(fav => fav.id === producto.id);
+    
+                if (!yaEnFavoritos) {
+                    favoritos.push(producto);
+                    localStorage.setItem('favoritos', JSON.stringify(favoritos));
+                    showNotification("Producto agregado a favoritos."); // Usamos la función de notificación
+                } else {
+                    showNotification("El producto ya está en favoritos."); // Mensaje de duplicado
+                }
+            }
+        });
+    });
+    
+    
 
     document.querySelectorAll('.eliminar-item').forEach(button => {
         button.addEventListener('click', (e) => {

@@ -51,12 +51,31 @@
   height: auto;
   border-radius: 5px;
 }
+.title-carrito{
+  text-align: start;
+  font-size: 20px !important;
+  color: var(--primary);
+}
 
+.title-marca{
+  text-align: start;
+  padding-top: 5px;
+  font-size: 16px !important;
+  color: var(--primary);
+}
+
+.precio-carrito{
+  text-align: start;
+  padding-top: 10px;
+  font-size: 18px !important;
+  font-weight: 600;
+  color: var(--primary);
+}
 .info {
   flex: 1; /* Ocupa todo el espacio restante */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 .carrito-item-cantidad {
