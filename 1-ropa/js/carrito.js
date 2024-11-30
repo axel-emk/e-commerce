@@ -69,7 +69,7 @@ function renderCarrito() {
             </div>
             <div class="info">
                 <h2 class="title-carrito">${producto.titulo}</h2>
-                <p>Marca: ${producto.marca}</p>
+                <p class="title-marca">Marca: ${producto.marca}</p>
                 <div class="carrito-item-cantidad">
                     <label for="cantidad-${producto.id}">Cantidad:</label>
                     <input type="number" class="cantidad" id="cantidad-${producto.id}" name="cantidad" 
